@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Costa mesa emailer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+        /* CLIENT-SPECIFIC STYLES */
+        #outlook a {
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Force Outlook to provide a "view in browser" message */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Force Hotmail to display normal line spacing */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Remove spacing between tables in Outlook 2007 and up */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Allow smoother rendering of resized image in Internet Explorer */
+
+        /* RESET STYLES */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+        .appleBody a {
+            color: #68440a;
+            text-decoration: none;
+        }
+
+        .appleFooter a {
+            color: #999999;
+            text-decoration: none;
+        }
+
+        .button-primary {
+            display: block;
+            max-width: 240px;
+            width: 100%;
+            border-radius: 6px;
+            background: #ffffff;
+            color: #033D5A;
+            padding: 12px 50px;
+            text-decoration: none;
+            font-family: 'Helvetica ', sans-serif;
+            font-size: 18x;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%;
+            letter-spacing: 0.2px;
+        }
+
+        .img-max {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .paragraph {
+            color: #033D5A;
+            text-align: center;
+            font-family: 'Helvetica ', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 180%;
+            text-transform: uppercase;
+        }
+
+        .column-header {
+            color: #1A4361;
+            text-align: left;
+            font-family: 'Helvetica ', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 148%;
+            letter-spacing: 0.24px;
+            text-transform: capitalize;
+        }
+
+
+
+        /* MOBILE STYLES */
+        @media screen and (max-width: 600px) {
+
+            /* ALLOWS FOR FLUID TABLES */
+            table[class="wrapper"] {
+                width: 100% !important;
+            }
+
+            td[class="mobile-wrapper hero-wrapper"] {
+                padding: 20px 5% 0px 5% !important;
+            }
+
+            td[class="experience-para"] {
+                font-size: 16px !important;
+            }
+
+            td[class="hero-img"] {
+                padding-top: 25px !important;
+            }
+
+            td[class="accuracy-td-padding"] {
+                padding: 30px 15px 14px !important;
+            }
+
+            td[class="mobile-wrapper mri-left"] {
+                padding: 10px 15px 14px 0 !important;
+            }
+
+            td[class="unmatch-img-padding"] {
+                padding: 30px 15px 30px !important;
+            }
+
+            td[class="choose-banner"] {
+                padding: 25px 0 0 0 !important;
+            }
+
+            td[class="verified-main-td"] {
+                padding: 30px 20px !important;
+            }
+
+            td[class="column-header verified-header"] {
+                font-size: 20px !important;
+            }
+
+            td[class="verified-para"] {
+                padding-left: 0 !important;
+                padding-top: 10px !important;
+                font-size: 16px !important;
+            }
+
+            td[class="verification-box-padding"] {
+                padding: 30px 0 0 0 !important;
+            }
+
+            td[class="location-main-td"] {
+                padding: 30px 20px 30px !important;
+            }
+
+            td[class="location-banner"] {
+                padding: 25px 0 0 !important;
+            }
+
+            td[class="custom-link-td"] {
+                text-align: center !important;
+            }
+            td[class="footer-media"] {
+                padding: 20px !important;
+            }
+            td[class="footer-logo"] {
+                padding: 0 40px 25px !important;
+            }
+            td[class="footer-contact"] {
+                padding: 20px  !important;
+            }
+
+
+
+            td span.paragraph {
+                font-size: 12px !important;
+            }
+
+            td span.column-header {
+                font-size: 24px !important;
+                padding-top: 10px !important;
+            }
+
+            td span.column-header.accuracy {
+                font-size: 32px !important;
+                padding-top: 0 !important;
+            }
+
+            td span.paragraph.sup-para {
+                margin: 0 auto !important;
+                max-width: 100% !important;
+                text-align: center !important;
+                padding: 0 0 0 15px !important;
+            }
+
+            td span.column-header.threeT {
+                font-size: 18px !important;
+            }
+
+            td a.button-primary {
+                font-size: 16px !important;
+            }
+            td a.footer-details-para {
+                font-size: 16px !important;
+            }
+
+            td img.verified-logo {
+                vertical-align: text-top !important;
+                margin-bottom: 10px !important;
+                margin-right: 15px !important;
+            }
+
+            td img.insta-logo {
+                margin: 0 auto !important;
+                padding-bottom: 10px !important;
+            }
+
+
+
+            a img.arc-badge {
+                margin: 0 auto !important;
+            }
+
+            a.column-header.human-number {
+                font-size: 16px !important;
+            }
+
+
+            /* ADJUSTS LAYOUT OF LOGO IMAGE */
+            td[class="logo"] {
+                text-align: left;
+                padding: 20px 0 20px 0 !important;
+            }
+
+            td[class="logo"] img {
+                margin: 0 auto !important;
+            }
+
+            /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+            td[class="mobile-hide"] {
+                display: none;
+            }
+
+            img[class="mobile-hide"] {
+                display: none !important;
+            }
+
+            img[class="img-max"] {
+                max-width: 100% !important;
+                height: auto !important;
+                width: 100% !important;
+            }
+
+            td img.exp-footer {
+                max-width: 200px;
+            }
+
+            /* FULL-WIDTH TABLES */
+            table[class="responsive-table"] {
+                width: 100% !important;
+            }
+
+            /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+            td[class="padding"] {
+                padding: 10px 5% 15px 5% !important;
+            }
+
+            td[class="padding-copy"] {
+                padding: 10px 5% 10px 5% !important;
+                text-align: center;
+            }
+
+            td[class="padding-meta"] {
+                padding: 30px 5% 0px 5% !important;
+                text-align: center;
+            }
+
+            td[class="no-pad"] {
+                padding: 0 0 20px 0 !important;
+            }
+
+            td[class="no-padding"] {
+                padding: 0 !important;
+            }
+
+            td[class="section-padding"] {
+                padding: 0 15px 0 15px !important;
+            }
+
+            td[class="section-padding-bottom-image"] {
+                padding: 0px 15px 0 15px !important;
+            }
+
+            /* ADJUST BUTTONS ON MOBILE */
+            td[class="mobile-wrapper"] {
+                padding: 10px 5% 15px 5% !important;
+            }
+
+            table[class="mobile-button-container"] {
+                margin: 0 auto;
+                width: 100% !important;
+            }
+
+            a[class="mobile-button"] {
+                width: 80% !important;
+                padding: 15px !important;
+                border: 0 !important;
+                font-size: 16px !important;
+            }
+
+            img.default-hide,
+            .default-hide {
+                display: block !important;
+                padding-bottom: 15px !important;
+            }
+
+            img.default-block,
+            .default-block {
+                display: none !important;
+            }
+
+        }
+
+        @media screen and (max-width: 450px) {
+            table[class="wrapper-social"] {
+                width: 100% !important;
+            }
+
+            td[class="insta-rd-status"] {
+                padding-bottom: 10px !important;
+            }
+
+            td[class="mri-header"] {
+                font-size: 20px !important;
+                text-align: center !important;
+            }
+
+            td[class="mri-para"] {
+                font-size: 14px !important;
+                text-align: center !important;
+                padding-top: 10px !important;
+            }
+
+
+
+            td img.insta-follow-logo {
+                margin: 0 auto !important;
+                display: block !important;
+                padding-bottom: 10px !important;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+    <!-- Some preview text. -->
+    <div style="display: none; max-height: 0; overflow: hidden;">
+
+    </div>
+    <!-- Get rid of unwanted preview text. -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+        &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+    </div>
+
+    <center class="wrapper" style=" width: 100%; table-layout: fixed; background-color: #C1DDFF">
+        <!-- HEADER -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td>
+                                <!-- TWO COLUMNS -->
+                                <table bgcolor="#033D5A" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                    width="100%">
+                                    <tr>
+                                        <td valign="top" style="padding: 16px 0 30px;" class="mobile-wrapper">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                                width="100%" class="responsive-table">
+                                                <tr>
+                                                    <td style="display: block; max-width: 262px; margin: 0 auto;">
+                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                            border="0" width="100%">
+                                                            <tr>
+                                                                <td align="center" bgcolor="#ffffff" valign="middle"
+                                                                    style=" padding: 20px 20px 16px;">
+                                                                    <a href="https://expertmri.com/"
+                                                                        target="_blank">
+                                                                        <img src="https://clientstaging.space/emailer-images/ct-expert-logo.png"
+                                                                            style="display: block; max-width: 160px; "
+                                                                            alt="Fluid images" border="0"
+                                                                            class="img-max">
+                                                                        </img>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" bgcolor="#ffffff" valign="middle"
+                                                                    style="padding-bottom:15px ;">
+                                                                    <span class="paragraph"
+                                                                        style="color: #033D5A; text-align: center; font-family: Helvetica Neue, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 180%; text-transform: uppercase;">
+                                                                        Costa Mesa, ORANGE COUNTY
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- HEADER-HERO -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td>
+                                <!-- TWO COLUMNS -->
+                                <table bgcolor="#033D5A" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                    width="100%">
+                                    <tr>
+                                        <td valign="top" style="padding: 20px 0 0;" class="mobile-wrapper hero-wrapper">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                                width="100%" class="responsive-table">
+                                                <tr>
+                                                    <td style="display: block;  margin: 0 auto;">
+                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                            border="0" width="100%">
+                                                            <tr>
+                                                                <td align="center" valign="middle"
+                                                                    class="experience-para"
+                                                                    style="color: #FFF; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 129%; ">
+                                                                    Experience Precision Like Never Before
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="middle"
+                                                                    style="padding-bottom:15px ;">
+                                                                    <span class="column-header"
+                                                                        style="color: #FFF; text-align: center; font-family: Helvetica , sans-serif; font-size: 35px; font-style: normal; font-weight: 400; line-height: 129%;text-transform: none; display: block; max-width: 500px; margin: 0 auto; ">
+                                                                        Introducing Our State-of-the-Art 3T MRI Machine
+                                                                        at ExpertMRI Costa Mesa
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="padding: 40px 0 24px 0;">
+                                                        <table role="presentation" border="0" cellspacing="0"
+                                                            cellpadding="0" class="responsive-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <a href="https://expertmri.com/"
+                                                                            target="_blank"
+                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #FFF; color: #033D5A; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%; max-width: 240px;"
+                                                                            class="button-primary">
+                                                                            Schedule a MRI
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="hero-img" style="padding-top: 40px;">
+                                                        <a href="https://expertmri.com/">
+                                                            <img src="https://clientstaging.space/emailer-images/cm-top-half.png"
+                                                                alt="mri machine top portion" class="img-max">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- DIAGNOSTIC ACCURACY -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td>
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td class="accuracy-td-padding" style="padding: 43px 32px 14px;">
+                                            <!-- COPY -->
+                                            <table role="presentation" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tr>
+                                                    <td align="center" style="" class="padding-copy">
+                                                        <span class="column-header accuracy"
+                                                            style=" display: block; max-width: 380px; margin: 0 auto; color: #033D5A; text-align: center; font-family: Helvetica , sans-serif; font-size: 40px; font-style: normal; font-weight: 400; line-height: 129%; ">
+                                                            Enhanced Diagnostic Accuracy
+                                                        </span>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table bgcolor="#ffffff" role="presentation" cellspacing="0" cellpadding="0"
+                                                border="0" width="100%">
+                                                <tr>
+                                                    <td valign="top" style="padding: 20px 35px 32px 0;"
+                                                        class="mobile-wrapper mri-left">
+                                                        <!-- LEFT COLUMN -->
+                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                            border="0" width="47%" align="left"
+                                                            class="responsive-table">
+                                                            <tr>
+                                                                <td>
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td align="center" bgcolor="#ffffff"
+                                                                                valign="middle">
+                                                                                <a href="https://expertmri.com/"
+                                                                                    target="_blank">
+                                                                                    <img src="https://clientstaging.space/emailer-images/cm-half-mri.png"
+                                                                                        style="display: block; "
+                                                                                        alt="mri machine left cut"
+                                                                                        border="0"
+                                                                                        class="img-max default-block">
+                                                                                    </img>
+                                                                                    <img src="https://clientstaging.space/emailer-images/cm-full-mri.png"
+                                                                                        alt="" style="display: none;"
+                                                                                        class="img-max default-hide">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- RIGHT COLUMN -->
+                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                            border="0" width="47%" align="right"
+                                                            class="responsive-table">
+                                                            <tr>
+                                                                <td>
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td align="left" bgcolor="#ffffff"
+                                                                                valign="middle" class="call-us-number">
+                                                                                <span class="paragraph sup-para"
+                                                                                    style="display: block; max-width: 229px; color: #033D5A; text-align: left; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 400; line-height: 160%; text-transform: none; ">
+                                                                                    With superior imaging capabilities,
+                                                                                    the 3T MRI can detect smaller
+                                                                                    abnormalities and subtle differences
+                                                                                    in tissues, leading to more precise
+                                                                                    diagnoses
+                                                                                </span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left"
+                                                                                style="padding: 40px 0 30px 0;"
+                                                                                class="padding-copy">
+                                                                                <table role="presentation" border="0"
+                                                                                    cellspacing="0" cellpadding="0"
+                                                                                    class="responsive-table">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center">
+                                                                                                <a href="https://expertmri.com/"
+                                                                                                    target="_blank"
+                                                                                                    style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #116BAB; color: #ffffff; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%;;"
+                                                                                                    class="button-primary">
+                                                                                                    Schedule a MRI
+                                                                                                </a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <a href="https://expertmri.com/">
+                                                                                    <img src="https://clientstaging.space/emailer-images/cm-arc-badge.png"
+                                                                                        alt="" class="arc-badge"
+                                                                                        style="width: 105px; height: 105px; display: block;">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- IMAGE QUALITY-->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td>
+                                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td>
+                                            <table bgcolor="#033D5A" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <table role="presentation" width="100%" border="0"
+                                                                cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td class="box-header" bgcolor="#F0F0F0"
+                                                                        align="center" style="padding: 15px 0;">
+                                                                        <a href="tel:(877) MRI-8888"
+                                                                            class="column-header human-number"
+                                                                            style="display: inline-block; color: #033D5A; text-align: center; font-family: Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: 700; line-height: 180%; ">
+                                                                            <img src="https://clientstaging.space/emailer-images/cm-mri-human.png"
+                                                                                alt="human body logo"
+                                                                                style="vertical-align: middle;">
+                                                                            Request a Scan: (877) MRI-8888
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 50px 40px 40px;"
+                                                            class="unmatch-img-padding">
+                                                            <table role="presentation" width="100%" border="0"
+                                                                cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td>
+                                                                        <span class="column-header"
+                                                                            style="display: block; color: #ffffff; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                            Unmatched
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span class="column-header"
+                                                                            style="display: block; color: #ffffff; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                            Image Quality
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="padding: 24px 0;">
+                                                                        <a href="https://expertmri.com/">
+                                                                            <img src="https://clientstaging.space/emailer-images/cm-chest-cover.jpg"
+                                                                                alt="" class="img-max"
+                                                                                style="border-radius: 16px;">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span class="column-header threeT"
+                                                                            style="display: block; color: #ffffff; text-align: center; font-family: Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: 700; line-height: 150%; text-transform: none;">
+                                                                            The 3T MRI machine
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="padding-top: 10px;">
+                                                                        <span class="paragraph "
+                                                                            style="display: block; max-width: 450px; margin: 0 auto;  color: #ffffff; text-align: center; font-family: Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: 400; line-height: 150%; text-transform: none;">
+                                                                            offers higher resolution images, providing
+                                                                            greater detail and clarity for more accurate
+                                                                            diagnoses.
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center" style="padding: 32px 0 0 0;">
+                                                                        <table role="presentation" border="0"
+                                                                            cellspacing="0" cellpadding="0"
+                                                                            class="responsive-table">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <a href="https://expertmri.com/"
+                                                                                            target="_blank"
+                                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #ffffff; color: #033D5A; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%;;"
+                                                                                            class="button-primary">
+                                                                                            Schedule a MRI
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- WHY CHOOSE US -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td>
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td class="verified-main-td" style="padding:40px">
+                                            <table role="presentation" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tr>
+                                                    <td>
+                                                        <span class="column-header"
+                                                            style="display: block; color: #033D5A; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 400; line-height: 129%;">
+                                                            Why Choose Us?
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="display: block; padding: 40px 0 0 0;"
+                                                        class="choose-banner">
+                                                        <a href="https://expertmri.com/">
+                                                            <img src="https://clientstaging.space/emailer-images/cm-baby-doctor.jpg"
+                                                                alt="child with doctor" class="img-max"
+                                                                style="border-radius: 16px;">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table role="presentation" width="100%" border="0"
+                                                            cellspacing="0" cellpadding="0">
+                                                            <!-- FIRST BOX -->
+                                                            <tr>
+                                                                <td style="padding: 40px 0 0 0;"
+                                                                    class="verification-box-padding">
+                                                                    <table role="presentation" width="100%" border="0"
+                                                                        cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td class="column-header verified-header"
+                                                                                style="display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                                <img src="https://clientstaging.space/emailer-images/cm-verified.png"
+                                                                                    alt="verification logo"
+                                                                                    class="verified-logo"
+                                                                                    style="display: inline-block; width: auto; vertical-align: middle; margin-right: 20px;">
+                                                                                State-of-the-Art Facility
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="verified-para"
+                                                                                style="padding-left: 70px; display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: 400; line-height: 160%;">
+                                                                                Located at ExpertMRI Costa Mesa, our
+                                                                                facility is equipped with the latest in
+                                                                                medical imaging technology, ensuring
+                                                                                top-notch care for our patients.
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- SECOND BOX -->
+                                                            <tr>
+                                                                <td style="padding: 40px 0 0 0;"
+                                                                    class="verification-box-padding">
+                                                                    <table role="presentation" width="100%" border="0"
+                                                                        cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td class="column-header verified-header"
+                                                                                style="display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                                <img src="https://clientstaging.space/emailer-images/cm-verified.png"
+                                                                                    alt="verification logo"
+                                                                                    class="verified-logo"
+                                                                                    style="display: inline-block; width: auto; vertical-align: middle; margin-right: 20px;">
+                                                                                Advanced Technology
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="verified-para"
+                                                                                style="padding-left: 70px; display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: 400; line-height: 160%;">
+                                                                                Utilizing the latest advancements in MRI
+                                                                                technology, the 3T MRI ensures
+                                                                                cutting-edge diagnostic capabilities and
+                                                                                reliability.
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- THIRD BOX -->
+                                                            <tr>
+                                                                <td style="padding: 40px 0 0 0;"
+                                                                    class="verification-box-padding">
+                                                                    <table role="presentation" width="100%" border="0"
+                                                                        cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td class="column-header verified-header"
+                                                                                style="display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                                <img src="https://clientstaging.space/emailer-images/cm-verified.png"
+                                                                                    alt="verification logo"
+                                                                                    class="verified-logo"
+                                                                                    style="display: inline-block; width: auto; vertical-align: middle; margin-right: 20px;">
+                                                                                Faster Scanning Times
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="verified-para"
+                                                                                style="padding-left: 70px; display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: 400; line-height: 160%;">
+                                                                                Enjoy shorter scan times without
+                                                                                compromising on image quality, making
+                                                                                the process quicker and more
+                                                                                comfortable.
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- FOURTH BOX -->
+                                                            <tr>
+                                                                <td style="padding: 40px 0 0 0;"
+                                                                    class="verification-box-padding">
+                                                                    <table role="presentation" width="100%" border="0"
+                                                                        cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td class="column-header verified-header"
+                                                                                style="display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                                <img src="https://clientstaging.space/emailer-images/cm-verified.png"
+                                                                                    alt="verification logo"
+                                                                                    class="verified-logo"
+                                                                                    style="display: inline-block; width: auto; vertical-align: middle; margin-right: 20px;">
+                                                                                Reduced Need for Contrast Agents
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="verified-para"
+                                                                                style="padding-left: 70px; display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: 400; line-height: 160%;">
+                                                                                In many cases, the superior imaging
+                                                                                capability of the 3T MRI reduces the
+                                                                                need for contrast agents, making the
+                                                                                procedure safer for patients.
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="padding: 40px 0 0 0;">
+                                                        <table role="presentation" border="0" cellspacing="0"
+                                                            cellpadding="0" class="responsive-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <a href="https://expertmri.com/"
+                                                                            target="_blank"
+                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #116BAB; color: #ffffff; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%; max-width: 240px;"
+                                                                            class="button-primary">
+                                                                            Schedule a MRI
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="https://expertmri.com/">
+                                                <img src="https://clientstaging.space/emailer-images/cm-long-banner.jpg"
+                                                    alt="" class="img-max">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- LOCATION  -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td>
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td style="padding: 40px;" class="location-main-td">
+                                            <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td>
+                                                        <span class="column-header"
+                                                            style="display: block; max-width: 440px; margin: 0 auto; color: #033D5A; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 400; line-height: 129%;">
+                                                            Located at ExpertMRI Costa Mesa
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 32px 0 0 0 ;" class="location-banner">
+                                                        <a href="https://expertmri.com/">
+                                                            <img src="https://clientstaging.space/emailer-images/cm-expertmri-shop.jpg"
+                                                                alt="" class="img-max"
+                                                                style="display: block; border-radius: 16px;">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- SOCIAL MEDIA DETAILS -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td>
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td valign="top" style="padding: 0 40px;" class="mobile-wrapper">
+                                            <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td
+                                                        style="border-bottom: 1px dashed #033D5A; padding-bottom: 32px;">
+                                                        <!-- LEFT COLUMN -->
+                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                            border="0" width="20%" align="left"
+                                                            class="responsive-table">
+                                                            <tr>
+                                                                <td>
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td align="left" bgcolor="#ffffff"
+                                                                                valign="middle" class="insta-rd-status">
+                                                                                <a href="https://www.instagram.com/ExpertMRI"
+                                                                                    target="_blank">
+                                                                                    <img src="https://clientstaging.space/emailer-images/cm-insta-status.png"
+                                                                                        style="display: block; "
+                                                                                        alt="Fluid images" border="0"
+                                                                                        class="insta-logo">
+                                                                                    </img>
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- RIGHT COLUMN -->
+                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                            border="0" width="70%" align="right"
+                                                            class="responsive-table">
+                                                            <tr>
+                                                                <td>
+                                                                    <table align="left" role="presentation"
+                                                                        cellpadding="0" cellspacing="0" border="0"
+                                                                        width="40%" class="wrapper-social">
+                                                                        <tr>
+                                                                            <td align="center" bgcolor="#ffffff"
+                                                                                valign="middle" class="mri-header"
+                                                                                style="display: block; color: #033D5A; text-align: left; font-family: Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                                expertmri
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="mri-para"
+                                                                                style="display: block; padding-bottom: 16px; color: #777777; text-align: left; font-family: Helvetica, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; line-height: 129%;">
+                                                                                Medical & health
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table align="right" role="presentation"
+                                                                        cellpadding="0" cellspacing="0" border="0"
+                                                                        width="50%" class="wrapper-social">
+                                                                        <tr>
+                                                                            <td align="center" bgcolor="#ffffff"
+                                                                                valign="middle">
+                                                                                <a href="https://www.instagram.com/ExpertMRI" class=""
+                                                                                    style="display: inline-block;">
+                                                                                    <img src="https://clientstaging.space/emailer-images/cm-insta-follow.png"
+                                                                                        alt="mobile logo"
+                                                                                        class="insta-follow-logo"
+                                                                                        style="vertical-align: middle; ">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="custom-link-td"
+                                                                    style=" color: #033D5A; font-family: Helvetica, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 170%; ">
+                                                                    California's leading MRI provider. Stay updated and
+                                                                    informed by visiting:
+                                                                    <a href="https://expertmri.com/"
+                                                                        style="color: #033D5A; font-weight: 700; line-height: 160%; text-decoration: none; display: inline-block;">
+                                                                        <img src="https://clientstaging.space/emailer-images/cm-link-clip-logo.png"
+                                                                            alt="link clip logo"
+                                                                            style="vertical-align: middle;">
+                                                                        www.expertmri.com
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- FOOTER -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td>
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td style="display: block; width: 100%; padding: 32px 40px 24px; "
+                                            class="footer-media">
+                                            <table role="presentation" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0" style="display: block; width: 100%;">
+                                                <tbody style="display: block; width: 100%; text-align: center;"
+                                                    class="footer-body-social">
+                                                    <tr style="display: inline-block;" class="social-padding">
+                                                        <td>
+                                                            <a style="display: inline-block; padding:8px 15px;"
+                                                                href="https://www.facebook.com/expertmri">
+                                                                <img style=" display: inline-block; margin: auto;"
+                                                                    src="https://clientstaging.space/emailer-images/cm-facebook.png"
+                                                                    alt="facebook">
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a style="display: inline-block; padding:8px 15px;"
+                                                                href="https://www.youtube.com/channel/UCN8HBDqaOvN8gf2pJ48_ZNQ">
+                                                                <img style=" display: inline-block; margin: auto;"
+                                                                    src="https://clientstaging.space/emailer-images/cm-youtube.png"
+                                                                    alt="youtube">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: inline-block;">
+                                                        <td>
+                                                            <a style="display: inline-block; padding:8px 15px;"
+                                                                href="https://www.linkedin.com/company/expert-mri-medical-diagnostics">
+                                                                <img style=" display: inline-block; margin: auto;"
+                                                                    src="https://clientstaging.space/emailer-images/cm-linkedln.png"
+                                                                    alt="linkedin">
+                                                            </a>
+                                                        </td>
+
+                                                        <td>
+                                                            <a style="display: inline-block; padding:8px 15px;"
+                                                                href="https://twitter.com/Expert_MRI">
+                                                                <img style=" display: inline-block; margin: auto;"
+                                                                    src="https://clientstaging.space/emailer-images/cm-twitter.png"
+                                                                    alt="twitter">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="display: block; width: 100%; padding: 0 40px 32px; "
+                                            class="footer-logo">
+                                            <a style="outline: none; display: block; "
+                                                href="https://marketing.expertmri.com/lp-expert-ct-new">
+                                                <img class="exp-footer exp-mri-logo-footer"
+                                                    style="max-width: 272px; width: 100%; margin:0 auto; display: block;"
+                                                    src="https://clientstaging.space/emailer-images/footer-logo.png"
+                                                    alt="Expert MRI-logo">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- contact details -->
+                        <tr>
+                            <td bgcolor="#F0F0F0" style="padding: 20px 40px;" class="footer-contact">
+                                <table  role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td align="center" >
+                                            <a href="tel:(877) MRI-8888" class="footer-details-para" style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: none;">
+                                                <img src="https://clientstaging.space/emailer-images/cm-calling.png" alt="call logo" style="vertical-align: middle; display: inline-block; margin-right: 10px;">
+                                                (877) MRI-8888
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="padding-top: 13px;">
+                                            <a href="mailto:scheduling@expertmri.com" class="footer-details-para" style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: underline; letter-spacing: 0.2px;">
+                                                scheduling@expertmri.com
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="padding-top: 13px;">
+                                            <a href="https://www.expertmri.com" class="footer-details-para" style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: none;">
+                                                www.expertmri.com
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+
+
+    </center>
+
+</body>
+
+</html>

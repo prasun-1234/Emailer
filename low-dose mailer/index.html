@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <style type="text/css">
+        /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
         /* CLIENT-SPECIFIC STYLES */
         #outlook a {
@@ -106,11 +105,11 @@
             max-width: 380px;
             width: 100%;
             border-radius: 6px;
-            background: #3192D7;
+            background: #338CCA;
             color: #ffffff !important;
             padding: 21px 50px;
             text-decoration: none;
-            font-family: "Reddit Sans", sans-serif;
+            font-family: "Work Sans", sans-serif;
             font-size: 23px;
             font-style: normal;
             font-weight: 700;
@@ -131,7 +130,8 @@
         a.read {
             color: #033D5A;
             text-align: center;
-            font-family: "Reddit Sans", sans-serif;
+            font-family: "Abhaya Libre", serif;
+            ;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -143,26 +143,27 @@
         .paragraph {
             color: #033D5A;
             font-family: "Work Sans", sans-serif;
-            font-size: 21px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
         }
 
         .column-header {
-            color: #033D5A !important;
+            color: #033D5A;
             text-align: left;
             font-family: "Abhaya Libre", serif;
+            ;
             font-size: 67px;
             font-style: normal;
             font-weight: 600;
             line-height: 105.3%;
-            /* text-transform: capitalize; */
         }
 
         .number {
-            color: #033D5A !important;
-            font-family: "Reddit Sans", sans-serif;
+            color: #033D5A;
+            font-family: "Abhaya Libre", serif;
+            ;
             font-size: 24px;
             font-style: normal;
             font-weight: 700;
@@ -189,7 +190,11 @@
             }
 
             td[class="column-header hero-header"] {
-                font-size: 40px !important;
+                font-size: 30px !important;
+            }
+
+            td[class="paragraph"] {
+                font-size: 16px !important;
             }
 
             td[class="paragraph header-para"] {
@@ -209,7 +214,7 @@
 
             td[class="column-header box-header"] {
                 padding-top: 10px !important;
-                font-size: 30px !important;
+                font-size: 25px !important;
             }
 
             td[class="column-header early-sign"] {
@@ -259,31 +264,44 @@
             }
 
             td[class="column-header location-header"] {
-                font-size: 29px !important;
+                font-size: 25px !important;
             }
 
             td[class="paragraph keep-para"] {
                 font-size: 16px !important;
                 padding: 0 0 10px !important;
             }
+
             td[class="footer-media"] {
                 padding: 20px 0 0 0 !important;
             }
+
             td[class="footer-media-gap"] {
                 margin-bottom: 20px !important;
             }
+
             td[class="footer-details"] {
                 padding: 0 !important;
             }
+
+            td[class="review-img"] {
+                padding-top: 20px !important;
+            }
+            td[class="padding-0"] {
+                padding: 0 !important;
+            }
+
             tr[class="footer-border"] {
                 display: block;
                 border-top: none !important;
                 padding: 0 20px !important;
             }
-            td a.paragraph.para-details{
+
+            td a.paragraph.para-details {
                 font-size: 16px !important;
             }
-            td a.paragraph.para-details.border-para{
+
+            td a.paragraph.para-details.border-para {
                 border-top: 1px dashed #1A436199 !important;
             }
 
@@ -294,7 +312,7 @@
             td img.exp-footer.exp-mri-logo-footer {
                 max-width: 200px !important;
             }
-            
+
 
             /* ADJUSTS LAYOUT OF LOGO IMAGE */
             td[class="logo"] {
@@ -377,6 +395,10 @@
                 border: 0 !important;
                 font-size: 16px !important;
             }
+            td img.resize-footer-logo{
+                width: 25px !important;
+                height: 25px !important;
+            }
 
         }
     </style>
@@ -406,7 +428,7 @@
                                 <table bgcolor="#033D5A" role="presentation" cellspacing="0" cellpadding="0" border="0"
                                     width="100%">
                                     <tr>
-                                        <td valign="top" style="padding: 20px 40px;" class="mobile-wrapper">
+                                        <td valign="top" style="padding: 20px 40px; border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;" class="mobile-wrapper">
 
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0"
                                                 width="100%" align="left" class="responsive-table">
@@ -418,8 +440,8 @@
                                                                 <td align="center" valign="middle">
                                                                     <a href="tel:674-8888" target="_blank"
                                                                         class="paragraph heading-tele"
-                                                                        style="color: #ffffff; font-weight: 400; line-height: 180%;">
-                                                                        Feel free to call us at : (877) 674-8888
+                                                                        style="color: #ffffff; font-weight: 400; font-family: Work Sans, sans-serif; line-height: 180%;">
+                                                                        Request a Scan: (877) MRI-8888
                                                                     </a>
                                                                 </td>
                                                             </tr>
@@ -447,10 +469,10 @@
                         class="responsive-table">
                         <tr>
                             <td>
-                                <table bgcolor="#ffffff" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                <table bgcolor="#FFFFF4" role="presentation" cellspacing="0" cellpadding="0" border="0"
                                     width="100%">
                                     <tr>
-                                        <td valign="top" style="padding: 20px 40px;" class="mobile-wrapper">
+                                        <td valign="top" style="padding: 20px 40px; border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;" class="mobile-wrapper">
 
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0"
                                                 width="100%" align="left" class="responsive-table">
@@ -462,8 +484,8 @@
                                                                 <td align="center" valign="middle"
                                                                     style="padding: 40px 0 50px;"
                                                                     class="header-logo-td">
-                                                                    <a href="#" target="_blank"
-                                                                        style="color: #ffffff; ">
+                                                                    <a href="https://marketing.expertmri.com/lp-expert-lowdose/"
+                                                                        target="_blank" style="color: #ffffff; ">
                                                                         <img src="https://clientstaging.space/emailer-images/ct-expert-logo.png"
                                                                             style="display: block; width: 270px; "
                                                                             alt="Fluid images" border="0"
@@ -474,14 +496,14 @@
                                                             <tr>
                                                                 <td align="center" valign="middle"
                                                                     class="column-header hero-header"
-                                                                    style="text-align: center;">
-                                                                    Don't Let Smoking Be a Mystery.
+                                                                    style="text-align: center; font-size: 43px; font-family: Abhaya Libre, serif; font-weight: 700; line-height: 140%; color: #033D5A;">
+                                                                    Demystify Your Smoking Habit Discover How Smoking Affects Your Health
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="paragraph header-para"
-                                                                    style="padding: 20px 0 0; text-align: center;">
-                                                                    Low-Dose CT Scan Reveals Your Lung Health.
+                                                                    style="padding: 20px 0 0; text-align: center; font-weight: 400; font-family: Work Sans, sans-serif; line-height: 160%; color: #033D5A;">
+                                                                    Stay Informed with Low-Dose CT Scans Accurate Detection with Reduced Radiation Exposure
                                                                 </td>
                                                             </tr>
 
@@ -508,19 +530,19 @@
                         class="responsive-table">
                         <tr>
                             <td>
-                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                <table bgcolor="#FFFFF4" role="presentation" width="100%" border="0" cellspacing="0"
                                     cellpadding="0">
                                     <tr>
-                                        <td>
+                                        <td style="border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;">
                                             <table role="presentation" width="100%" border="0" cellspacing="0"
                                                 cellpadding="0">
                                                 <tr>
                                                     <td style="padding: 30px 0 0 0;" align="center">
                                                         <a href="https://marketing.expertmri.com/lp-expert-ct-new/"
                                                             target="_blank">
-                                                            <img src="https://clientstaging.space/emailer-images/patient-checking.png"
+                                                            <img src="https://clientstaging.space/emailer-images/ld-glowing-heart.jpg"
                                                                 width="600" height="600" border="0"
-                                                                alt="doctor checking patient" class="img-max">
+                                                                alt="glowing lung " class="img-max">
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -530,12 +552,12 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 40px 40px 60px;" class="hero-text-button">
+                                        <td bgcolor="FFFFFF" style="padding: 40px 40px 60px; border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;" class="hero-text-button">
                                             <table role="presentation" width="100%" border="0" cellspacing="0"
                                                 cellpadding="0">
                                                 <tr>
                                                     <td align="center" valign="middle" class="paragraph"
-                                                        style="text-align: center; font-size: 19px; font-weight: 400; display: block; max-width: 530px; margin-bottom: 40px; line-height: 180%;">
+                                                        style="text-align: center;  font-weight: 400; font-family: Work Sans, sans-serif; display: block; max-width: 530px; margin-bottom: 40px; line-height: 180%; color: #033D5A;">
                                                         Low-dose CT scans are the best way to assess smoking's damage.
                                                         They see early lung cancer, heart disease risks, and both lung
                                                         and heart health in one scan. This empowers smokers with info to
@@ -543,10 +565,10 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td >
+                                                    <td>
                                                         <a href="https://marketing.expertmri.com/lp-expert-lowdose/"
                                                             class="button-primary"
-                                                            style="text-align: center; margin-top: 40px; margin: 0 auto; display: block; max-width: 380px; width: 100%;border-radius: 6px; background: #3192D7; color: #ffffff; padding: 21px 50px;text-decoration: none;font-family: Reddit Sans, sans-serif;font-size: 23px; font-style: normal; font-weight: 700; line-height: 160%;letter-spacing: 0.23px;">
+                                                            style="text-align: center; margin-top: 40px; margin: 0 auto; display: block; max-width: 380px; width: 100%;border-radius: 6px; background: #338CCA; color: #ffffff; padding: 21px 50px;text-decoration: none;font-family: Work Sans, sans-serif;font-size: 20px; font-style: normal; font-weight: 700; line-height: 160%;letter-spacing: 0.23px;">
                                                             Request An Appointment
                                                         </a>
                                                     </td>
@@ -573,7 +595,7 @@
                                 <table bgcolor="#ffffff" role="presentation" cellspacing="0" cellpadding="0" border="0"
                                     width="100%">
                                     <tr>
-                                        <td valign="top" style="padding: 20px 40px;" class="mobile-wrapper">
+                                        <td valign="top" style="border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;" class="mobile-wrapper">
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0"
                                                 width="100%" align="left" class="responsive-table">
                                                 <tr>
@@ -582,30 +604,44 @@
                                                             border="0" width="100%">
                                                             <tr>
                                                                 <td align="center" valign="middle"
-                                                                    class="header-logo-td">
-                                                                    <a href="#" target="_blank" style=" ">
-                                                                        <img src="https://clientstaging.space/emailer-images/red-heart.jpg"
+                                                                    class="header-logo-td" style="padding-left: 40px;">
+                                                                    <a href="https://marketing.expertmri.com/lp-expert-lowdose/"
+                                                                        target="_blank" >
+                                                                        <img src="https://clientstaging.space/emailer-images/acr-patient.png"
                                                                             style="display: block; width:100%; border-radius: 18px; "
-                                                                            alt="Red heart" border="0" class="img-max ">
+                                                                            alt="Heart full of smoke" border="0"
+                                                                            class="img-max ">
                                                                     </a>
                                                                 </td>
                                                             </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0 40px;" class="padding-0">
+                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                            border="0" width="100%">
+
                                                             <tr>
                                                                 <td align="center" valign="middle"
                                                                     class="column-header box-header"
-                                                                    style="text-align: left; font-size: 40px; padding-top: 35px;">
-                                                                    Coronary Artery Calcium (CAC) Scoring
+                                                                    style="text-align: left; font-size: 36px; font-family: Abhaya Libre, serif; padding-top: 35px; font-weight: 700; line-height: 140%;color: #033D5A;">
+                                                                    How Low-Dose CT Scans Can Save Your Life
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="paragraph header-para"
-                                                                    style=" text-align: left; font-size: 20px; font-weight: 400; padding-top: 16px; line-height: 180%;">
-                                                                    Low-dose CT can detect and quantify calcium deposits
-                                                                    in the coronary arteries. This CAC score is a strong
-                                                                    predictor of future heart attacks and other
-                                                                    cardiovascular events. Smokers are at higher risk
-                                                                    for coronary artery disease, making this information
-                                                                    particularly relevant.
+                                                                    style=" text-align: left; font-size: 20px; font-weight: 400; font-family: Work Sans, sans-serif; padding-top: 16px; line-height: 180%;color: #033D5A;">
+                                                                    Low-dose CT scans are a great tool for smokers to
+                                                                    detect lung cancer early.
+                                                                    These scans can spot tiny changes in your lungs
+                                                                    before symptoms appear,
+                                                                    increasing the chances of successful treatment.
+                                                                    Early detection through low-dose CT scans can
+                                                                    significantly improve your
+                                                                    health outcomes by catching potential issues early
+                                                                    and allowing for timely
+                                                                    intervention.
                                                                 </td>
                                                             </tr>
 
@@ -616,7 +652,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td valign="top" style="padding: 20px 40px 60px;" class="mobile-wrapper">
+                                        <td valign="top" style="padding: 40px ; border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;" class="mobile-wrapper">
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0"
                                                 width="100%" align="left" class="responsive-table">
                                                 <tr>
@@ -626,27 +662,82 @@
                                                             <tr>
                                                                 <td align="center" valign="middle"
                                                                     class="header-logo-td">
-                                                                    <a href="#" target="_blank" style=" ">
-                                                                        <img src="https://clientstaging.space/emailer-images/heart-artari.jpg"
+                                                                    <a href="https://marketing.expertmri.com/lp-expert-lowdose/"
+                                                                        target="_blank" style=" ">
+                                                                        <img src="https://clientstaging.space/emailer-images/ld-mri-machine.jpg"
                                                                             style="display: block; width:100%; border-radius: 18px; "
-                                                                            alt="Red heart" border="0" class="img-max ">
+                                                                            alt="MRI machine" border="0"
+                                                                            class="img-max ">
                                                                     </a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td align="center" valign="middle"
                                                                     class="column-header box-header"
-                                                                    style="text-align: left; font-size: 40px; padding-top: 35px;">
-                                                                    Aortic Calcification
+                                                                    style="text-align: left; font-size: 36px; font-family: Abhaya Libre, serif;  padding-top: 35px; font-weight: 700; line-height: 140%;color: #033D5A;">
+                                                                    Reduced Radiation with Low-Dose CT Scans
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="paragraph header-para"
-                                                                    style=" text-align: left; font-size: 20px; font-weight: 400; padding-top: 16px; line-height: 180%;">
-                                                                    The aorta is the main artery carrying blood from the
-                                                                    heart. Calcium buildup in the aorta can indicate
-                                                                    atherosclerosis (hardening of the arteries), another
-                                                                    risk factor for heart disease and stroke.
+                                                                    style=" text-align: left; font-size: 20px; font-weight: 400; font-family: Work Sans, sans-serif; padding-top: 16px; line-height: 180%;color: #033D5A;">
+                                                                    Low-dose CT scans use significantly less radiation
+                                                                    compared to standard CT scans,
+                                                                    making them a safer option for patients. This
+                                                                    reduced radiation exposure minimizes
+                                                                    the risk of potential radiation-related side effects
+                                                                    while still providing high-quality
+                                                                    images for early detection and diagnosis. This
+                                                                    safety advantage is especially
+                                                                    important for regular screenings and monitoring.
+                                                                </td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding: 0 40px 60px; border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;" class="mobile-wrapper">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                                width="100%" align="left" class="responsive-table">
+                                                <tr>
+                                                    <td>
+                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                            border="0" width="100%">
+                                                            <tr>
+                                                                <td align="center" valign="middle"
+                                                                    class="header-logo-td">
+                                                                    <a href="https://marketing.expertmri.com/lp-expert-lowdose/"
+                                                                        target="_blank" style=" ">
+                                                                        <img src="https://clientstaging.space/emailer-images/black-heart.jpg"
+                                                                            style="display: block; width:100%; border-radius: 18px; "
+                                                                            alt="Black heart" border="0"
+                                                                            class="img-max ">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="middle"
+                                                                    class="column-header box-header"
+                                                                    style="text-align: left; font-size: 36px; font-family: Abhaya Libre, serif;  padding-top: 35px; font-weight: 700; line-height: 140%;color: #033D5A;">
+                                                                    Comprehensive Screening
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="paragraph header-para"
+                                                                    style=" text-align: left; font-size: 20px; font-weight: 400; font-family: Work Sans, sans-serif; padding-top: 16px; line-height: 180%;color: #033D5A;">
+                                                                    Low-dose CT scans provide a thorough evaluation of
+                                                                    your lungs,
+                                                                    detecting not only early signs of lung cancer but
+                                                                    also other lung conditions.
+                                                                    These scans offer detailed images, ensuring that any
+                                                                    abnormalities are
+                                                                    identified and monitored closely. This comprehensive
+                                                                    screening helps in early
+                                                                    intervention and better management of lung health.
                                                                 </td>
                                                             </tr>
 
@@ -665,169 +756,6 @@
             </tr>
         </table>
 
-        <!-- HEART TEXT -->
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-                <tr>
-                    <td align="center" style="padding: 0 15px 0 15px;" class="section-padding">
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
-                            class="responsive-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
-                                            cellspacing="0" cellpadding="0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="world-map">
-                                                        <table role="presentation" width="100%" border="0"
-                                                            cellspacing="0" cellpadding="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="padding-copy" style="padding: 0 40px;">
-                                                                        <table role="presentation" width="100%"
-                                                                            border="0" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td style="border-top: 1px dashed #1A436199; padding: 40px 0 35px; font-size: 56px; font-weight: 600; text-align: center;"
-                                                                                        class="column-header early-sign">
-                                                                                        Early signs of heart disease
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="">
-                                                                        <a href="#" style="padding: 0 0 40px;">
-                                                                            <img src="https://clientstaging.space/emailer-images/heart-attack.jpg"
-                                                                                alt="chest pain"
-                                                                                style="display: block; width: 100%;">
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr bgcolor="#033D5A">
-                                                                    <td style="padding: 40px; font-family: Inter, sans-serif; font-size: 20px; color: #FFF; text-align: center; font-style: normal; font-weight: 400; line-height: 170%;"
-                                                                        class="heart-atk-text">
-                                                                        CT scans can sometimes reveal subtle changes in
-                                                                        the heart's structure or function,
-                                                                        such as thickening of the heart walls or early
-                                                                        signs of heart failure, that may not
-                                                                        yet be causing noticeable symptoms.
-                                                                    </td>
-                                                                </tr>
-                                                                <tr bgcolor="#033D5A">
-                                                                    <td style="padding: 40px 40px 24px; color: #FFF !important; font-size: 20px; font-family: Inter , sans-serif; text-align: center; font-weight: 700;"
-                                                                        class="column-header apont-text">
-                                                                        Feel free to reach us, Request an appointment
-                                                                    </td>
-                                                                </tr>
-                                                                <tr bgcolor="#033D5A">
-                                                                    <td class="heart-call-us"
-                                                                        style="padding: 0 40px 60px ">
-                                                                        <a href="tel:877-674-8888"
-                                                                            class="button-primary"
-                                                                            style="text-align: center; margin-top: 40px; margin: 0 auto; display: block; max-width: 380px; width: 100%;border-radius: 6px; background: #3192D7; color: #ffffff; padding: 21px 50px;text-decoration: none;font-family: Reddit Sans, sans-serif;font-size: 23px; font-style: normal; font-weight: 700; line-height: 160%;letter-spacing: 0.23px;">
-                                                                            Call Us at : 877-674-8888
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- BEFORE REVIEW TEXT -->
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-                <tr>
-                    <td align="center" style="padding: 0 15px 0 15px;" class="section-padding">
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
-                            class="responsive-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
-                                            cellspacing="0" cellpadding="0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="world-map">
-                                                        <table role="presentation" width="100%" border="0"
-                                                            cellspacing="0" cellpadding="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="padding-copy" style="padding: 0 40px;">
-                                                                        <table role="presentation" width="100%"
-                                                                            border="0" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td style=" padding: 60px 0 18px; font-size: 56px; font-weight: 600; text-align: center;"
-                                                                                        class="column-header risk-assessment">
-                                                                                        Overall Cardiovascular Risk
-                                                                                        Assessment
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td style="padding: 0 40px; font-family: Inter, sans-serif; font-size: 20px; color: #033D5A; text-align: center; font-style: normal; font-weight: 400; line-height: 170%;"
-                                                                        class="heart-atk-text">
-                                                                        By combining the information from the CT scan
-                                                                        with other risk factors (smoking history, age,
-                                                                        blood pressure, cholesterol levels, etc.),
-                                                                        doctors can get a more comprehensive picture of
-                                                                        a smoker's cardiovascular risk profile.
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td style="padding: 40px 40px 24px; color: #033D5A !important; font-size: 20px; font-family: Inter, sans-serif; text-align: center; font-weight: 700;"
-                                                                        class="column-header hassle-free">
-                                                                        Schedule an appointment hassle free
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="heart-call-us"
-                                                                        style="padding: 0 40px 60px ">
-                                                                        <a href="https://marketing.expertmri.com/lp-expert-lowdose/" class="button-primary"
-                                                                        style="text-align: center; margin-top: 40px; margin: 0 auto; display: block; max-width: 380px; width: 100%;border-radius: 6px; background: #3192D7; color: #ffffff; padding: 21px 50px;text-decoration: none;font-family: Reddit Sans, sans-serif;font-size: 23px; font-style: normal; font-weight: 700; line-height: 160%;letter-spacing: 0.23px;">
-                                                                            Request An Appointment
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
         <!-- REVIEW SECTION -->
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tbody>
@@ -842,7 +770,7 @@
                                             cellspacing="0" cellpadding="0">
                                             <tbody>
                                                 <tr>
-                                                    <td class="world-map">
+                                                    <td class="world-map" style="border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;">
                                                         <table bgcolor="#033D5A" role="presentation" width="100%"
                                                             border="0" cellspacing="0" cellpadding="0">
                                                             <tbody>
@@ -852,7 +780,7 @@
                                                                             border="0" cellspacing="0" cellpadding="0">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td style=" padding: 40px 0; font-size: 56px; font-weight: 600; text-align: center; color: #FFF  !important;"
+                                                                                    <td style="display: block; margin: 0 auto; max-width: 426px; padding: 40px 0; font-size: 48px; font-family: Abhaya Libre, serif; font-weight: 700; text-align: center; color: #FFF !important; line-height: 130%;"
                                                                                         class="column-header review-text">
                                                                                         What people say about us
                                                                                     </td>
@@ -869,10 +797,11 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td class="">
-                                                                        <a href="#" style="padding: 0 0 40px;">
+                                                                    <td class="review-img" style="padding-top: 40px;">
+                                                                        <a href="https://marketing.expertmri.com/lp-expert-lowdose/"
+                                                                            style="padding: 0 0 40px;">
                                                                             <img src="https://clientstaging.space/emailer-images/staff-review.png"
-                                                                                alt="chest pain"
+                                                                                alt="patient review image"
                                                                                 style="display: block; width: 100%;">
                                                                         </a>
                                                                     </td>
@@ -903,7 +832,7 @@
                                 <table bgcolor="#ffffff" role="presentation" cellspacing="0" cellpadding="0" border="0"
                                     width="100%">
                                     <tr>
-                                        <td valign="top" style="padding: 60px 40px;" class="mobile-wrapper">
+                                        <td valign="top" style="padding: 60px 40px; border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;" class="mobile-wrapper">
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0"
                                                 width="100%" align="left" class="responsive-table">
                                                 <tr>
@@ -913,7 +842,8 @@
                                                             <tr>
                                                                 <td align="center" valign="middle"
                                                                     class="header-logo-td">
-                                                                    <a href="#">
+                                                                    <a
+                                                                        href="https://marketing.expertmri.com/lp-expert-lowdose/">
                                                                         <img src="https://clientstaging.space/emailer-images/low-dose-mri-logo.png"
                                                                             style="display: block; width:auto; margin: 0 auto; "
                                                                             alt="expert mri logo" border="0"
@@ -924,31 +854,33 @@
                                                             <tr>
                                                                 <td align="center" valign="middle"
                                                                     class="column-header location-header"
-                                                                    style="text-align: center; font-size: 56px; padding-bottom: 32px;">
+                                                                    style="text-align: center; font-size: 43px; font-weight: 700; font-family: Abhaya Libre, serif; line-height: 130%; padding-bottom: 32px; color: #033D5A;">
                                                                     Location across Southern California
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>
-                                                                    <a href="#">
+                                                                    <a
+                                                                        href="https://marketing.expertmri.com/lp-expert-lowdose/">
                                                                         <img src="https://clientstaging.space/emailer-images/MRI-office.jpg"
                                                                             style="display: block; width:100%; border-radius: 18px;  "
-                                                                            alt="expert mri logo" border="0"
+                                                                            alt="expert mri office" border="0"
                                                                             class="img-max ">
                                                                     </a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="paragraph location-para"
-                                                                    style="padding-top: 32px; text-align: center; font-size: 25px; font-weight: 400; line-height: 180%; letter-spacing: 0.2px;">
+                                                                    style="padding-top: 32px; text-align: center; font-size: 25px; font-weight: 400; font-family: Work Sans, sans-serif; line-height: 180%; letter-spacing: 0.2px;color: #033D5A;">
                                                                     Get the CT scan you need, close to home, throughout
                                                                     Southern California.
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="location-button" style="padding: 40px 0 0 ">
-                                                                    <a href="https://marketing.expertmri.com/lp-expert-lowdose/" class="button-primary"
-                                                                        style="text-align: center; margin-top: 40px; margin: 0 auto; display: block; max-width: 380px; width: 100%;border-radius: 6px; background: #3192D7; color: #ffffff; padding: 21px 50px;text-decoration: none;font-family: Reddit Sans, sans-serif;font-size: 23px; font-style: normal; font-weight: 700; line-height: 160%;letter-spacing: 0.23px;">
+                                                                    <a href="https://marketing.expertmri.com/lp-expert-lowdose/"
+                                                                        class="button-primary"
+                                                                        style="text-align: center; margin-top: 40px; margin: 0 auto; display: block; max-width: 380px; width: 100%;border-radius: 6px; background: #338CCA; color: #ffffff; padding: 21px 50px;text-decoration: none;font-family:  Work Sans, sans-serif;font-size: 20px; font-style: normal; font-weight: 700; line-height: 160%;letter-spacing: 0.23px;">
                                                                         Request An Appointment
                                                                     </a>
                                                                 </td>
@@ -979,7 +911,7 @@
                                 <table bgcolor="#ffffff" role="presentation" cellspacing="0" cellpadding="0" border="0"
                                     width="100%">
                                     <tr>
-                                        <td valign="top" style="padding: 0 40px 60px;" class="mobile-wrapper">
+                                        <td valign="top" style="padding: 0 40px 60px; border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;" class="mobile-wrapper">
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0"
                                                 width="100%" align="left" class="responsive-table">
                                                 <tr>
@@ -988,13 +920,14 @@
                                                             border="0" width="100%">
                                                             <tr>
                                                                 <td class="paragraph keep-para"
-                                                                    style="font-family: Inter, sans-serif; font-weight: 400; text-align: center; padding-bottom: 16px;">
+                                                                    style=" font-weight: 400; font-family: Work Sans, sans-serif; text-align: center; padding-bottom: 16px; line-height: 160%;">
                                                                     Keep Up with us
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td align="center" valign="middle">
-                                                                    <a href="#">
+                                                                    <a
+                                                                        href="https://marketing.expertmri.com/lp-expert-lowdose/">
                                                                         <img src="https://clientstaging.space/emailer-images/keep-with-us.jpg"
                                                                             style="display: block; width:100%; "
                                                                             alt="keep with us" border="0"
@@ -1027,22 +960,28 @@
                             width="600" class="responsive-table">
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <table style="width: 100%; text-align: center; max-width: 485px; padding:0px 20px 20px 20px; margin: auto">
+                                    <td style="border-left: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;">
+                                        <table
+                                            style="width: 100%; text-align: center; max-width: 485px; padding:0px 20px 20px 20px; margin: auto">
                                             <tbody>
-                                                <tr style="display: block; width: 100%; margin-bottom: 40px;" class="footer-media-gap">
-                                                    <td style="display: block; width: 100%; padding: 0 40px;" class="footer-media">
-                                                        <table role="presentation" width="100%" border="0" cellspacing="0"
-                                                            cellpadding="0" style="display: block; width: 100%;">
-                                                            <tbody style="display: block; width: 100%; text-align: center;"
+                                                <tr style="display: block; width: 100%; margin-bottom: 40px;"
+                                                    class="footer-media-gap">
+                                                    <td style="display: block; width: 100%; padding: 0 40px;"
+                                                        class="footer-media">
+                                                        <table role="presentation" width="100%" border="0"
+                                                            cellspacing="0" cellpadding="0"
+                                                            style="display: block; width: 100%;">
+                                                            <tbody
+                                                                style="display: block; width: 100%; text-align: center;"
                                                                 class="footer-body-social">
-                                                                <tr style="display: inline-block;" class="social-padding">
+                                                                <tr style="display: inline-block;"
+                                                                    class="social-padding">
                                                                     <td>
                                                                         <a style="display: inline-block; padding:8px 20px;"
                                                                             href="https://www.facebook.com/expertmri">
                                                                             <img style=" display: inline-block; margin: auto;"
                                                                                 src="https://clientstaging.space/emailer-images/low-dose-facebook.png"
-                                                                                alt="facebook">
+                                                                                alt="facebook" class="resize-footer-logo">
                                                                         </a>
                                                                     </td>
                                                                     <td>
@@ -1050,7 +989,7 @@
                                                                             href="https://www.instagram.com/ExpertMRI">
                                                                             <img style=" display: inline-block; margin: auto;"
                                                                                 src="https://clientstaging.space/emailer-images/low-dose-insta.png"
-                                                                                alt="instagram">
+                                                                                alt="instagram" class="resize-footer-logo">
                                                                         </a>
                                                                     </td>
                                                                     <td>
@@ -1058,7 +997,7 @@
                                                                             href="https://www.linkedin.com/company/expert-mri-medical-diagnostics">
                                                                             <img style=" display: inline-block; margin: auto;"
                                                                                 src="https://clientstaging.space/emailer-images/low-dose-linkedln.png"
-                                                                                alt="linkedin">
+                                                                                alt="linkedin" class="resize-footer-logo">
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1068,7 +1007,7 @@
                                                                             href="https://www.youtube.com/channel/UCN8HBDqaOvN8gf2pJ48_ZNQ">
                                                                             <img style=" display: inline-block; margin: auto;"
                                                                                 src="https://clientstaging.space/emailer-images/low-dose-youtube.png"
-                                                                                alt="youtube">
+                                                                                alt="youtube" class="resize-footer-logo">
                                                                         </a>
                                                                     </td>
                                                                     <td>
@@ -1076,7 +1015,7 @@
                                                                             href="https://twitter.com/Expert_MRI">
                                                                             <img style=" display: inline-block; margin: auto;"
                                                                                 src="https://clientstaging.space/emailer-images/low-dose-twiter.png"
-                                                                                alt="twitter">
+                                                                                alt="twitter" class="resize-footer-logo">
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1097,21 +1036,37 @@
                                                     </td>
                                                 </tr>
                                                 <tr class="footer-border" style="border-top: 1px dashed #1A436199;">
-                                                    <td style="display: block; width: 100%;   padding: 0 40px ; " class="footer-details">
-                                                       <a href="tel:877-674-8888" style="color: #033D5A;  width: 100%; display: block; padding: 24px 0 0; text-align: center; font-weight: 400; text-decoration: none;" class="paragraph para-details border-para"> 
+                                                    <td style="display: block; width: 100%;   padding: 0 40px ; "
+                                                        class="footer-details">
+                                                        <a href="tel:877-674-8888"
+                                                            style="color: #033D5A;  width: 100%; display: block; padding: 24px 0 0; text-align: center; font-weight: 400; font-family: Work Sans, sans-serif; text-decoration: none;"
+                                                            class="paragraph  para-details border-para">
                                                             Call Us at : 877-674-8888
-                                                       </a>
+                                                        </a>
                                                     </td>
                                                 </tr>
-                                                <tr >
-                                                    <td style="display: block; width: 100%;   padding: 0 40px ; " class="footer-details">
-                                                       <a href="mailto:scheduling@expertmri.com" style="color: #033D5A;  width: 100%; display: block; padding: 16px 0 45px; text-align: center; font-weight: 400; text-decoration: none;" class="paragraph para-details"> 
+                                                <tr>
+                                                    <td style="display: block; width: 100%;   padding: 0 40px ; "
+                                                        class="footer-details">
+                                                        <a href="mailto:scheduling@expertmri.com"
+                                                            style="color: #033D5A;  width: 100%; display: block; padding: 16px 0; text-align: center; font-weight: 400; font-family: Work Sans, sans-serif; text-decoration: none;"
+                                                            class="paragraph  para-details">
                                                             scheduling@expertmri.com
-                                                       </a>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="display: block; width: 100%;   padding: 0 40px ; "
+                                                        class="footer-details">
+                                                        <a href="www.expertmri.com"
+                                                            style="color: #000000;  width: 100%; display: block; padding: 0 0 45px; text-align: center; font-weight: 400; font-family: Work Sans, sans-serif; text-decoration: none;"
+                                                            class="paragraph  para-details">
+                                                            www.expertmri.com
+                                                        </a>
                                                     </td>
                                                 </tr>
 
-                                                
+
                                             </tbody>
                                         </table>
                                     </td>
