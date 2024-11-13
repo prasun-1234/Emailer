@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>claustrophobia emailer</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="color-scheme" content="light dark" />
+   <meta name="supported-color-schemes" content="light dark" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<style type="text/css">
+   @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+
+   :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+   }
+
+   /* CLIENT-SPECIFIC STYLES */
+   #outlook a {
+      padding: 0;
+   }
+
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+   /* Force Outlook to provide a "view in browser" message */
+   .ReadMsgBody {
+      width: 100%;
+   }
+
+   .ExternalClass {
+      width: 100%;
+   }
+
+   /* Force Hotmail to display emails at full width */
+   .ExternalClass,
+   .ExternalClass p,
+   .ExternalClass span,
+   .ExternalClass font,
+   .ExternalClass td,
+   .ExternalClass div {
+      line-height: 100%;
+   }
+
+   /* Force Hotmail to display normal line spacing */
+   body,
+   table,
+   td,
+   a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+   }
+
+   /* Prevent WebKit and Windows mobile changing default text sizes */
+   table,
+   td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+   }
+
+   /* Remove spacing between tables in Outlook 2007 and up */
+   img {
+      -ms-interpolation-mode: bicubic;
+   }
+
+   /* Allow smoother rendering of resized image in Internet Explorer */
+
+   /* RESET STYLES */
+   body {
+      margin: 0;
+      padding: 0;
+   }
+
+   img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+   }
+
+   table {
+      border-collapse: collapse !important;
+   }
+
+   body {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      font-family: "Helvetica Neue", sans-serif;
+      color: #033d5a;
+   }
+
+   /* iOS BLUE LINKS */
+   .appleBody a {
+      color: #68440a;
+      text-decoration: none;
+   }
+
+   .appleFooter a {
+      color: #999999;
+      text-decoration: none;
+   }
+
+   .button-primary {
+      display: block;
+      max-width: 310px;
+      width: 100%;
+      border-radius: 8px;
+      color: #ffffff !important;
+      padding: 16px 32px;
+      text-decoration: none;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+      letter-spacing: 0.2px;
+   }
+
+   .img-max {
+      width: 100%;
+      height: 100%;
+      display: block;
+   }
+
+   .paragraph {
+      color: #033d5a !important;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 190%;
+      letter-spacing: 0.16px;
+   }
+
+   .column-header {
+      color: #1a4361;
+      text-align: left;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 148%;
+      letter-spacing: 0.24px;
+      text-transform: capitalize;
+   }
+
+   @media screen and (max-width: 600px) {
+
+      /* ALLOWS FOR FLUID TABLES */
+      table[class="wrapper"] {
+         width: 100% !important;
+      }
+
+      table[class="responsive-table right-align"] {
+         float: none !important;
+         margin: 0 auto !important;
+      }
+
+      td[class="section-padding-bottom-image only-top"] {
+         padding: 50px 15px 0 !important;
+      }
+
+      /* ADJUSTS LAYOUT OF LOGO IMAGE */
+      td[class="logo"] {
+         text-align: left;
+         padding: 20px 0 20px 0 !important;
+      }
+
+      td[class="logo"] img {
+         margin: 0 auto !important;
+      }
+
+      /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+      td[class="mobile-hide"] {
+         display: none;
+      }
+
+      img[class="mobile-hide"] {
+         display: none !important;
+      }
+
+      img[class="img-max"] {
+         max-width: 100% !important;
+         height: auto !important;
+         width: auto !important;
+      }
+
+      td img.exp-footer {
+         max-width: 200px;
+      }
+
+      /* FULL-WIDTH TABLES */
+      table[class="responsive-table"] {
+         width: 100% !important;
+      }
+
+      /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+      td[class="padding"] {
+         padding: 10px 5% 15px 5% !important;
+      }
+
+      td[class="padding-copy"] {
+         padding: 10px 5% 10px 5% !important;
+         text-align: center;
+      }
+
+      td[class="padding-meta"] {
+         padding: 30px 5% 0px 5% !important;
+         text-align: center;
+      }
+
+      td[class="no-pad"] {
+         padding: 0 0 20px 0 !important;
+      }
+
+      td[class="no-padding"] {
+         padding: 0 !important;
+      }
+
+      td[class="section-padding"] {
+         padding: 0 15px 0 15px !important;
+      }
+
+      td[class="section-padding-bottom-image"] {
+         padding: 0px 15px 0 15px !important;
+      }
+
+      /* ADJUST BUTTONS ON MOBILE */
+      td[class="mobile-wrapper"] {
+         padding: 10px 5% 15px 5% !important;
+      }
+
+      table[class="mobile-button-container"] {
+         margin: 0 auto;
+         width: 100% !important;
+      }
+
+      a[class="mobile-button"] {
+         width: 80% !important;
+         padding: 15px !important;
+         border: 0 !important;
+         font-size: 16px !important;
+      }
+
+      /* custom css */
+      img.img-hero {
+         width: 100% !important;
+      }
+
+      h2.paragraph.hero-para {
+         color: #033D5A;
+      }
+
+
+   }
+
+   @media (prefers-color-scheme: dark) {
+
+      /* Shows Dark Mode-Only Content, Like Images */
+      [data-ogsc] .dark-img {
+         display: block !important;
+         width: auto !important;
+         overflow: visible !important;
+         float: none !important;
+         max-height: inherit !important;
+         max-width: inherit !important;
+         line-height: auto !important;
+         margin-top: 0px !important;
+         visibility: inherit !important;
+      }
+
+      /* Hides Light Mode-Only Content, Like Images */
+      [data-ogsc] .light-img {
+         display: none;
+         display: none !important;
+      }
+
+      /* Custom Dark Mode Background Color */
+      [data-ogsc] .darkmode {
+         background-color: #272623 !important;
+      }
+
+      /* Custom Dark Mode Font Colors */
+      [data-ogsc] h1,
+      [data-ogsc] h2,
+      [data-ogsc] p,
+      [data-ogsc] span,
+      [data-ogsc] a,
+      [data-ogsc] b {
+         color: #ffffff !important;
+      }
+
+      /* Custom Dark Mode Text Link Color */
+      [data-ogsc] .link {
+         color: #91add4 !important;
+      }
+   }
+
+   @media (prefers-color-scheme: dark) {
+
+      table[class="dark-mode-bg"],
+      td.dark-mode-bg {
+         background-color: #FBFBFB !important;
+         background-image: url("https://clientstaging.space/emailer-images/cls-bg-img.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      table[class="dark-mode-bg-2"],
+      td.dark-mode-bg-2 {
+         background-color: #033d5a !important;
+         background-image: url("https://clientstaging.space/emailer-images/cls-bg-img-2.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+   }
+</style>
+
+<body style="margin: 0; padding: 0; background-color: #cef3ff"></body>
+<!-- Get rid of unwanted preview text. -->
+<div style="display: none; max-height: 0px; overflow: hidden">
+   &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+</div>
+<center class="wrapper" style="width: 100%; table-layout: fixed; background-color: #cef3ff">
+   <!--HEADER HERO -->
+   <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+         <td align="center" style="padding: 100px 0 0 0;" class="section-padding-bottom-image only-top">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
+               <tr>
+                  <td
+                     style="border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9; border-top: 1px solid #C9C9C9;">
+                     <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                        cellpadding="0">
+                        <tr>
+                           <td>
+                              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 <tr>
+                                    <td style="padding:  0 0 0; " align="center">
+                                       <a href="https://clientstaging.space/lp-claustrophobia/" target="_blank">
+                                          <img src="https://clientstaging.space/emailer-images/cls-header-2.jpg"
+                                             width="600" height="600" border="0" alt="doctor with machine"
+                                             class="img-hero">
+                                       </a>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+
+   <!-- HERO TEXT -->
+   <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+         <td align="center" class="section-padding-bottom-image">
+            <table bgcolor="#FBFBFB" role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
+               <tr>
+                  <td style="border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9; " class="dark-mode-bg">
+                     <table bgcolor="#FBFBFB" role="presentation" width="100%" border="0" cellspacing="0"
+                        cellpadding="0" class="dark-mode-bg">
+                        <tr>
+                           <td class="hero-text " style="padding: 32px 40px 40px">
+                              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 <tr>
+                                    <td align="center" class="paragraph hero-para">
+                                       <h2 class="paragraph hero-para"
+                                          style=" display: block;  text-align: center;  font-family: 'Helvetica Neue', sans-serif; font-size: 28px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px;">
+                                          Claustrophobia? Breathe Easy! Open MRI: Relax on a bed, no
+                                          closed tube. Less anxiety, clear scanner
+                                       </h2>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td align="center" class="padding-copy button-td"
+                              style="background-color: #FBFBFB; ">
+                              <a href="https://clientstaging.space/lp-claustrophobia/" class="button-primary"
+                                 style="display: block; margin: 0 auto; max-width: 305px; width: 100%;  border-radius: 8px; background: #4E6CDD;  text-decoration: none; color: #ffffff ; padding: 19px 20px; font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px;">
+                                 Schedule an Appointment
+                              </a>
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+</center>
+
+</html>

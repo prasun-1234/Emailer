@@ -162,6 +162,9 @@
                 font-size: 16px !important;
             }
 
+            td[class="mobile-wrapper header-mobile"] {
+                padding: 10px 10% !important;
+            }
             td[class="hero-img"] {
                 padding-top: 25px !important;
             }
@@ -183,7 +186,7 @@
             }
 
             td[class="verified-main-td"] {
-                padding: 30px 20px !important;
+                padding: 30px 15px !important;
             }
 
             td[class="column-header verified-header"] {
@@ -211,14 +214,21 @@
             td[class="custom-link-td"] {
                 text-align: center !important;
             }
+
             td[class="footer-media"] {
                 padding: 20px !important;
             }
+
             td[class="footer-logo"] {
                 padding: 0 40px 25px !important;
             }
+
             td[class="footer-contact"] {
-                padding: 20px  !important;
+                padding: 20px !important;
+            }
+
+            td[class="button-left-padding"] {
+                padding: 0 0 0 15px !important;
             }
 
 
@@ -251,6 +261,7 @@
             td a.button-primary {
                 font-size: 16px !important;
             }
+
             td a.footer-details-para {
                 font-size: 16px !important;
             }
@@ -259,6 +270,11 @@
                 vertical-align: text-top !important;
                 margin-bottom: 10px !important;
                 margin-right: 15px !important;
+            }
+
+            td img.img-max-location {
+                max-width: 100% !important;
+                height: auto !important;
             }
 
             td img.insta-logo {
@@ -370,9 +386,7 @@
                 display: none !important;
             }
 
-        }
 
-        @media screen and (max-width: 450px) {
             table[class="wrapper-social"] {
                 width: 100% !important;
             }
@@ -392,16 +406,25 @@
                 padding-top: 10px !important;
             }
 
-
-
             td img.insta-follow-logo {
                 margin: 0 auto !important;
                 display: block !important;
                 padding-bottom: 10px !important;
             }
-
+            
+            td img.header-img{
+                width: 100% !important;
+            }
 
         }
+
+        /* @media screen and (max-width: 450px) {
+            
+
+
+            
+
+        } */
     </style>
 </head>
 
@@ -425,44 +448,19 @@
                         class="responsive-table">
                         <tr>
                             <td>
-                                <!-- TWO COLUMNS -->
                                 <table bgcolor="#033D5A" role="presentation" cellspacing="0" cellpadding="0" border="0"
                                     width="100%">
                                     <tr>
-                                        <td valign="top" style="padding: 16px 0 30px;" class="mobile-wrapper">
-                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                        <td valign="top" style="padding: 16px 0 30px; background-color: #033D5A;" class="mobile-wrapper header-mobile">
+                                            <table bgcolor="#033D5A" role="presentation" cellpadding="0" cellspacing="0" border="0"
                                                 width="100%" class="responsive-table">
                                                 <tr>
-                                                    <td style="display: block; max-width: 262px; margin: 0 auto;">
-                                                        <table role="presentation" cellpadding="0" cellspacing="0"
-                                                            border="0" width="100%">
-                                                            <tr>
-                                                                <td align="center" bgcolor="#ffffff" valign="middle"
-                                                                    style=" padding: 20px 20px 16px;">
-                                                                    <a href="https://expertmri.com/"
-                                                                        target="_blank">
-                                                                        <img src="https://clientstaging.space/emailer-images/ct-expert-logo.png"
-                                                                            style="display: block; max-width: 160px; "
-                                                                            alt="Fluid images" border="0"
-                                                                            class="img-max">
-                                                                        </img>
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center" bgcolor="#ffffff" valign="middle"
-                                                                    style="padding-bottom:15px ;">
-                                                                    <span class="paragraph"
-                                                                        style="color: #033D5A; text-align: center; font-family: Helvetica Neue, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 180%; text-transform: uppercase;">
-                                                                        Costa Mesa, ORANGE COUNTY
-                                                                    </span>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
+                                                    <td style="display: block; text-align: center;  margin: 0 auto;">
+                                                        <img src="https://clientstaging.space/emailer-images/cm-header-img.jpg" alt="Fluid img with text" class="header-img" >
+
                                                     </td>
                                                 </tr>
                                             </table>
-
                                         </td>
                                     </tr>
                                 </table>
@@ -486,7 +484,7 @@
                                 <table bgcolor="#033D5A" role="presentation" cellspacing="0" cellpadding="0" border="0"
                                     width="100%">
                                     <tr>
-                                        <td valign="top" style="padding: 20px 0 0;" class="mobile-wrapper hero-wrapper">
+                                        <td  valign="top" style="padding: 20px 0 0; background-color: #033D5A;" class="mobile-wrapper hero-wrapper">
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0"
                                                 width="100%" class="responsive-table">
                                                 <tr>
@@ -516,15 +514,14 @@
                                                 <tr>
                                                     <td align="center" style="padding: 40px 0 24px 0;">
                                                         <table role="presentation" border="0" cellspacing="0"
-                                                            cellpadding="0" class="responsive-table">
+                                                            width="100%" cellpadding="0" class="responsive-table">
                                                             <tbody>
                                                                 <tr>
                                                                     <td align="center">
-                                                                        <a href="https://expertmri.com/"
-                                                                            target="_blank"
-                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #FFF; color: #033D5A; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%; max-width: 240px;"
+                                                                        <a href="https://expertmri.com/" target="_blank"
+                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #FFF; color: #033D5A; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%; max-width: 250px;"
                                                                             class="button-primary">
-                                                                            Schedule a MRI
+                                                                            Schedule An MRI
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -566,12 +563,12 @@
                                 <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
                                     cellpadding="0">
                                     <tr>
-                                        <td class="accuracy-td-padding" style="padding: 43px 32px 14px;">
+                                        <td class="accuracy-td-padding" style="padding: 43px 32px 14px; background-color: #ffffff;">
                                             <!-- COPY -->
                                             <table role="presentation" width="100%" border="0" cellspacing="0"
                                                 cellpadding="0">
                                                 <tr>
-                                                    <td align="center" style="" class="padding-copy">
+                                                    <td align="center"  class="padding-copy">
                                                         <span class="column-header accuracy"
                                                             style=" display: block; max-width: 380px; margin: 0 auto; color: #033D5A; text-align: center; font-family: Helvetica , sans-serif; font-size: 40px; font-style: normal; font-weight: 400; line-height: 129%; ">
                                                             Enhanced Diagnostic Accuracy
@@ -588,7 +585,7 @@
                                             <table bgcolor="#ffffff" role="presentation" cellspacing="0" cellpadding="0"
                                                 border="0" width="100%">
                                                 <tr>
-                                                    <td valign="top" style="padding: 20px 35px 32px 0;"
+                                                    <td valign="top" style="padding: 20px 35px 32px 0; background-color: #ffffff;"
                                                         class="mobile-wrapper mri-left">
                                                         <!-- LEFT COLUMN -->
                                                         <table role="presentation" cellpadding="0" cellspacing="0"
@@ -643,19 +640,20 @@
                                                                         </tr>
                                                                         <tr>
                                                                             <td align="left"
-                                                                                style="padding: 40px 0 30px 0;"
-                                                                                class="padding-copy">
+                                                                                style="padding: 40px 0 30px 0;">
                                                                                 <table role="presentation" border="0"
-                                                                                    cellspacing="0" cellpadding="0"
+                                                                                    width="100%" cellspacing="0"
+                                                                                    cellpadding="0"
                                                                                     class="responsive-table">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td align="center">
+                                                                                            <td align="center"
+                                                                                                class="button-left-padding">
                                                                                                 <a href="https://expertmri.com/"
                                                                                                     target="_blank"
-                                                                                                    style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #116BAB; color: #ffffff; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%;;"
+                                                                                                    style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #116BAB; color: #ffffff; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%; max-width: 250px;"
                                                                                                     class="button-primary">
-                                                                                                    Schedule a MRI
+                                                                                                    Schedule An MRI
                                                                                                 </a>
                                                                                             </td>
                                                                                         </tr>
@@ -714,7 +712,7 @@
                                                                         <a href="tel:(877) MRI-8888"
                                                                             class="column-header human-number"
                                                                             style="display: inline-block; color: #033D5A; text-align: center; font-family: Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: 700; line-height: 180%; ">
-                                                                            <img src="https://clientstaging.space/emailer-images/cm-mri-human.png"
+                                                                            <img src="https://clientstaging.space/emailer-images/cm-mri-human.jpg"
                                                                                 alt="human body logo"
                                                                                 style="vertical-align: middle;">
                                                                             Request a Scan: (877) MRI-8888
@@ -725,14 +723,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="padding: 50px 40px 40px;"
+                                                        <td style="padding: 50px 40px 40px; background-color: #033D5A;"
                                                             class="unmatch-img-padding">
-                                                            <table role="presentation" width="100%" border="0"
+                                                            <table bgcolor="#033D5A" role="presentation" width="100%" border="0"
                                                                 cellspacing="0" cellpadding="0">
                                                                 <tr>
                                                                     <td>
                                                                         <span class="column-header"
-                                                                            style="display: block; color: #ffffff; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                            style="display: block; color: #ffffff; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 400; line-height: 129%;">
                                                                             Unmatched
                                                                         </span>
                                                                     </td>
@@ -740,7 +738,7 @@
                                                                 <tr>
                                                                     <td>
                                                                         <span class="column-header"
-                                                                            style="display: block; color: #ffffff; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 700; line-height: 129%;">
+                                                                            style="display: block; color: #ffffff; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 400; line-height: 129%;">
                                                                             Image Quality
                                                                         </span>
                                                                     </td>
@@ -775,16 +773,16 @@
                                                                 <tr>
                                                                     <td align="center" style="padding: 32px 0 0 0;">
                                                                         <table role="presentation" border="0"
-                                                                            cellspacing="0" cellpadding="0"
+                                                                            width="100%" cellspacing="0" cellpadding="0"
                                                                             class="responsive-table">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="center">
                                                                                         <a href="https://expertmri.com/"
                                                                                             target="_blank"
-                                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #ffffff; color: #033D5A; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%;;"
+                                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #ffffff; color: #033D5A; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%; max-width: 250px;"
                                                                                             class="button-primary">
-                                                                                            Schedule a MRI
+                                                                                            Schedule An MRI
                                                                                         </a>
                                                                                     </td>
                                                                                 </tr>
@@ -818,11 +816,11 @@
                                 <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
                                     cellpadding="0">
                                     <tr>
-                                        <td class="verified-main-td" style="padding:40px">
-                                            <table role="presentation" width="100%" border="0" cellspacing="0"
+                                        <td class="verified-main-td" style="padding:40px; background-color: #ffffff;">
+                                            <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
                                                 cellpadding="0">
                                                 <tr>
-                                                    <td>
+                                                    <td style="background-color: #ffffff;">
                                                         <span class="column-header"
                                                             style="display: block; color: #033D5A; text-align: center; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 400; line-height: 129%;">
                                                             Why Choose Us?
@@ -830,7 +828,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center" style="display: block; padding: 40px 0 0 0;"
+                                                    <td align="center" style="display: block; padding: 40px 0 0 0; background-color: #ffffff;"
                                                         class="choose-banner">
                                                         <a href="https://expertmri.com/">
                                                             <img src="https://clientstaging.space/emailer-images/cm-baby-doctor.jpg"
@@ -839,9 +837,9 @@
                                                         </a>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <tr style="background-color: #ffffff;">
                                                     <td>
-                                                        <table role="presentation" width="100%" border="0"
+                                                        <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
                                                             cellspacing="0" cellpadding="0">
                                                             <!-- FIRST BOX -->
                                                             <tr>
@@ -959,17 +957,16 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center" style="padding: 40px 0 0 0;">
+                                                    <td align="center" style="padding: 40px 0 0 0;" class="">
                                                         <table role="presentation" border="0" cellspacing="0"
-                                                            cellpadding="0" class="responsive-table">
+                                                            width="100%" cellpadding="0" class="responsive-table">
                                                             <tbody>
                                                                 <tr>
                                                                     <td align="center">
-                                                                        <a href="https://expertmri.com/"
-                                                                            target="_blank"
-                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #116BAB; color: #ffffff; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%; max-width: 240px;"
+                                                                        <a href="https://expertmri.com/" target="_blank"
+                                                                            style="display: inline-block; padding: 12px 50px;border-radius: 6px; background: #116BAB; color: #ffffff; text-align: center; font-family: Helvetica , sans-serif; font-size: 18px; font-style: normal; font-weight: 700; line-height: 140%; max-width: 250px;"
                                                                             class="button-primary">
-                                                                            Schedule a MRI
+                                                                            Schedule An MRI
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1008,7 +1005,7 @@
                                 <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
                                     cellpadding="0">
                                     <tr>
-                                        <td style="padding: 40px;" class="location-main-td">
+                                        <td style="padding: 40px; background-color: #ffffff;" class="location-main-td">
                                             <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
                                                 cellspacing="0" cellpadding="0">
                                                 <tr>
@@ -1022,9 +1019,9 @@
                                                 <tr>
                                                     <td style="padding: 32px 0 0 0 ;" class="location-banner">
                                                         <a href="https://expertmri.com/">
-                                                            <img src="https://clientstaging.space/emailer-images/cm-expertmri-shop.jpg"
-                                                                alt="" class="img-max"
-                                                                style="display: block; border-radius: 16px;">
+                                                            <img src="https://clientstaging.space/emailer-images/cm-expertmri-shop.jpg" alt=""
+                                                                class="img-max-location"
+                                                                style="display: block; border-radius: 16px; width: auto;">
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -1043,19 +1040,18 @@
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
                 <td align="center" class="section-padding-bottom-image">
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                    <table bgcolor="#ffffff" role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
                         class="responsive-table">
                         <tr>
                             <td>
                                 <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
                                     cellpadding="0">
                                     <tr>
-                                        <td valign="top" style="padding: 0 40px;" class="mobile-wrapper">
+                                        <td valign="top" style="padding: 0 40px; background-color: #ffffff;" class="mobile-wrapper">
                                             <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
                                                 cellspacing="0" cellpadding="0">
                                                 <tr>
-                                                    <td
-                                                        style="border-bottom: 1px dashed #033D5A; padding-bottom: 32px;">
+                                                    <td style="border-bottom: 1px dashed #033D5A; padding-bottom: 32px; background-color: #ffffff;">
                                                         <!-- LEFT COLUMN -->
                                                         <table role="presentation" cellpadding="0" cellspacing="0"
                                                             border="0" width="20%" align="left"
@@ -1082,7 +1078,7 @@
                                                             </tr>
                                                         </table>
                                                         <!-- RIGHT COLUMN -->
-                                                        <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        <table bgcolor="#ffffff" role="presentation" cellpadding="0" cellspacing="0"
                                                             border="0" width="70%" align="right"
                                                             class="responsive-table">
                                                             <tr>
@@ -1110,7 +1106,8 @@
                                                                         <tr>
                                                                             <td align="center" bgcolor="#ffffff"
                                                                                 valign="middle">
-                                                                                <a href="https://www.instagram.com/ExpertMRI" class=""
+                                                                                <a href="https://www.instagram.com/ExpertMRI"
+                                                                                    class=""
                                                                                     style="display: inline-block;">
                                                                                     <img src="https://clientstaging.space/emailer-images/cm-insta-follow.png"
                                                                                         alt="mobile logo"
@@ -1158,7 +1155,7 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
                         class="responsive-table">
                         <tr>
-                            <td>
+                            <td style="background-color: #ffffff;">
                                 <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
                                     cellpadding="0">
                                     <tr>
@@ -1200,7 +1197,7 @@
                                                             <a style="display: inline-block; padding:8px 15px;"
                                                                 href="https://twitter.com/Expert_MRI">
                                                                 <img style=" display: inline-block; margin: auto;"
-                                                                    src="https://clientstaging.space/emailer-images/cm-twitter.png"
+                                                                    src="https://clientstaging.space/emailer-images/cm-twitter.jpg"
                                                                     alt="twitter">
                                                             </a>
                                                         </td>
@@ -1216,7 +1213,7 @@
                                                 href="https://marketing.expertmri.com/lp-expert-ct-new">
                                                 <img class="exp-footer exp-mri-logo-footer"
                                                     style="max-width: 272px; width: 100%; margin:0 auto; display: block;"
-                                                    src="https://clientstaging.space/emailer-images/footer-logo.png"
+                                                    src="https://clientstaging.space/emailer-images/cm-footer-logo.jpg"
                                                     alt="Expert MRI-logo">
                                             </a>
                                         </td>
@@ -1227,26 +1224,30 @@
                         <!-- contact details -->
                         <tr>
                             <td bgcolor="#F0F0F0" style="padding: 20px 40px;" class="footer-contact">
-                                <table  role="presentation" width="100%" border="0" cellspacing="0"
-                                    cellpadding="0">
+                                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
                                     <tr>
-                                        <td align="center" >
-                                            <a href="tel:(877) MRI-8888" class="footer-details-para" style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: none;">
-                                                <img src="https://clientstaging.space/emailer-images/cm-calling.png" alt="call logo" style="vertical-align: middle; display: inline-block; margin-right: 10px;">
+                                        <td align="center">
+                                            <a href="tel:(877) MRI-8888" class="footer-details-para"
+                                                style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: none;">
+                                                <img src="https://clientstaging.space/emailer-images/cm-calling.jpg"
+                                                    alt="call logo"
+                                                    style="vertical-align: middle; display: inline-block; margin-right: 10px;">
                                                 (877) MRI-8888
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="center" style="padding-top: 13px;">
-                                            <a href="mailto:scheduling@expertmri.com" class="footer-details-para" style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: underline; letter-spacing: 0.2px;">
+                                            <a href="mailto:scheduling@expertmri.com" class="footer-details-para"
+                                                style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: underline; letter-spacing: 0.2px;">
                                                 scheduling@expertmri.com
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="center" style="padding-top: 13px;">
-                                            <a href="https://www.expertmri.com" class="footer-details-para" style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: none;">
+                                            <a href="https://www.expertmri.com" class="footer-details-para"
+                                                style="color: #033D5A; text-align: center; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 180%; text-decoration: none;">
                                                 www.expertmri.com
                                             </a>
                                         </td>

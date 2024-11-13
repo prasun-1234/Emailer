@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Active cases emailer</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <style type="text/css">
+      @import url('https://fonts.cdnfonts.com/css/times-new-roman');
+      @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+
+      /* CLIENT-SPECIFIC STYLES */
+      #outlook a {
+         padding: 0;
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      /* Force Outlook to provide a "view in browser" message */
+      .ReadMsgBody {
+         width: 100%;
+      }
+
+      .ExternalClass {
+         width: 100%;
+      }
+
+      /* Force Hotmail to display emails at full width */
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+         line-height: 100%;
+      }
+
+      /* Force Hotmail to display normal line spacing */
+      body,
+      table,
+      td,
+      a {
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: 100%;
+      }
+
+      /* Prevent WebKit and Windows mobile changing default text sizes */
+      table,
+      td {
+         mso-table-lspace: 0pt;
+         mso-table-rspace: 0pt;
+      }
+
+      /* Remove spacing between tables in Outlook 2007 and up */
+      img {
+         -ms-interpolation-mode: bicubic;
+      }
+
+      /* Allow smoother rendering of resized image in Internet Explorer */
+
+      /* RESET STYLES */
+      body {
+         margin: 0;
+         padding: 0;
+      }
+
+      img {
+         border: 0;
+         height: auto;
+         line-height: 100%;
+         outline: none;
+         text-decoration: none;
+      }
+
+      table {
+         border-collapse: collapse !important;
+      }
+
+      body {
+         height: 100% !important;
+         margin: 0;
+         padding: 0;
+         width: 100% !important;
+         font-family: 'Helvetica Neue', sans-serif;
+         color: #033D5A;
+      }
+
+      /* iOS BLUE LINKS */
+      .appleBody a {
+         color: #68440a;
+         text-decoration: none;
+      }
+
+      .appleFooter a {
+         color: #999999;
+         text-decoration: none;
+      }
+
+
+      .column-header {
+         text-align: left;
+         font-family: 'Helvetica Neue', sans-serif;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 160%;
+      }
+
+      .special-header {
+         color: #033D5A;
+         font-family: 'Times New Roman', sans-serif;
+         font-size: 32px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 160%;
+      }
+
+      .paragraph {
+         color: #033D5A !important;
+         font-family: 'Helvetica Neue', sans-serif;
+         text-align: justify;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 160%;
+      }
+
+
+      @media screen and (max-width: 600px) {
+
+         /* ALLOWS FOR FLUID TABLES */
+         table[class="wrapper"] {
+            width: 100% !important;
+         }
+
+         table[class="responsive-table right-align"] {
+            width: 100% !important;
+         }
+
+         td[class="section-padding-bottom-image only-top"] {
+            padding: 50px 15px 0 !important;
+         }
+
+         /* ADJUSTS LAYOUT OF LOGO IMAGE */
+         td[class="logo"] {
+            text-align: left;
+            padding: 20px 0 20px 0 !important;
+         }
+
+         td[class="logo"] img {
+            margin: 0 auto !important;
+         }
+
+         /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+         td[class="mobile-hide"] {
+            display: none;
+         }
+
+         img[class="mobile-hide"] {
+            display: none !important;
+         }
+
+         img[class="img-max"] {
+            max-width: 100% !important;
+            height: auto !important;
+            width: auto !important;
+
+         }
+
+         td img.exp-footer {
+            max-width: 200px;
+         }
+
+         /* FULL-WIDTH TABLES */
+         table[class="responsive-table"] {
+            width: 100% !important;
+         }
+
+         /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+         td[class="padding"] {
+            padding: 10px 5% 15px 5% !important;
+         }
+
+         td[class="padding-copy"] {
+            padding: 10px 5% 10px 5% !important;
+            text-align: center;
+         }
+
+         td[class="padding-meta"] {
+            padding: 30px 5% 0px 5% !important;
+            text-align: center;
+         }
+
+         td[class="no-pad"] {
+            padding: 0 0 20px 0 !important;
+         }
+
+         td[class="no-padding"] {
+            padding: 0 !important;
+         }
+
+         td[class="section-padding"] {
+            padding: 0 15px 0 15px !important;
+         }
+
+         td[class="section-padding-bottom-image"] {
+            padding: 0px 15px 0 15px !important;
+         }
+
+         /* ADJUST BUTTONS ON MOBILE */
+         td[class="mobile-wrapper"] {
+            padding: 10px 5% 15px 5% !important;
+         }
+
+         table[class="mobile-button-container"] {
+            margin: 0 auto;
+            width: 100% !important;
+         }
+
+         a[class="mobile-button"] {
+            width: 80% !important;
+            padding: 15px !important;
+            border: 0 !important;
+            font-size: 16px !important;
+         }
+
+         /* custom css */
+         td.header-logo {
+            padding: 25px 32px !important;
+         }
+
+         img.img-hero {
+            width: 100% !important;
+         }
+
+         td[class="hero-padding"] {
+            padding: 15px 20px !important;
+         }
+
+         td[class="box-padding"] {
+            padding: 20px !important;
+         }
+
+         td[class="column-header hero-header"] {
+            font-size: 16px !important;
+         }
+
+         td[class="column-header"] {
+            font-size: 14px !important;
+         }
+
+         td[class="paragraph"] {
+            font-size: 13px !important;
+         }
+
+         td[class="footer-top"] {
+            padding-top: 20px !important;
+         }
+
+      }
+   </style>
+</head>
+
+<body>
+   <center class="wrapper" style=" width: 100%; table-layout: fixed; background-color: #CEF3FF">
+      <!--HEADER HERO -->
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tr>
+            <td align="center" style="padding: 100px 0 0 0;" class="section-padding-bottom-image">
+               <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                  class="responsive-table">
+                  <tr>
+                     <td>
+                        <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                           cellpadding="0">
+                           <tr>
+                              <td style="background-color: #ffffff;">
+                                 <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                       <td style="padding:  40px 32px; " align="center" class="header-logo">
+                                          <a href="https://expertmri.com/" target="_blank">
+                                             <img src="https://clientstaging.space/emailer-images/ac-mri-logo.jpg"
+                                                width="270" height="55" border="0" alt="expert-mri logo"
+                                                class="img-hero" style="max-width: 270px; ">
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td align="center">
+                                          <a href="https://expertmri.com/" target="_blank">
+                                             <img src="https://clientstaging.space/emailer-images/ac-warning.jpg"
+                                                width="600" height="100" border="0" alt="expert-mri logo"
+                                                class="img-hero">
+                                          </a>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+
+      <!-- mail box -->
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tr>
+            <td align="center" class="section-padding-bottom-image">
+               <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                  class="responsive-table">
+                  <tr>
+                     <td>
+                        <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                           cellpadding="0">
+                           <tr>
+                              <td style="padding: 40px; background-color: #ffffff;" class="box-padding">
+                                 <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                       <td class="column-header"
+                                          style="color: #033D5A; text-align: left; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 700; line-height: 160%; ">
+                                          Dear [recipient]
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="paragraph"
+                                          style=" padding-top: 14px; color: #033D5A; text-align: justify; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%; ">
+                                          At ExpertMRI, PC, we are committed to delivering the best possible service to
+                                          our clients,
+                                          and your feedback is invaluable in helping us achieve that goal. To make it
+                                          even easier for
+                                          you to keep us updated on the progress of your cases, we are excited to
+                                          introduce Injury Claim Status,
+                                          a user-friendly feature that will streamline the stat using
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding: 0 40px 40px; background-color: #ffffff;" class="box-padding">
+                                 <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                       <td class="column-header"
+                                          style="color: #033D5A; text-align: left; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 700; line-height: 160%; ">
+                                          Here’s how it works:
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="paragraph"
+                                          style=" padding-top: 14px; color: #033D5A; text-align: justify; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%; ">
+                                          Receive an Email Notification: Periodically, you will receive an email from us
+                                          with a list of
+                                          your active cases that require a status update. Convenient Drop down Menu: In
+                                          the email, you will find
+                                          a drop-down menu next to each case, where you can easily select the
+                                          appropriate status from a predefined list of options.
+                                          This ensures accuracy and expedites the process. Submit with a Single Click:
+                                          Once you've made your selections,
+                                          simply click the “Submit” button in the email, and your updates will be sent
+                                          directly to our team.
+                                          Injury Claim Status eliminates the need for lengthy phone calls or detailed
+                                          written updates, making it more convenient
+                                          than ever to communicate with us regarding your cases.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+
+      <!-- logo content box -->
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tr>
+            <td align="center" class="section-padding-bottom-image">
+               <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                  class="responsive-table">
+                  <tr>
+                     <td style="padding: 20px 40px; background-color: #ffffff;" class="hero-padding">
+                        <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                           cellpadding="0">
+                           <tr>
+                              <td style="display: block;  text-align: center;">
+                                 <img src="https://clientstaging.space/emailer-images/ac-logo-only.jpg" width="54"
+                                    height="54" alt="mri logo with human body">
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="special-header"
+                                 style="color: #033D5A; text-align: center; font-family: Times New Roman, sans-serif; font-size: 32px; font-style: normal; font-weight: 400; line-height: 160%; ">
+                                 Warm Regards
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="column-header"
+                                 style="color: #033D5A; text-align: center; font-family: Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%; ">
+                                 Collections Department
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding: 40px 0 32px; border-bottom: 1px solid #4A778D; ">
+                                 <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                    style="display: block; width: 100%;">
+                                    <tbody style="display: block; width: 100%; text-align: center;"
+                                       class="footer-body-social">
+                                       <tr style="display: inline-block;" class="social-padding">
+                                          <td style="background-color: #ffffff; ">
+                                             <a style="display: inline-block; padding:8px 15px;"
+                                                href="https://www.facebook.com/expertmri">
+                                                <img style=" display: inline-block; margin: auto;"
+                                                   src="https://clientstaging.space/emailer-images/ac-facebook.jpg"
+                                                   alt="facebook">
+                                             </a>
+                                          </td>
+                                          <td style="background-color: #ffffff; ">
+                                             <a style="display: inline-block; padding:8px 15px;"
+                                                href="https://www.instagram.com/ExpertMRI">
+                                                <img style=" display: inline-block; margin: auto;"
+                                                   src="https://clientstaging.space/emailer-images/ac-instagram.jpg"
+                                                   alt="instagram">
+                                             </a>
+                                          </td>
+                                          <td style="background-color: #ffffff; ">
+                                             <a style="display: inline-block; padding:8px 15px;"
+                                                href="https://www.youtube.com/channel/UCN8HBDqaOvN8gf2pJ48_ZNQ">
+                                                <img style=" display: inline-block; margin: auto;"
+                                                   src="https://clientstaging.space/emailer-images/ac-youtube.jpg"
+                                                   alt="youtube">
+                                             </a>
+                                          </td>
+                                       </tr>
+                                       <tr style="display: inline-block; ">
+                                          <td style="background-color: #ffffff; ">
+                                             <a style="display: inline-block; padding:8px 15px;"
+                                                href="https://www.linkedin.com/company/expert-mri-medical-diagnostics">
+                                                <img style=" display: inline-block; margin: auto;"
+                                                   src="https://clientstaging.space/emailer-images/ac-linkedln.jpg"
+                                                   alt="linkedin">
+                                             </a>
+                                          </td>
+
+                                          <td style="background-color: #ffffff; ">
+                                             <a style="display: inline-block; padding:8px 15px;"
+                                                href="https://twitter.com/Expert_MRI">
+                                                <img style=" display: inline-block; margin: auto;"
+                                                   src="https://clientstaging.space/emailer-images/ac-twitter.jpg"
+                                                   alt="twitter">
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+
+      <!-- footer -->
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tr>
+            <td align="center" class="section-padding-bottom-image">
+               <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                  class="responsive-table">
+                  <tr>
+                     <td style="padding: 0  40px 30px; background-color: #ffffff;" class="hero-padding">
+                        <table bgcolor="#F0F9FF" role="presentation" width="100%" border="0" cellspacing="0"
+                           cellpadding="0">
+                           <tr style="background-color: #ffffff; background: #ffffff;">
+                              <td style="display: block; width: 100%;   " class="footer-details">
+                                 <table role="presentation" cellpadding="0">
+                                    <tbody style="display: block; text-align: center;">
+                                       <tr style="background-color: #ffffff; background: #ffffff;">
+                                          <td style="display: inline-block; padding: 30px;" class="footer-details">
+                                             <table role="presentation" cellpadding="0">
+                                                <tbody >
+                                                   <tr>
+                                                      <td style="display: block; text-align: center;">
+                                                         <a href="mailto:scheduling@expertmri.com"
+                                                            style="color: #033D5A; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.32px; text-decoration: none;"
+                                                            class="paragraph">
+                                                            <img
+                                                               src="https://clientstaging.space/emailer-images/cls-mail-logo.png"
+                                                               alt="mail button logo"
+                                                               style="vertical-align: top; margin-right: 12px;">
+                                                            Email us
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td style="background-color: #ffffff; background: #ffffff;">
+                                                         <a href="mailto:scheduling@expertmri.com"
+                                                            style="color: #033D5A; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 400; line-height: 170%; letter-spacing: 0.32px; text-decoration: none; "
+                                                            class="paragraph number">
+                                                            scheduling@expertmri.com
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                          <td style="display: inline-block; padding: 30px;" class="footer-details">
+                                             <table role="presentation" cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td style="display: block; text-align: center;">
+                                                         <a href="https://expertmri.com/"
+                                                            style="color: #033D5A; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.32px; text-decoration: none;"
+                                                            class="paragraph">
+                                                            <img
+                                                               src="https://clientstaging.space/emailer-images/cls-calender.png"
+                                                               alt="calenderlogo"
+                                                               style="vertical-align: top; margin-right: 12px;">
+                                                            Visit us
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td style="background-color: #ffffff; background: #ffffff;">
+                                                         <a href="https://expertmri.com/"
+                                                            style="color: #033D5A; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 400; line-height: 170%; letter-spacing: 0.32px; text-decoration: none; "
+                                                            class="paragraph number">
+                                                            www.expertmri.com
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+
+
+
+
+   </center>
+</body>
+
+</html>

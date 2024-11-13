@@ -1,0 +1,203 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="600px" />
+    <mj-font name="Helvetica" href="https://fonts.cdnfonts.com/css/helvetica-neue-55" />
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
+    <mj-attributes>
+      <mj-all color="#040404" font-family="'Helvetica Neue, sans-serif'" padding="0px" />
+      <mj-class name="border-radius" border-radius="8px" />
+      <mj-class name="border-right" border-right="1px solid #CECECE" />
+      <mj-class name="border-left" border-left="1px solid #CECECE" />
+      <mj-class name="border-top" border-top="1px solid #B6B5B5" />
+      <mj-class name="border-bottom" border-bottom="1px solid #B6B5B5" />
+      <mj-class name="custom" display="inline-block" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#ECEDEC">
+    <!-- -->
+
+
+    <!--header logo & image -->
+    <mj-section background-color="#ffffff" padding="20px 20px 0 ">
+      <mj-column width="100%">
+        <mj-image width="228px" src="https://clientstaging.space/emailer-images/ctv-mri-logo.jpg" href="https://expertmri.com/" />
+        <mj-image padding-top="20px" border-radius="8px 8px 0 0 " src="https://clientstaging.space/emailer-images/ct-low-banner.jpg" href="https://expertmri.com/" />
+
+      </mj-column>
+    </mj-section>
+
+    <!--header Text section -->
+    <mj-section background-color="#ffffff" padding="0px 20px">
+      <mj-column width="100%" background-color="#F5F3F0" padding="26px 10px 20px ">
+        <mj-text align="left" color="#2C2C2C" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="28px" font-weight="700" line-height="150%" font-style="normal" padding="0 0 8px 0">
+          Why Low-Dose CT Scans Matter for Your Health and Safety
+        </mj-text>
+        <mj-text align="left" color="#2C2C2C" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" font-style="normal">
+          At ExpertMRI, we are committed to providing the highest quality imaging services that
+          prioritize patient safety without compromising diagnostic accuracy.
+          Our Low-Dose CT scans offer advanced imaging with significantly reduced radiation exposure,
+          ensuring a safer experience for all our patients.
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="#ffffff" padding="0px 20px">
+      <mj-section background-color="#F5F3F0" padding="10px 16px" mj-class="border-top border-bottom">
+        <mj-group mj-class="border-top">
+          <mj-column padding="0px 0">
+            <mj-text color="#2C2C2C" font-family="Helvetica" font-size="14px" font-style="normal" font-weight="700" line-height="180%" align="left">
+              Reduced Radiation
+            </mj-text>
+          </mj-column>
+          <mj-column padding="0px 0">
+            <mj-text color="#2C2C2C" font-family="Helvetica" font-size="14px" font-style="normal" font-weight="700" line-height="180% " align="center">
+              High-Quality Imaging
+            </mj-text>
+          </mj-column>
+          <mj-column padding="0px 0">
+            <mj-text color="#2C2C2C" font-family="Helvetica" font-size="14px" font-style="normal" font-weight="700" line-height="180% " align="right">
+              Preventive Monitoring
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+
+    <mj-wrapper background-color="#ffffff" padding="0px 20px">
+      <mj-section background-color="#F5F3F0" padding="20px 8px 8px">
+        <mj-column background-color="transparent" width="50%" padding="10px">
+          <mj-button inner-padding="16px 12px" background-color="#ffffff">
+            <span style="color:#2C2C2C; font-family: Helvetica; font-size: 16px; font-weight: 700; display: inline-block; padding-bottom: 16px; text-align: left; ">
+              Reduced Radiation Exposure
+            </span>
+            <span style="color:#2C2C2C; font-family: Helvetica; font-size: 16px; font-weight: 400; line-height: 180%; text-align: left; display: inline-block;">
+              For patients who require periodic imaging—such as those monitoring chronic conditions or undergoing routine screenings—Low-Dose CT scans offer a safer way to keep track of health without increased risks.
+            </span>
+          </mj-button>
+        </mj-column>
+        <mj-column background-color="transparent" width="50%" padding="10px">
+          <mj-button inner-padding="16px 12px 70px" background-color="#ffffff">
+            <span style="color:#2C2C2C; font-family: Helvetica; font-size: 16px; font-weight: 700; display: inline-block; padding-bottom: 16px; text-align: left; ">
+              Exceptional Image Quality
+            </span>
+            <span style="color:#2C2C2C; font-family: Helvetica; font-size: 16px; font-weight: 400; line-height: 180%; text-align: left; display: inline-block;">
+              Despite using lower radiation levels, Low-Dose CT scans provide clear, high-resolution images. This allows physicians to make accurate diagnoses while maintaining patient safety.
+            </span>
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#F5F3F0" padding="0px 8px 8px">
+        <mj-column background-color="transparent" width="50%" padding="10px">
+          <mj-button inner-padding="16px 12px" background-color="#ffffff">
+            <span style="color:#2C2C2C; font-family: Helvetica; font-size: 16px; font-weight: 700; display: inline-block; padding-bottom: 16px; text-align: left; ">
+              Reduced Radiation Exposure
+            </span>
+            <span style="color:#2C2C2C; font-family: Helvetica; font-size: 16px; font-weight: 400; line-height: 180%; text-align: left; display: inline-block;">
+              For patients who require periodic imaging—such as those monitoring chronic conditions or undergoing routine screenings—Low-Dose CT scans offer a safer way to keep track of health without increased risks.
+            </span>
+          </mj-button>
+        </mj-column>
+        <mj-column background-color="transparent" width="50%" padding="10px">
+          <mj-button inner-padding="16px 12px 70px" background-color="#ffffff">
+            <span style="color:#2C2C2C; font-family: Helvetica; font-size: 16px; font-weight: 700; display: inline-block; padding-bottom: 16px; text-align: left; ">
+              Exceptional Image Quality
+            </span>
+            <span style="color:#2C2C2C; font-family: Helvetica; font-size: 16px; font-weight: 400; line-height: 180%; text-align: left; display: inline-block;">
+              Despite using lower radiation levels, Low-Dose CT scans provide clear, high-resolution images. This allows physicians to make accurate diagnoses while maintaining patient safety.
+            </span>
+          </mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Button section-->
+    <mj-wrapper background-color="#ffffff" padding="0px 20px">
+      <mj-section background-color="#F5F3F0" padding=" 30px 0px">
+        <mj-column width="100%">
+          <mj-button href="https://expertmri.com/" border-radius="6px" background-color="#7030F7">
+            <span style=" color: #FFF;font-family: Helvetica;font-size: 16px;font-style: normal;font-weight: 700;line-height: 180%;  ">Schedule Your Scan </span>
+          </mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Review section-->
+    <mj-wrapper background-color="#ffffff" padding="0px 20px">
+      <mj-section background-color="#F5F3F0">
+        <mj-column width="100%">
+          <mj-image src="https://clientstaging.space/emailer-images/ct-low-review-banner.jpg" alt="review banner" href="https://expertmri.com/" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+
+
+
+    <mj-section background-color="#ffffff" padding="0px 20px">
+      <mj-column width="100%" background-color="#F5F3F0">
+        <mj-text color="#2C2C2C" font-family="Helvetica" font-size="16px" font-style="normal" font-weight="400" line-height="180%" padding="30px 20px ">
+          Take a proactive step toward safe and effective imaging. Whether you’re a physician referring patients or a patient looking to prioritize your health, ExpertMRI is here to provide expert, compassionate care with the latest imaging technology.
+        </mj-text>
+        <mj-text color="#000" font-family="Helvetica" font-size="18px" font-style="normal" font-weight="700" line-height="180%" letter-spacing="0.36px" padding="0px 20px">
+          Experience the difference with Low-Dose CT at ExpertMRI—where your health and safety are our top priority.
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <!-- Button section-->
+    <mj-section background-color="#ffffff" padding="0px 20px">
+      <mj-column width="100%" background-color="#F5F3F0">
+        <mj-button href="https://expertmri.com/" border-radius="6px" border="1px solid #7030F7" background-color="#FFF" padding="30px 0 ">
+          <image width="20px" height="20px" src="https://clientstaging.space/emailer-images/ct-low-phone-icon.png">
+            <span style=" color: #7030F7; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 700; line-height: 180%;   ">Schedule Your Scan Now</span>
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="#ffffff" padding="0px 20px">
+      <mj-section background-color="#3C3939">
+        <mj-column width="100%">
+          <mj-image src="https://clientstaging.space/emailer-images/ct-low-footer-border.svg" alt="" />
+          <mj-text align="center" color="#FFF" font-family="Helvetica" font-size="14px" font-style="normal" font-weight="700" line-height="180%" letter-spacing=" 0.28px" padding="10px 0">
+            Find us in Social Media
+          </mj-text>
+        </mj-column>
+
+        <!-- Social icon section-->
+        <mj-column width="100%" padding="0 0 20px 0">
+          <mj-social font-size="25px" icon-size="24px" mode="horizontal">
+            <mj-social-element src="https://clientstaging.space/emailer-images/ct-low-facebook-icon.svg" href="https://mjml.io/" padding="0 20px 0 0">
+
+            </mj-social-element>
+            <mj-social-element src="https://clientstaging.space/emailer-images/ct-low-instagram-icon.svg" href="https://mjml.io/" padding="0 20px 0 0">
+
+            </mj-social-element>
+            <mj-social-element src="https://clientstaging.space/emailer-images/ct-low-linkdin-icon.svg" href="https://mjml.io/">
+
+            </mj-social-element>
+
+          </mj-social>
+        </mj-column>
+
+      </mj-section>
+    </mj-wrapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </mj-body>
+</mjml>

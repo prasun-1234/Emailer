@@ -1,0 +1,325 @@
+<mjml>
+  <mj-head>
+    <mj-preview>Costa mesa </mj-preview>
+    <mj-breakpoint width="600px" />
+    <mj-font name="Helvetica" href="https://fonts.cdnfonts.com/css/helvetica-neue-55" />
+    <mj-attributes>
+      <mj-all color="#033D5A" font-family="'Helvetica Neue, sans-serif'" padding="0" />
+      <mj-class name="border-radius" border-radius="8px" />
+      <mj-class name="top-border" border-radius="4px 4px 0 0" />
+      <mj-class name="btn-border" border-radius="6px" />
+      <mj-class name="img-border" border-radius="16px" />
+      <mj-class name="border" border="1px solid red" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .a-tag {
+        color: #033D5A;
+      }
+
+      .a-tag-link {
+        color: #033D5A;
+        font-weight: 700;
+      }
+
+      .a-tag-footer {
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0.2px;
+        color: #033D5A;
+      }
+    </mj-style>
+
+    <mj-style inline="inline">
+      @media (prefers-color-scheme: dark) {
+        .dark-mode-bg {
+          background-color: #000000 !important;
+        }
+
+        .dark-mode-text {
+          color: #FFFFFF !important;
+        }
+
+        .dark-mode-btn {
+          background-color: #444444 !important;
+          color: #FFFFFF !important;
+        }
+
+        .dark-mode-border {
+          border-color: #FFFFFF !important;
+        }
+      }
+    </mj-style>
+
+
+  </mj-head>
+  <mj-body background-color="#CEF3FF">
+    <!-- header hero -->
+    <mj-wrapper background-color="#033D5A" mj-class="top-border">
+      <!-- header logo box -->
+      <mj-section padding="20px 15%">
+        <mj-column width="260px" background-color="#fff" padding="20px">
+          <mj-image align="center" width="160px" src="https://clientstaging.space/emailer-images/ct-expert-logo.png" alt="expert mri logo" />
+          <mj-text align="center" font-size="14px" font-weight="400" font-family="Helvetica,sans-serif" padding="10px 0 0">
+            Costa Mesa, ORANGE COUNTY
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- header text -->
+      <mj-section padding="40px 35px">
+        <mj-column>
+          <mj-text align="center" font-size="16px" font-weight="700" font-family="Helvetica,sans-serif" line-height="129%" color="#ffffff">
+            Experience Precision Like Never Before
+          </mj-text>
+          <mj-text align="center" font-size="32px" font-weight="400" font-family="Helvetica,sans-serif" line-height="129%" color="#ffffff" padding="0 0 40px">
+            Introducing Our State-of-the-Art 3T MRI Machine at ExpertMRI Costa Mesa
+          </mj-text>
+          <mj-button href="https://expertmri.com/locations/costa-mesa/" width="235px" align="center" background-color="#116BAB" font-size="16px" font-weight="700" font-family="Helvetica,sans-serif" line-height="129%" color="#ffffff" mj-class="btn-border">
+            Schedule a MRI
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <!-- header img box -->
+      <mj-section background-color="#033D5A" padding="0 35px">
+        <mj-column>
+          <mj-image src="https://clientstaging.space/emailer-images/cm-top-half.png" alt="" />
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+
+    <!-- Diagnostic section -->
+    <mj-wrapper padding="40px 0 0" background-color="#ffffff">
+      <mj-section>
+        <mj-column>
+          <mj-image align="center" width="85px" src="https://clientstaging.space/emailer-images/cm-arc-badge.png" alt="acr logo" />
+          <mj-text align="center" font-size="32px" font-weight="400" font-family="Helvetica,sans-serif" line-height="129%" padding="12px 0 0" css-class="dark-mode-text">
+            Enhanced
+          </mj-text>
+          <mj-text align="center" font-size="32px" font-weight="400" font-family="Helvetica,sans-serif" line-height="129%" css-class="dark-mode-text">
+            Diagnostic Accuracy
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="16px 0 60px">
+        <!-- half mri machine -->
+        <mj-column>
+          <mj-image width="300px" align="left" src="https://clientstaging.space/emailer-images/cm-half-mrii.png" alt="mri machine" />
+        </mj-column>
+
+        <!-- text content -->
+        <mj-column padding="0 35px 0 22px">
+          <mj-text vertical-align="middle" align="left" font-size="18px" font-weight="400" font-family="Helvetica,sans-serif" line-height="160%" padding="30px 0 40px" css-class="dark-mode-text">
+            With superior imaging capabilities, the 3T MRI can detect smaller abnormalities and subtle differences in tissues, leading to more precise diagnoses
+          </mj-text>
+          <mj-button href="https://expertmri.com/locations/costa-mesa/" align="left" background-color="#116BAB" font-size="16px" font-weight="700" font-family="Helvetica,sans-serif" line-height="129%" color="#ffffff" mj-class="btn-border">
+            Schedule a MRI
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#F0F0F0" padding="15px 0">
+        <mj-column vertical-align="middle">
+          <mj-text align="center" font-size="18px" font-weight="700" line-height="180%" font-family="Helvetica, Sans serif" color="#ffffff">
+            <a align="center" href="tel:(877) MRI-8888" font-size="18px" font-weight="700" line-height="180%" font-family="Helvetica, Sans serif" class="a-tag">Request a Scan: (877) MRI-8888</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- image quality section -->
+    <mj-section padding="50px 35px" background-color="#033D5A">
+      <mj-column>
+        <mj-text align="center" font-size="32px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" color="#ffffff">
+          Unmatched
+        </mj-text>
+        <mj-text align="center" font-size="32px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" color="#ffffff" padding="0 0 24px">
+          Image Quality
+        </mj-text>
+        <mj-image src="https://clientstaging.space/emailer-images/cm-chest-cover.jpg" alt="doctore with old patient" mj-class="img-border" />
+
+        <mj-text align="center" font-size="20px" font-weight="700" line-height="129%" font-family="Helvetica, Sans serif" color="#ffffff" padding="24px 0 0">
+          The 3T MRI machine
+        </mj-text>
+        <mj-text align="center" font-size="18px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" color="#ffffff" padding="0 0 32px">
+          offers higher resolution images, providing greater detail and clarity for more accurate diagnoses.
+        </mj-text>
+
+        <mj-button href="https://expertmri.com/locations/costa-mesa/" width="235px" align="center" background-color="#116BAB" font-size="16px" font-weight="700" font-family="Helvetica,sans-serif" line-height="129%" color="#ffffff" mj-class="btn-border">
+          Schedule a MRI
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- image quality section -->
+    <mj-wrapper background-color="#ffffff" padding="40px 35px">
+      <mj-section>
+        <mj-column>
+          <mj-text align="center" font-size="32px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" padding="0 0 40px">
+            Why Choose Us?
+          </mj-text>
+          <mj-image src="https://clientstaging.space/emailer-images/cm-baby-doctor.jpg" alt="doctor with child" mj-class="img-border" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="40px 0">
+        <mj-column width="10%">
+          <mj-image width="40px" align="left" src="https://clientstaging.space/emailer-images/cm-verified.png" alt="verified logo" padding="0 20px 20px 0" />
+        </mj-column>
+        <mj-column width="90%">
+          <mj-text align="left" font-size="24px" font-weight="700" line-height="129%" font-family="Helvetica, Sans serif" padding="0 0 12px" css-class="dark-mode-text">
+            State-Of-The-Art Facility
+          </mj-text>
+          <mj-text align="left" font-size="18px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" padding="0" css-class="dark-mode-text">
+            Located at ExpertMRI Costa Mesa, our facility is equipped with the latest in medical imaging technology, ensuring top-notch care for our patients.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding=" 0 0 40px">
+        <mj-column width="10%">
+          <mj-image width="40px" align="left" src="https://clientstaging.space/emailer-images/cm-verified.png" alt="verified logo" padding="0 20px 20px 0" />
+        </mj-column>
+        <mj-column width="90%">
+          <mj-text align="left" font-size="24px" font-weight="700" line-height="129%" font-family="Helvetica, Sans serif" padding="0 0 12px" css-class="dark-mode-text">
+            Advanced Technology
+          </mj-text>
+          <mj-text align="left" font-size="18px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" padding="0" css-class="dark-mode-text">
+            Utilizing the latest advancements in MRI technology, the 3T MRI ensures cutting-edge diagnostic capabilities and reliability.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 0 40px">
+        <mj-column width="10%">
+          <mj-image width="40px" align="left" src="https://clientstaging.space/emailer-images/cm-verified.png" alt="verified logo" padding="0 20px 20px 0" />
+        </mj-column>
+        <mj-column width="90%">
+          <mj-text align="left" font-size="24px" font-weight="700" line-height="129%" font-family="Helvetica, Sans serif" padding="0 0 12px" css-class="dark-mode-text">
+            Faster Scanning Times
+          </mj-text>
+          <mj-text align="left" font-size="18px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" padding="0" css-class="dark-mode-text">
+            Enjoy shorter scan times without compromising on image quality, making the process quicker and more comfortable.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 0 40px">
+        <mj-column width="10%">
+          <mj-image width="40px" align="left" src="https://clientstaging.space/emailer-images/cm-verified.png" alt="verified logo" padding="0 20px 20px 0" />
+        </mj-column>
+        <mj-column width="90%">
+          <mj-text align="left" font-size="24px" font-weight="700" line-height="129%" font-family="Helvetica, Sans serif" padding="0 0 12px" css-class="dark-mode-text">
+            Reduced Need for Contrast Agents
+          </mj-text>
+          <mj-text align="left" font-size="18px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" padding="0" css-class="dark-mode-text">
+            In many cases, the superior imaging capability of the 3T MRI reduces the need for contrast agents, making the procedure safer for patients.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-button href="https://expertmri.com/locations/costa-mesa/" align="center" width="220px" background-color="#116BAB" font-size="16px" font-weight="700" font-family="Helvetica,sans-serif" line-height="129%" color="#ffffff" mj-class="btn-border">
+            Schedule a MRI
+          </mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- long banner section -->
+    <mj-section>
+      <mj-column>
+        <mj-image src="https://clientstaging.space/emailer-images/cm-long-banner.jpg" alt="" />
+      </mj-column>
+    </mj-section>
+
+    <!-- location section -->
+    <mj-section padding="40px 35px" background-color="#ffffff">
+      <mj-column>
+        <mj-text align="center" font-size="32px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" css-class="dark-mode-text">
+          Located at ExpertMRI
+        </mj-text>
+        <mj-text align="center" font-size="32px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" padding="0 0 32px" css-class="dark-mode-text">
+          Costa Mesa
+        </mj-text>
+        <mj-image src="https://clientstaging.space/emailer-images/cm-expertmri-shop.jpg" alt="expert mri building" mj-class="img-border" />
+      </mj-column>
+    </mj-section>
+
+    <!-- instagram section -->
+    <mj-section padding="0 35px" background-color="#ffffff">
+      <mj-column width="20%" padding="0 20px 20px 0">
+        <mj-image width="114px" src="https://clientstaging.space/emailer-images/cm-insta-status.png" alt="instagram logo" href="https://www.instagram.com/ExpertMRI" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-image src="https://clientstaging.space/emailer-images/cm-insta-handle.jpg" alt="insta handle" href="https://www.instagram.com/ExpertMRI" />
+        <mj-text align="left" font-size="14px" font-weight="400" line-height="129%" font-family="Helvetica, Sans serif" padding="20px 0 32px" css-class="dark-mode-text">
+          California's leading MRI provider. Stay updated and informed by visiting:
+          <a href="https://www.instagram.com/ExpertMRI" class="a-tag-link"> www.expertmri.com</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff">
+      <mj-column padding="20px 35px">
+        <mj-divider border-width="1px" border-style="dashed" border-color="#033D5A" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="20px 5%">
+      <mj-column>
+        <mj-social font-size="15px" icon-size="24px" mode="horizontal" align="center" padding="0 0 24px">
+          <mj-social-element padding="15px" name="linkedln" src="https://clientstaging.space/emailer-images/cm-linkedln.png" href="https://www.linkedin.com/company/expert-mri-medical-diagnostics/"></mj-social-element>
+          <mj-social-element padding="15px" name="facebook" src="https://clientstaging.space/emailer-images/cm-facebook.jpg" href="https://www.facebook.com/expertmri/"></mj-social-element>
+          <mj-social-element padding="15px" name="twitter" src="https://clientstaging.space/emailer-images/cm-X.jpg" href="https://twitter.com/Expert_MRI"></mj-social-element>
+          <mj-social-element padding="15px" name="youtube" src="https://clientstaging.space/emailer-images/cm-youtube.jpg" href="https://www.youtube.com/channel/UCN8HBDqaOvN8gf2pJ48_ZNQ"></mj-social-element>
+        </mj-social>
+        <mj-image width="272px" padding="0 10%" src="https://clientstaging.space/emailer-images/footer-logo.png" alt="expert mri logo" />
+      </mj-column>
+    </mj-section>
+
+
+    <mj-wrapper padding="20px 35px" background-color="#F0F0F0">
+      <mj-section padding="0 0 15px">
+        <mj-group>
+          <mj-column>
+            <mj-text align="center" align="center" vertical-align="top" font-size="20px" font-weight="400" line-height="180%" font-family="Helvetica, Sans serif">
+              <a href="tel:(877)MRI-8888" class="a-tag-footer">(877) MRI-8888</a>
+            </mj-text>
+          </mj-column>
+
+        </mj-group>
+      </mj-section>
+
+      <mj-section padding="0 0 15px">
+        <mj-group>
+          <mj-column>
+            <mj-text align="center" align="center" vertical-align="top" font-size="20px" font-weight="400" line-height="180%" font-family="Helvetica, Sans serif">
+              <a href="mailto:scheduling@expertmri.com" class="a-tag-footer">scheduling@expertmri.com</a>
+            </mj-text>
+          </mj-column>
+
+        </mj-group>
+      </mj-section>
+
+      <mj-section padding="0 0 15px">
+        <mj-group>
+          <mj-column>
+            <mj-text align="center" align="center" vertical-align="top" font-size="20px" font-weight="400" line-height="180%" font-family="Helvetica, Sans serif">
+              <a href="https://www.expertmri.com" class="a-tag-footer">www.expertmri.com</a>
+            </mj-text>
+          </mj-column>
+
+        </mj-group>
+      </mj-section>
+
+    </mj-wrapper>
+
+
+  </mj-body>
+</mjml>

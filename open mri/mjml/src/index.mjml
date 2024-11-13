@@ -1,0 +1,144 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="600px" />
+    <mj-font name="Helvetica" href="https://fonts.cdnfonts.com/css/helvetica-neue-55" />
+    <mj-font name="Arial Black" href="https://fonts.cdnfonts.com/css/arial" />
+    <mj-attributes>
+      <mj-all color="#040404" font-family="'Helvetica Neue, sans-serif'" padding="0px" />
+      <mj-class name="border-radius" border-radius="8px" />
+      <mj-class name="border-right" border-right="1px solid #CECECE" />
+      <mj-class name="border-left" border-left="1px solid #CECECE" />
+      <mj-class name="custom" display="inline-block" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#ECEDEC">
+
+    <mj-wrapper background-color="#ECEDEC" padding="0px 15px">
+
+      <!--     header logo     -->
+      <mj-section background-color="#ECEDEC" mj-class="top-border" padding="70px 0 0 0">
+        <mj-column padding="10px" background-color="#4D5DFB" mj-class="border-right">
+          <mj-button href="tel:877-674-8888" inner-padding="10px 15px" font-family="Raleway,sans-serif" font-size="14px" font-weight="400" color="#ffffff" background-color="transparent">
+            Book your appointment now! Reach out at 877-674-8888
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <!--     Header text section    -->
+      <mj-section background-color="#ffffff" padding="30px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-image width="190px" src="https://clientstaging.space/emailer-images/ctv-mri-logo.jpg" href="https://expertmri.com/" alt="expert mri logo" padding-bottom="15px" />
+          <mj-text align="center" color="#2C2C2C" background-color="#ffffff" font-family="Arial Black" font-size="30px" font-weight="900" line-height="156%" font-style="normal">
+            Discover Tailored Comfort & Clarity with Open MRI
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!--     Banner text section    -->
+      <mj-section background-color="#ffffff" padding="0px 24px 30px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-image width="440px" src="https://clientstaging.space/emailer-images/open-mri-machine-left.png" href="https://expertmri.com/" alt="expert mri logo" padding-bottom="15px" />
+          <mj-text align="center" padding="0 15px" color="#2C2C2C" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="22px" font-weight="400" line-height="150%" letter-spacing="0.88px" font-style="normal">
+            We heard you loud and clear,
+          </mj-text>
+          <mj-text align="center" padding="0 15px" color="#2C2C2C" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="22px" font-weight="400" line-height="150%" letter-spacing="0.88px" font-style="normal">
+            so we made Open MRI
+          </mj-text>
+          <mj-text align="center" padding="15px" color="#2C2C2C" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="22px" font-weight="700" line-height="150%" letter-spacing="0.88px" font-style="normal">
+            Lighter. Quieter. Personalised
+          </mj-text>
+          <mj-text align="left" color="#2C2C2C" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" font-style="normal">
+            At ExpertMRI, we understand that comfort is just as important as clarity.
+            Our Open MRI technology is designed to provide the highest level of
+            patient comfort while delivering precise and reliable results.
+            With a more open, quieter, and personalized experience, Open MRI ensures
+            your imaging process is seamless and stress-free. Trust us to
+            prioritize your well-being at every step.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     Column group section    -->
+      <mj-section background-color="#ffffff" padding="0px 24px 30px" mj-class="border-right border-left">
+        <mj-group>
+          <mj-column width="60%">
+            <mj-text align="left" color="#2C2C2C" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="20px" font-weight="700" line-height="150%" font-style="normal">
+              Spacious, open design -
+              no more feeling confined <br />
+              <ul style="padding-left: 15px; margin: 0; list-style-type: disc; ">
+                <li style="font-size: 16px; line-height: 32PX; font-weight: 400;   ">
+                  Offering flexible positioning options
+                </li>
+                <li style="font-size: 16px; line-height: 32PX; font-weight: 400;   ">
+                  Eliminating anxiety about confined spaces
+                </li>
+                <li style="font-size: 16px; line-height: 32PX; font-weight: 400;   ">
+                  Providing clear communication during the scan
+                </li>
+                <li style="font-size: 16px; line-height: 32PX; font-weight: 400;   ">
+                  Ensuring accessibility for wheelchair users
+                </li>
+              </ul>
+            </mj-text>
+          </mj-column>
+          <mj-column width="40%">
+            <mj-image src="https://clientstaging.space/emailer-images/open-mri-machine-left.png" alt="mri machine" />
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <!--    Calling btn section    -->
+      <mj-section background-color="#ffffff" padding="10px 24px 40px" mj-class="border-right border-left">
+
+        <mj-column padding=" 0 25px">
+          <mj-button href="https://expertmri.com/" background-color="#7030F7" border-radius="8px">
+            <span style="display: inline-block; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 700; color: #FFF; line-height: 180%; padding-left: 10px; ">Learn More and Schedule Today</span>
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <!--   insurence banner section    -->
+      <mj-section background-color="#ffffff" padding="10px 24px" mj-class="border-right border-left">
+        <mj-column>
+          <mj-image src="https://clientstaging.space/emailer-images/open-mri-insurence-banner.jpg" alt="insurence company" />
+        </mj-column>
+      </mj-section>
+
+
+      <!--     Schedule link section    -->
+      <mj-section background-color="#061F3D" padding="20px 24px 15px" mj-class="border-right border-left">
+        <mj-column background-color="#061F3D">
+          <mj-text align="center" color="#ffffff" background-color="#ffffff" font-family="Raleway,sans-serif" font-size="23px" font-weight="700" line-height="170%">
+            Schedule Your Appointment Today
+          </mj-text>
+
+          <mj-text align="center" padding-top="10px" color="#ffffff" padding-bottom="10px" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            <a href="tel:877-674-8888" style="color: #ffffff; text-decoration: none;">Call us at 877-674-8888 or</a>
+          </mj-text>
+          <mj-text align="center" color="#ffffff" padding-bottom="10px" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            <a href="https://expertmri.com" style="color: #ffffff; text-decoration: none;">visit https://expertmri.com</a>
+          </mj-text>
+          <mj-text align="center" color="#ffffff" padding-bottom="10px" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            to schedule your appointment.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     Footer logo     -->
+      <mj-section padding="0 0 70px 0">
+        <mj-column padding="10px" background-color="#ffffff" mj-class="border-right border-left" border-bottom="1px solid #CECECE">
+          <mj-text align="center" padding-bottom="10px" color="#484848" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" font-style="italic" line-height="170%">
+            Caring for Our Community
+          </mj-text>
+
+          <mj-image width="190px" src="https://clientstaging.space/emailer-images/ctv-mri-logo.jpg" href="https://expertmri.com/" />
+          <mj-text align="center" padding="20px 0 0 0" color="#0D5385" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" font-style="italic" line-height="170%">
+            Your Partner in Precision Diagnostics
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

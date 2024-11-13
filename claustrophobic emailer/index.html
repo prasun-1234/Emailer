@@ -5,9 +5,18 @@
     <title>claustrophobia emailer</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
     <style type="text/css">
         @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
 
         /* CLIENT-SPECIFIC STYLES */
         #outlook a {
@@ -85,7 +94,7 @@
             margin: 0;
             padding: 0;
             width: 100% !important;
-            font-family: Helvetica Neue, sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             color: #033D5A;
         }
 
@@ -105,7 +114,6 @@
             max-width: 310px;
             width: 100%;
             border-radius: 8px;
-            background: #153851;
             color: #ffffff !important;
             padding: 16px 32px;
             text-decoration: none;
@@ -196,17 +204,21 @@
             text-transform: capitalize;
         }
 
-
-
-
-
-
         /* MOBILE STYLES */
         @media screen and (max-width: 600px) {
 
             /* ALLOWS FOR FLUID TABLES */
             table[class="wrapper"] {
                 width: 100% !important;
+            }
+
+            table[class="responsive-table right-align"] {
+                float: none !important;
+                margin: 0 auto !important;
+            }
+
+            td[class="section-padding-bottom-image only-top"] {
+                padding: 50px 15px 0 !important;
             }
 
             td[class="hero-text"] {
@@ -217,12 +229,21 @@
                 font-size: 14px !important;
             }
 
+            td[class="paragraph hero-para"] {
+                font-size: 16px !important;
+            }
+
             td[class="padding-copy hero-border-top"] {
                 padding: 30px 5% 30px 5% !important;
             }
 
-            td[class="box-header top-header"] {
+            td[class="box-header top-header easy-header"] {
                 padding-top: 20px !important;
+                font-size: 18px !important;
+            }
+
+            td[class="hassle-header"] {
+                font-size: 20px !important;
             }
 
             td[class="section-padding box-padding"] {
@@ -246,6 +267,11 @@
                 padding: 0 20px !important;
             }
 
+            td[class="paragraph icon-box-para"] {
+                text-align: center !important;
+                font-size: 14px !important;
+            }
+
             td[class="two-col-padding"] {
                 padding: 20px !important;
             }
@@ -267,7 +293,7 @@
             }
 
             td[class="column-header recommend-text"] {
-                font-size: 20px !important;
+                font-size: 16px !important;
                 padding: 0 20px !important;
             }
 
@@ -275,15 +301,23 @@
                 padding-bottom: 30px !important;
             }
 
+            td[class="custom-rating"] {
+                padding: 0 20px !important;
+            }
+
             td[class="footer-media"] {
                 padding: 20px 0 0 0 !important;
             }
 
             td[class="footer-details"] {
-                padding: 0 20px !important;
+                padding: 16px 20px !important;
             }
 
             td[class="last-footer-td"] {
+                padding: 0 0 30px !important;
+            }
+
+            td[class="padding-bottom"] {
                 padding: 0 0 30px !important;
             }
 
@@ -295,12 +329,13 @@
                 margin: 16px auto !important;
             }
 
-            td span.easy-header {
-                font-size: 20px !important;
+            td[class="section-padding bottom-only"] {
+                padding: 0 15px 50px !important;
             }
 
-            td span.hassle-header {
-                font-size: 25px !important;
+            td[class="padding-copy button-td"] {
+                width: 200px !important;
+                padding: 15px 5% !important;
             }
 
             td img.exp-footer.exp-mri-logo-footer {
@@ -310,6 +345,48 @@
             td a.paragraph.number {
                 font-size: 18px !important;
             }
+
+            td img.img-max.icon-box {
+                width: 146px !important;
+                height: 146px !important;
+            }
+
+            td img.img-max.stars {
+                max-width: 100% !important;
+                width: 120px !important;
+                height: auto !important;
+            }
+
+            td img.rating-img {
+                max-width: 100% !important;
+                width: 180px !important;
+                height: auto !important;
+            }
+
+            td img.exp-footer.exp-mri-logo-footer {
+                width: 180px !important;
+                height: auto !important;
+            }
+
+            .button-primary {
+                font-size: 12px !important;
+                padding: 0 !important;
+            }
+
+            tr.foo-tr {
+                margin-bottom: 20px !important;
+            }
+
+
+            td[class="display-none"] {
+                display: none !important;
+            }
+
+            td[class="mobile-wrapper display-block"] {
+                display: inline-block !important;
+            }
+
+
 
 
 
@@ -395,9 +472,77 @@
                 border: 0 !important;
                 font-size: 16px !important;
             }
-            td img.img-hero{
+
+            td img.img-hero {
                 width: 100% !important;
+                height: auto !important;
+                display: block;
             }
+
+        }
+
+
+
+
+
+        @media (prefers-color-scheme: dark) {
+
+            /* Shows Dark Mode-Only Content, Like Images */
+            [data-ogsc] .dark-img {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+                float: none !important;
+                max-height: inherit !important;
+                max-width: inherit !important;
+                line-height: auto !important;
+                margin-top: 0px !important;
+                visibility: inherit !important;
+            }
+
+            /* Hides Light Mode-Only Content, Like Images */
+            [data-ogsc] .light-img {
+                display: none;
+                display: none !important;
+            }
+
+            /* Custom Dark Mode Background Color */
+            [data-ogsc] .darkmode {
+                background-color: #272623 !important;
+            }
+
+            /* Custom Dark Mode Font Colors */
+            [data-ogsc] h1,
+            [data-ogsc] h2,
+            [data-ogsc] p,
+            [data-ogsc] span,
+            [data-ogsc] a,
+            [data-ogsc] b {
+                color: #ffffff !important;
+            }
+
+            /* Custom Dark Mode Text Link Color */
+            [data-ogsc] .link {
+                color: #91ADD4 !important;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            table[class="dark-mode-bg"],
+            td.dark-mode-bg {
+                background-color: #FBFBFB !important;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            table[class="dark-mode-bg-2"],
+            td.dark-mode-bg-2 {
+                background-color: #033D5A !important;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
 
         }
     </style>
@@ -419,24 +564,26 @@
         <!--HEADER HERO -->
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
-                <td align="center" style="padding: 0;" class="section-padding-bottom-image">
+                <td align="center" style="padding: 100px 0 0 0;" class="section-padding-bottom-image only-top">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
                         class="responsive-table">
                         <tr>
-                            <td>
-                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                            <td
+                                style="border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9; border-top: 1px solid #C9C9C9;">
+                                <table bgcolor="#FBFBFB" role="presentation" width="100%" border="0" cellspacing="0"
                                     cellpadding="0">
                                     <tr>
                                         <td>
                                             <table role="presentation" width="100%" border="0" cellspacing="0"
                                                 cellpadding="0">
                                                 <tr>
-                                                    <td style="padding:  0 0 0; border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;"
-                                                        align="center">
-                                                        <a href="#" target="_blank">
-                                                            <img src="https://clientstaging.space/emailer-images/cls-header.jpg"
-                                                                width="600" height="600" border="0"
-                                                                alt="doctor with machine" class="img-hero">
+                                                    <td style="padding:  0 0 0; " align="center">
+                                                        <a href="https://marketing.expertmri.com/claustrophobia"
+                                                            target="_blank">
+                                                            <img src="https://clientstaging.space/emailer-images/cls-header-2.jpg"
+                                                                width="600" height="auto" border="0"
+                                                                alt="doctor with machine" class="img-hero"
+                                                                style="width: 100%; height: auto; display: block;">
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -455,40 +602,33 @@
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
                 <td align="center" class="section-padding-bottom-image">
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                    <table bgcolor="#FBFBFB" role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
                         class="responsive-table">
-                        <tr bgcolor="#ffffff">
-                            <td style=" border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
-                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
-                                    cellpadding="0">
+                        <tr>
+                            <td class="dark-mode-bg"
+                                style="border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9; ">
+                                <table bgcolor="#FBFBFB" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0" class="dark-mode-bg">
                                     <tr>
                                         <td class="hero-text" style="padding: 32px 40px 40px">
-                                            <table role="presentation" width="100%" border="0" cellspacing="0"
-                                                cellpadding="0">
+                                            <table bgcolor="#FBFBFB" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0" style="background-color: #fbfbfb;">
                                                 <tr>
-                                                    <td align="center" class="paragraph"
-                                                        style="display: block;  text-align: center; color: #033D5A; font-family: 'Helvetica Neue', sans-serif; font-size: 18px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px;">
-                                                        If you experience claustrophobia, a traditional MRI can be
-                                                        intimidating.
-                                                        However, with front open MRI technology, you can undergo scans
-                                                        in a
-                                                        comfortable and stress-free environment. The Fonar Open MRI, in
-                                                        particular,
-                                                        offers a spacious design that eliminates the enclosed,
-                                                        tunnel-like feeling,
-                                                        making it easier for you to relax. Enjoy precise and detailed
-                                                        imaging without the anxiety,
-                                                        ensuring both your comfort and accurate diagnoses.
+                                                    <td align="center" class="paragraph hero-para"
+                                                        style="background-color: #FBFBFB; display: block;  text-align: center; color: #033D5A; font-family: 'Helvetica Neue', sans-serif; font-size: 24px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px;">
+                                                        Claustrophobia? Breathe Easy! Open MRI: Relax on a bed, no
+                                                        closed tube. Less anxiety, clear scanner
                                                     </td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td align="center" class="padding-copy">
-                                            <a href="https://www.google.com" class="button-primary"
-                                                style="display: block; margin: 0 auto; max-width: 305px; width: 100%; border-radius: 8px; background: #4E6CDD; color: #ffffff ; padding: 19px 20px; text-decoration: none; font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px;">
-                                                Schedule an appointment
+                                    <tr style="display: block; padding: 0 20px;">
+                                        <td align="center" class="padding-copy "
+                                            style=" display: block; margin: 0 auto; max-width: 305px; padding: 19px 20px;  border-radius: 8px; background: #4E6CDD;  text-decoration: none;">
+                                            <a href="https://marketing.expertmri.com/claustrophobia" class=""
+                                                style=" color: #ffffff ;  font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px; text-decoration: none;">
+                                                Schedule an Appointment
                                             </a>
                                         </td>
                                     </tr>
@@ -505,7 +645,7 @@
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
                 <td align="center" class="section-padding-bottom-image">
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                    <table bgcolor="#FBFBFB" role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
                         class="responsive-table">
                         <tr>
                             <td>
@@ -514,29 +654,24 @@
                                         <td>
                                             <!-- COLUMN IMAGE -->
                                             <table role="presentation" width="100%" border="0" cellspacing="0"
-                                                cellpadding="0">
+                                                cellpadding="0" class="dark-mode-bg">
                                                 <tbody>
-                                                    <tr bgcolor="#ffffff">
+                                                    <tr>
                                                         <td class="padding-copy hero-border-top"
                                                             style="padding: 40px 40px 60px;  border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
                                                             <table role="presentation" width="100%" border="0"
                                                                 cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td class="box-header top-header"
-                                                                        style=" border-top: 1px solid #033D5A80 ; padding-top: 40px;">
-                                                                        <span class="easy-header"
-                                                                            style="display: block; margin: 0 auto; color: #033D5A;text-align: center;font-family: Helvetica Neue,sans-serif;font-size: 26px;font-style: normal;font-weight: 700;line-height: 140%;">
-                                                                            MRI Made Easy
-                                                                        </span>
+                                                                    <td class="box-header top-header easy-header"
+                                                                        style=" border-top: 1px solid #033D5A80 ; padding-top: 40px; display: block; margin: 0 auto; color: #033D5A;text-align: center;font-family: Helvetica Neue,sans-serif;font-size: 24px;font-style: normal;font-weight: 700;line-height: 140%;">
+                                                                        MRI Made Easy
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>
-                                                                        <span class="hassle-header"
-                                                                            style="display: block; margin: 0 auto; max-width: 450px; color: #033D5A;text-align: center;font-family: Helvetica Neue,sans-serif;font-size: 35px;font-style: normal;font-weight: 700;line-height: 140%;">
-                                                                            Hassle-Free, Anxiety-Free, and
-                                                                            Claustrophobia-Free
-                                                                        </span>
+                                                                    <td class="hassle-header"
+                                                                        style=" display: block; margin: 0 auto; max-width: 450px; color: #033D5A;text-align: center;font-family: Helvetica Neue,sans-serif;font-size: 24px;font-style: normal;font-weight: 700;line-height: 140%;">
+                                                                        Hassle-Free, Anxiety-Free, and
+                                                                        Claustrophobia-Free
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -549,293 +684,52 @@
                                     <tr>
                                         <td>
                                             <!-- TWO COLUMN START -->
-                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                                width="100%">
-                                                <!-- BOX 1 -->
-                                                <tr>
-                                                    <td bgcolor="#ffffff" align="center"
-                                                        class="section-padding box-padding"
-                                                        style="padding-bottom: 40px; border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
-                                                        <table role="presentation" border="0" cellpadding="0"
-                                                            cellspacing="0" width="600" class="responsive-table">
-                                                            <tr>
-                                                                <td>
-                                                                    <!-- TWO COLUMNS -->
-                                                                    <table role="presentation" cellspacing="0"
-                                                                        cellpadding="0" border="0" width="100%">
-                                                                        <tr>
-                                                                            <td valign="top" style="padding: 0;"
-                                                                                class="mobile-wrapper">
-                                                                                <!-- LEFT COLUMN -->
-                                                                                <table role="presentation"
-                                                                                    cellpadding="0" cellspacing="0"
-                                                                                    border="0" width="30%" align="left"
-                                                                                    class="responsive-table">
-                                                                                    <tr>
-                                                                                        <td class="left-img-padding"
-                                                                                            style="padding: 0 20px 0 40px;  ">
-                                                                                            <table role="presentation"
-                                                                                                cellpadding="0"
-                                                                                                cellspacing="0"
-                                                                                                border="0" width="100%">
-                                                                                                <tr>
-                                                                                                    <td align="center"
-                                                                                                        bgcolor="#ffffff"
-                                                                                                        valign="middle">
-                                                                                                        <img src="https://clientstaging.space/emailer-images/cls-thinking.png"
-                                                                                                            alt="cartoon with laptop  thinking"
-                                                                                                            class="img-max border-radius">
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!-- RIGHT COLUMN -->
-                                                                                <table role="presentation"
-                                                                                    cellpadding="0" cellspacing="0"
-                                                                                    border="0" width="70%" align="right"
-                                                                                    class="responsive-table">
-                                                                                    <tr>
-                                                                                        <td align="center"
-                                                                                            style="padding: 25px 40px 0 40px;"
-                                                                                            class="right-box-text">
-                                                                                            <table role="presentation"
-                                                                                                cellpadding="0"
-                                                                                                cellspacing="0"
-                                                                                                border="0" width="100%">
-                                                                                                <tr>
-                                                                                                    <td align="center"
-                                                                                                        bgcolor="#ffffff"
-                                                                                                        valign="middle"
-                                                                                                        class="right-img-padding">
-                                                                                                        <table
-                                                                                                            role="presentation"
-                                                                                                            cellpadding="0"
-                                                                                                            cellspacing="0"
-                                                                                                            border="0"
-                                                                                                            width="100%"
-                                                                                                            align="right"
-                                                                                                            class="responsive-table">
-                                                                                                            <tbody>
-                                                                                                                <tr>
-                                                                                                                    <td class="paragraph"
-                                                                                                                        style="color: #033D5A; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%;letter-spacing: 0.4px;">
-                                                                                                                        Perfect
-                                                                                                                        for
-                                                                                                                        Claustrophobic
-                                                                                                                        Patients
-                                                                                                                    </td>
-                                                                                                                </tr>
-                                                                                                            </tbody>
-                                                                                                        </table>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
+                                            <table bgcolor="#fbfbfb" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tbody
+                                                    style="display: block; width: 100%; text-align: center; background-color: #fbfbfb; border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
+                                                    <tr
+                                                        style="display: inline-block; margin-bottom: 40px; width: 100%; background-color: #fbfbfb;  ">
+                                                        <td align="center"
+                                                            style="background-color: #fbfbfb; padding: 0 30px 0 40px; display: inline-block; "
+                                                            valign="center">
+                                                            <img src="https://clientstaging.space/emailer-images/cls-book.jpg"
+                                                                alt="cartoon with laptop " class="img-max icon-box">
+                                                        </td>
+                                                        <td class="paragraph icon-box-para" align="left"
+                                                            style="background-color: #fbfbfb; display: inline-block; padding: 15px 0 0 0; max-width: 280px; color: #033D5A; font-family: Helvetica; font-size: 16px; text-align: center; font-style: normal; font-weight: 500; line-height: 160%;letter-spacing: 0.4px;">
+                                                            Schedule an MRI appointment at your earliest convenience.
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: inline-block; margin-bottom: 40px; width: 100%; background-color: #fbfbfb; ">
+                                                        <td align="center"
+                                                            style="background-color: #fbfbfb; padding: 0 30px 0 40px; display: inline-block; "
+                                                            valign="center">
+                                                            <img src="https://clientstaging.space/emailer-images/cls-get-scan.jpg"
+                                                                alt="cartoon mri machine with patients"
+                                                                class="img-max icon-box">
+                                                        </td>
+                                                        <td class="paragraph icon-box-para" align="left"
+                                                            style="background-color: #fbfbfb; display: inline-block; max-width: 280px; padding: 15px 0 0 0;  color: #033D5A; font-family: Helvetica; text-align: center; font-size: 16px; font-style: normal; font-weight: 500; line-height: 160%;letter-spacing: 0.4px;">
+                                                            Get Your Scan Done at One of Our California Locations
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: inline-block; margin-bottom: 40px; width: 100%; background-color: #fbfbfb; ">
+                                                        <td align="left"
+                                                            style="background-color: #fbfbfb; padding: 0 30px 0 40px; display: inline-block; "
+                                                            valign="center">
+                                                            <img src="https://clientstaging.space/emailer-images/cls-access.jpg"
+                                                                alt="cartoon man teaching" class="img-max icon-box">
+                                                        </td>
+                                                        <td class="paragraph icon-box-para" align="left"
+                                                            style="background-color: #fbfbfb; display: inline-block; max-width: 280px; padding: 15px 0 0 0;   color: #033D5A; font-family: Helvetica; text-align: center; font-size: 16px; font-style: normal; font-weight: 500; line-height: 160%;letter-spacing: 0.4px;">
+                                                            Access Your Reports Through the ExpertMRI Patient Portal
+                                                        </td>
+                                                    </tr>
 
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <!-- BOX 2 -->
-                                                <tr>
-                                                    <td bgcolor="#ffffff" align="center"
-                                                        class="section-padding section-padding box-padding"
-                                                        style="padding-bottom: 40px; border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
-                                                        <table role="presentation" border="0" cellpadding="0"
-                                                            cellspacing="0" width="600" class="responsive-table">
-                                                            <tr>
-                                                                <td>
-                                                                    <!-- TWO COLUMNS -->
-                                                                    <table role="presentation" cellspacing="0"
-                                                                        cellpadding="0" border="0" width="100%">
-                                                                        <tr>
-                                                                            <td valign="top" style="padding: 0;"
-                                                                                class="mobile-wrapper">
-                                                                                <!-- LEFT COLUMN -->
-                                                                                <table role="presentation"
-                                                                                    cellpadding="0" cellspacing="0"
-                                                                                    border="0" width="30%" align="left"
-                                                                                    class="responsive-table">
-                                                                                    <tr>
-                                                                                        <td class="left-img-padding"
-                                                                                            style="padding: 0 20px 0 40px;">
-                                                                                            <table role="presentation"
-                                                                                                cellpadding="0"
-                                                                                                cellspacing="0"
-                                                                                                border="0" width="100%">
-                                                                                                <tr>
-                                                                                                    <td align="center"
-                                                                                                        bgcolor="#ffffff"
-                                                                                                        valign="middle">
-                                                                                                        <img src="https://clientstaging.space/emailer-images/cls-cancer-people.png"
-                                                                                                            alt="cartoon mri machine with patients"
-                                                                                                            class="img-max border-radius">
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!-- RIGHT COLUMN -->
-                                                                                <table role="presentation"
-                                                                                    cellpadding="0" cellspacing="0"
-                                                                                    border="0" width="70%" align="right"
-                                                                                    class="responsive-table">
-                                                                                    <tr>
-                                                                                        <td align="center"
-                                                                                            style="padding: 15px 40px 0 40px;"
-                                                                                            class="right-box-text">
-                                                                                            <table role="presentation"
-                                                                                                cellpadding="0"
-                                                                                                cellspacing="0"
-                                                                                                border="0" width="100%">
-                                                                                                <tr>
-                                                                                                    <td align="center"
-                                                                                                        bgcolor="#ffffff"
-                                                                                                        valign="middle"
-                                                                                                        class="right-img-padding">
-                                                                                                        <table
-                                                                                                            role="presentation"
-                                                                                                            cellpadding="0"
-                                                                                                            cellspacing="0"
-                                                                                                            border="0"
-                                                                                                            width="100%"
-                                                                                                            align="right"
-                                                                                                            class="responsive-table">
-                                                                                                            <tbody>
-                                                                                                                <tr>
-                                                                                                                    <td class="paragraph"
-                                                                                                                        style="color: #033D5A; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%;letter-spacing: 0.4px;">
-                                                                                                                        Weight-Bearing,
-                                                                                                                        Stand-Up
-                                                                                                                        MRI
-                                                                                                                        Facility
-                                                                                                                    </td>
-                                                                                                                </tr>
-                                                                                                            </tbody>
-                                                                                                        </table>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <!-- BOX 3 -->
-                                                <tr>
-                                                    <td bgcolor="#ffffff" align="center"
-                                                        class="section-padding section-padding box-padding"
-                                                        style="padding-bottom: 40px;border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
-                                                        <table role="presentation" border="0" cellpadding="0"
-                                                            cellspacing="0" width="600" class="responsive-table">
-                                                            <tr>
-                                                                <td>
-                                                                    <!-- TWO COLUMNS -->
-                                                                    <table role="presentation" cellspacing="0"
-                                                                        cellpadding="0" border="0" width="100%">
-                                                                        <tr>
-                                                                            <td valign="top" style="padding: 0;"
-                                                                                class="mobile-wrapper">
-                                                                                <!-- LEFT COLUMN -->
-                                                                                <table role="presentation"
-                                                                                    cellpadding="0" cellspacing="0"
-                                                                                    border="0" width="30%" align="left"
-                                                                                    class="responsive-table">
-                                                                                    <tr>
-                                                                                        <td class="left-img-padding"
-                                                                                            style="padding: 0 20px 0 40px;">
-                                                                                            <table role="presentation"
-                                                                                                cellpadding="0"
-                                                                                                cellspacing="0"
-                                                                                                border="0" width="100%">
-                                                                                                <tr>
-                                                                                                    <td align="center"
-                                                                                                        bgcolor="#ffffff"
-                                                                                                        valign="middle">
-                                                                                                        <img src="https://clientstaging.space/emailer-images/cls-television.png"
-                                                                                                            alt="cartoon man teaching"
-                                                                                                            class="img-max border-radius">
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!-- RIGHT COLUMN -->
-                                                                                <table role="presentation"
-                                                                                    cellpadding="0" cellspacing="0"
-                                                                                    border="0" width="70%" align="right"
-                                                                                    class="responsive-table">
-                                                                                    <tr>
-                                                                                        <td align="center"
-                                                                                            style="padding: 0px 40px 0 40px;"
-                                                                                            class="right-box-text">
-                                                                                            <table role="presentation"
-                                                                                                cellpadding="0"
-                                                                                                cellspacing="0"
-                                                                                                border="0" width="100%">
-                                                                                                <tr>
-                                                                                                    <td align="center"
-                                                                                                        bgcolor="#ffffff"
-                                                                                                        valign="middle"
-                                                                                                        class="right-img-padding">
-                                                                                                        <table
-                                                                                                            role="presentation"
-                                                                                                            cellpadding="0"
-                                                                                                            cellspacing="0"
-                                                                                                            border="0"
-                                                                                                            width="100%"
-                                                                                                            align="right"
-                                                                                                            class="responsive-table">
-                                                                                                            <tbody>
-                                                                                                                <tr>
-                                                                                                                    <td class="paragraph"
-                                                                                                                        style="color: #033D5A; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%;letter-spacing: 0.4px;">
-                                                                                                                        Watch
-                                                                                                                        TV
-                                                                                                                        During
-                                                                                                                        Your
-                                                                                                                        Scan
-                                                                                                                        and
-                                                                                                                        Feel
-                                                                                                                        Relaxed
-                                                                                                                        and
-                                                                                                                        Comfortable
-                                                                                                                    </td>
-                                                                                                                </tr>
-                                                                                                            </tbody>
-                                                                                                        </table>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-
-                                                        </table>
-                                                    </td>
-                                                </tr>
+                                                </tbody>
                                             </table>
                                         </td>
                                     </tr>
@@ -851,70 +745,71 @@
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
                 <td align="center" class="section-padding-bottom-image">
-                    <table bgcolor="ffffff">
+                    <table bgcolor="fbfbfb">
                         <tbody>
                             <tr>
-                                <td style="border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
+                                <td
+                                    style="background: #fbfbfb; background-color: #fbfbfb; border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
                                         class="responsive-table">
-                                        <tr bgcolor="#ffffff">
+                                        <tr bgcolor="#fbfbfb" style="background-color: #fbfbfb; background: #fbfbfb;">
                                             <td>
-                                                <table bgcolor="ffffff" role="presentation" width="100%" border="0"
-                                                    cellspacing="0" cellpadding="0">
-                                                    <tr>
+                                                <table bgcolor="fbfbfb" role="presentation" width="100%" border="0"
+                                                    cellspacing="0" cellpadding="0" class="dark-mode-bg">
+                                                    <tr style="background-color: #fbfbfb;">
                                                         <td style="padding: 0 32px;" class="text-col-padding">
                                                             <!-- COPY -->
                                                             <table role="presentation" width="100%" border="0"
                                                                 cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td class="box-header top-header"
-                                                                        style=" border-top: 1px solid #033D5A80 ; padding-top: 40px;">
-                                                                        <span class="column-header open-mri"
-                                                                            style="display: block; margin: 0 auto; color: #033D5A;text-align: center;font-family: Helvetica Neue,sans-serif;font-size: 28px; font-style: normal;font-weight: 700; line-height: 1.4; text-transform: none;">
-                                                                            Front-Open MRI
-                                                                        </span>
+                                                                    <td class="box-header top-header easy-header"
+                                                                        style="background-color: #fbfbfb; border-top: 1px solid #033D5A80 ; padding-top: 40px; display: block; margin: 0 auto; color: #033D5A;text-align: center;font-family: Helvetica Neue,sans-serif;font-size: 24px;font-style: normal;font-weight: 700;line-height: 140%;">
+                                                                        Front-Open MRI
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>
-                                                                        <span class="column-header"
-                                                                            style="display: block; margin: 0 auto; max-width: 450px; color: #033D5A;text-align: center;font-family: Helvetica Neue,sans-serif;font-size: 35px;font-style: normal;font-weight: 700; line-height: 1.4; text-transform: none; max-width: 450px;">
-                                                                            Eliminates the Enclosed Feeling and Reduces
-                                                                            Anxiety
-                                                                        </span>
+                                                                    <td class="hassle-header"
+                                                                        style="background-color: #fbfbfb; display: block; margin: 0 auto; max-width: 400px;  color: #033D5A;text-align: center;font-family: Helvetica Neue,sans-serif;font-size: 24px;font-style: normal;font-weight: 700;line-height: 140%;">
+                                                                        Eliminates the Enclosed Feeling
+                                                                        and Reduces Anxiety
                                                                     </td>
                                                                 </tr>
                                                             </table>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 32px 40px;"
+                                                    <tr style="background-color: #fbfbfb;">
+                                                        <td align="center"
+                                                            style="padding: 32px 40px; background-color: #fbfbfb; background: #fbfbfb;"
                                                             class="two-col-padding">
-                                                            <a href="#">
+                                                            <a href="https://marketing.expertmri.com/claustrophobia">
                                                                 <img src="https://clientstaging.space/emailer-images/cls-two-col.jpg"
-                                                                    alt="two column image" class="img-max"
-                                                                    style="display: block; border-radius: 8px;">
+                                                                    alt="two column image" class="img-max" width="600"
+                                                                    height="auto"
+                                                                    style="display: block; width: 100%; height: auto; border-radius: 8px;">
                                                             </a>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr style="background-color: #fbfbfb; background: #fbfbfb;">
                                                         <td class="paragraph text-col-padding"
-                                                            style=" padding: 0 40px; color: #033D5A; text-align: center; font-family: Helvetica; font-size: 18px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px;">
+                                                            style="background-color: #fbfbfb; background: #fbfbfb; padding: 0 40px; color: #033D5A; text-align: center; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px;">
                                                             Unlike traditional MRI machines with a closed tunnel, open
                                                             MRI scanners have a more open design.
                                                             This helps reduce the feeling of being trapped and the
                                                             claustrophobia often caused by enclosed spaces.
                                                         </td>
                                                     </tr>
-                                                    <tr style="display: block; margin: 40px auto 60px; "
-                                                        class="button-tr">
-                                                        <td align="center" class="padding-copy" style="display: block;">
-                                                            <a href="https://www.google.com"
-                                                                style="display: block; margin: 0 auto; max-width: 305px; width: 100%; border-radius: 8px; background: #4E6CDD; color: #ffffff ; padding: 19px 20px; text-decoration: none; font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px;">
-                                                                Schedule an appointment
+                                                    <tr
+                                                        style="display: block; padding: 0 20px; margin: 40px auto 60px; background-color: #fbfbfb; ">
+                                                        <td align="center" class="padding-copy "
+                                                            style=" display: block; margin: 0 auto; max-width: 305px; padding: 19px 20px;  border-radius: 8px; background: #4E6CDD;  text-decoration: none;">
+                                                            <a href="https://marketing.expertmri.com/claustrophobia"
+                                                                class=""
+                                                                style=" color: #ffffff ;  font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px; text-decoration: none;">
+                                                                Schedule an Appointment
                                                             </a>
                                                         </td>
                                                     </tr>
+
                                                 </table>
                                             </td>
                                         </tr>
@@ -935,53 +830,52 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
                         class="responsive-table">
                         <tr>
-                            <td style="border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
+                            <td
+                                style="background-color: #033D5A; border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9; background: #033D5A;">
                                 <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                         <td>
                                             <!-- COPY -->
                                             <table bgcolor="#033D5A" role="presentation" width="100%" border="0"
-                                                cellspacing="0" cellpadding="0">
-                                                <tr>
-                                                    <td align="center" class="">
-                                                        <img src="https://clientstaging.space/emailer-images/cls-quotetion.jpg"
-                                                            alt="quatation logo" class="img-max"
-                                                            style="display: block; ">
-                                                    </td>
-                                                </tr>
-                                                <tr>
+                                                cellspacing="0" cellpadding="0" class="dark-mode-bg-2">
+
+                                                <tr style="background-color: #033D5A;  background: #033D5A;">
                                                     <td align="center" class="column-header"
-                                                        style="display: block; margin: 0 auto; max-width: 400px; padding: 20px 0 0; color: #FFF; text-align: center; font-family: Helvetica; font-size: 40px; font-style: normal; font-weight: 400; line-height: 140%;">
+                                                        style="background-color: #033D5A;  background: #033D5A; display: block; margin: 0 auto; max-width: 400px; padding: 30px 0 0; color: #FFF; text-align: center; font-family: Helvetica; font-size: 24px; font-style: normal; font-weight: 700; line-height: 140%;">
                                                         What people say about us
                                                     </td>
                                                 </tr>
-                                                <tr class="rating-tr" style="display: block; margin: 32px 0;">
-                                                    <td align="center" class="">
-                                                        <img src="https://clientstaging.space/emailer-images/low-dose-rating.jpg"
-                                                            alt="google-rating" class="img-max"
-                                                            style="display: block; ">
+                                                <tr class="rating-tr"
+                                                    style="display: block; margin: 32px 0; background-color: #033D5A;  background: #033D5A;">
+                                                    <td align="center" class="custom-rating"
+                                                        style="background-color: #033D5A;  background: #033D5A; display: block; margin: 0 auto;">
+                                                        <img src="https://clientstaging.space/emailer-images/cls-rating-2.png"
+                                                            alt="google-rating" class="rating-img" width="315"
+                                                            height="55"
+                                                            style="display: block; max-width: 100%; height: auto;">
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <tr style="background-color: #033D5A;  background: #033D5A;">
                                                     <td align="center" class="column-header recommend-text"
-                                                        style="display: block; margin: 0 auto; max-width: 500px;  color: #FFF; text-align: center; font-family: Helvetica; font-size: 32px; font-style: normal; font-weight: 400; line-height: 180%;">
+                                                        style="background-color: #033D5A;  background: #033D5A; display: block; margin: 0 auto; max-width: 500px;  color: #FFF; text-align: center; font-family: Helvetica; font-size: 24px; font-style: normal; font-weight: 400; line-height: 180%;">
                                                         “I highly recommend this place they're very professional and the
                                                         place is clean.
                                                         They are very patient if you're claustrophobic.
                                                         You have to be patient though they do take a while”
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <tr style="background-color: #033D5A;  background: #033D5A;">
                                                     <td align="center" class="column-header recommend-text"
-                                                        style="display: block; margin: 0 auto; max-width: 500px; padding-top: 25px; color: #FFF; text-align: center; font-family: Helvetica; font-size: 24px; font-style: normal; font-weight: 400; line-height: 180%;">
+                                                        style="background-color: #033D5A;  background: #033D5A; display: block; margin: 0 auto; max-width: 500px; padding-top: 25px; color: #FFF; text-align: center; font-family: Helvetica; font-size: 24px; font-style: normal; font-weight: 400; line-height: 180%;">
                                                         Mara H.
                                                     </td>
                                                 </tr>
-                                                <tr class="rating-tr">
+                                                <tr class="rating-tr"
+                                                    style="background-color: #033D5A;  background: #033D5A;">
                                                     <td align="center" class="rating-td"
-                                                        style="padding-bottom: 50px; padding-top: 15px;">
+                                                        style="padding-bottom: 50px; padding-top: 15px; background-color: #033D5A;  background: #033D5A;">
                                                         <img src="https://clientstaging.space/emailer-images/cls-stars.png"
-                                                            alt="google-rating" class="img-max"
+                                                            alt="google-rating" class="img-max stars"
                                                             style="display: block; width: auto;">
                                                     </td>
                                                 </tr>
@@ -1003,9 +897,10 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
                         class="responsive-table">
                         <tr>
-                            <td style="border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
-                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
-                                    cellpadding="0">
+                            <td
+                                style="background-color: #fbfbfb;  background: #fbfbfb; border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
+                                <table bgcolor="#fbfbfb" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0" class="dark-mode-bg">
                                     <tbody>
                                         <tr>
                                             <td>
@@ -1013,20 +908,25 @@
                                                     cellpadding="0">
                                                     <tr>
                                                         <td class="badges-padding">
-                                                            <img src="https://clientstaging.space/emailer-images/cls-location.jpg"
-                                                                alt="location img" class="img-max"
-                                                                style="display: block; margin: 0 auto; display: block; width: 100%; height: auto;">
+                                                            <a href="https://marketing.expertmri.com/claustrophobia">
+                                                                <img src="https://clientstaging.space/emailer-images/cls-location.jpg"
+                                                                    width="600" height="auto" border="0"
+                                                                    alt="location img" class="img-hero"
+                                                                    style="width: 100%; height: auto; display: block;">
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
 
                                         </tr>
-                                        <tr style="display: block; margin: 20px auto 60px; " class="button-tr">
-                                            <td align="center" class="padding-copy" style="display: block;">
-                                                <a href="https://www.google.com"
-                                                    style="display: block; margin: 0 auto; max-width: 305px; width: 100%; border-radius: 8px; background: #4E6CDD; color: #ffffff ; padding: 19px 20px; text-decoration: none; font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px;">
-                                                    Schedule an appointment
+                                        <tr
+                                            style="display: block; padding: 0 20px; margin: 50px auto 60px; background-color: #fbfbfb; ">
+                                            <td align="center" class="padding-copy "
+                                                style=" display: block; margin: 0 auto; max-width: 305px; padding: 19px 20px;  border-radius: 8px; background: #4E6CDD;  text-decoration: none;">
+                                                <a href="https://marketing.expertmri.com/claustrophobia" class=""
+                                                    style=" color: #ffffff ;  font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px; text-decoration: none;">
+                                                    Schedule an Appointment
                                                 </a>
                                             </td>
                                         </tr>
@@ -1043,28 +943,31 @@
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tbody>
                 <tr>
-                    <td align="center" style="padding: 0  15px 0  15px;" class="section-padding">
-                        <table bgcolor="#ffffff" role="presentation" border="0" cellpadding="0" cellspacing="0"
+                    <td align="center" style="padding: 0  15px 100px;" class="section-padding bottom-only">
+                        <table bgcolor="#fbfbfb" role="presentation" border="0" cellpadding="0" cellspacing="0"
                             width="600" class="responsive-table">
                             <tbody>
-                                <tr>
-                                    <td style="border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9;">
-                                        <table bgcolor="#ffffff" style="width: 100%; text-align: center; ">
+                                <tr style="background-color: #fbfbfb; background: #fbfbfb;">
+                                    <td
+                                        style="background-color: #fbfbfb; border-left: 1px solid #C9C9C9; border-right: 1px solid #C9C9C9; border-bottom: 1px solid #C9C9C9; background: #fbfbfb;">
+                                        <table bgcolor="#fbfbfb" style="width: 100%; text-align: center; "
+                                            class="dark-mode-bg">
                                             <tbody>
-
-                                                <tr
-                                                    style="display: block; width: 100%; margin-bottom: 40px; background-color: #ffffff;">
-                                                    <td style="display: block; width: 100%;  " class="footer-logo">
+                                                <tr class="foo-tr"
+                                                    style="display: block; width: 100%; margin-bottom: 40px; background-color: #fbfbfb; background: #fbfbfb;">
+                                                    <td style="display: block; width: 100%; background-color: #fbfbfb; background: #fbfbfb; "
+                                                        class="footer-logo">
                                                         <a style="outline: none; display: block;"
-                                                            href="https://marketing.expertmri.com/lp-expert-ct-new">
+                                                            href="https://marketing.expertmri.com/claustrophobia">
                                                             <img class="exp-footer exp-mri-logo-footer"
-                                                                style="max-width: 322px; width: 100%; margin: auto;"
-                                                                src="https://clientstaging.space/emailer-images/footer-logo.png"
+                                                                style="max-width: 322px;  margin: 0 auto;"
+                                                                src="https://clientstaging.space/emailer-images/cls-footer-logo.jpg" width="322" height="auto"
                                                                 alt="Expert MRI-logo">
                                                         </a>
                                                     </td>
                                                 </tr>
-                                                <tr style="display: block; width: 100%; margin-bottom: 40px; background-color: #ffffff;"
+                                                <tr class="foo-tr"
+                                                    style="display: block; width: 100%; margin-bottom: 40px; background-color: #fbfbfb; background: #fbfbfb;"
                                                     class="footer-media-gap">
                                                     <td style="display: block; width: 100%; padding: 0 40px;"
                                                         class="footer-media">
@@ -1076,46 +979,51 @@
                                                                 class="footer-body-social">
                                                                 <tr style="display: inline-block;"
                                                                     class="social-padding">
-                                                                    <td>
+                                                                    <td
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb;">
                                                                         <a style="display: inline-block; padding:8px 15px;"
                                                                             href="https://www.facebook.com/expertmri">
                                                                             <img style=" display: inline-block; margin: auto;"
-                                                                                src="https://clientstaging.space/emailer-images/cls-facebook.png"
+                                                                                src="https://clientstaging.space/emailer-images/cls-facebook.jpg"
                                                                                 alt="facebook">
                                                                         </a>
                                                                     </td>
-                                                                    <td>
+                                                                    <td
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb;">
                                                                         <a style="display: inline-block; padding:8px 15px;"
                                                                             href="https://www.instagram.com/ExpertMRI">
                                                                             <img style=" display: inline-block; margin: auto;"
-                                                                                src="https://clientstaging.space/emailer-images/cls-instagram.png"
+                                                                                src="https://clientstaging.space/emailer-images/cls-instagram.jpg"
                                                                                 alt="instagram">
                                                                         </a>
                                                                     </td>
-                                                                    <td>
+                                                                    <td
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb;">
                                                                         <a style="display: inline-block; padding:8px 15px;"
                                                                             href="https://www.youtube.com/channel/UCN8HBDqaOvN8gf2pJ48_ZNQ">
                                                                             <img style=" display: inline-block; margin: auto;"
-                                                                                src="https://clientstaging.space/emailer-images/cls-youtube.png"
+                                                                                src="https://clientstaging.space/emailer-images/cls-youtube.jpg"
                                                                                 alt="youtube">
                                                                         </a>
                                                                     </td>
                                                                 </tr>
-                                                                <tr style="display: inline-block;">
-                                                                    <td>
+                                                                <tr style="display: inline-block; ">
+                                                                    <td
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb;">
                                                                         <a style="display: inline-block; padding:8px 15px;"
                                                                             href="https://www.linkedin.com/company/expert-mri-medical-diagnostics">
                                                                             <img style=" display: inline-block; margin: auto;"
-                                                                                src="https://clientstaging.space/emailer-images/cls-linkedln.png"
+                                                                                src="https://clientstaging.space/emailer-images/cls-linkedln.jpg"
                                                                                 alt="linkedin">
                                                                         </a>
                                                                     </td>
 
-                                                                    <td>
+                                                                    <td
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb;">
                                                                         <a style="display: inline-block; padding:8px 15px;"
                                                                             href="https://twitter.com/Expert_MRI">
                                                                             <img style=" display: inline-block; margin: auto;"
-                                                                                src="https://clientstaging.space/emailer-images/cls-twitter.png"
+                                                                                src="https://clientstaging.space/emailer-images/cls-twitter.jpg"
                                                                                 alt="twitter">
                                                                         </a>
                                                                     </td>
@@ -1124,16 +1032,20 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                <tr class="footer-border" style="background-color: #ffffff;">
+
+                                                <!-- take -->
+
+                                                <tr class="footer-border"
+                                                    style="background-color: #fbfbfb; background: #fbfbfb;">
                                                     <td style="display: block; width: 100%;   padding: 0 40px ; "
-                                                        class="footer-details">
-                                                        <table bgcolor="#ffffff" role="presentation" width="100%"
+                                                        align="middle" valign="middle" class="footer-details">
+                                                        <table bgcolor="#fbfbfb" role="presentation" width="100%"
                                                             border="0" cellspacing="0" cellpadding="0">
                                                             <tbody>
                                                                 <tr>
                                                                     <td class=""
-                                                                        style="border-top: 1px solid #033D5A50; padding: 40px 0 0;">
-                                                                        <a href="#"
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb; border-top: 1px solid #033D5A50; padding: 40px 0 0; text-align: center;">
+                                                                        <a href="tel:(877)-MRI-8888"
                                                                             style="color: #033D5A; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.32px; text-decoration: none;"
                                                                             class="paragraph">
                                                                             <img src="https://clientstaging.space/emailer-images/cls-call-logo.png"
@@ -1144,7 +1056,8 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td class="">
+                                                                    <td class=""
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb; text-align: center;">
                                                                         <a href="tel:(877)-MRI-8888"
                                                                             style="color: #033D5A; font-family: Helvetica; font-size: 24px; font-style: normal; font-weight: 400; line-height: 170%; letter-spacing: 0.32px; "
                                                                             class="paragraph number">
@@ -1157,27 +1070,26 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                <tr style="background-color: #ffffff;">
-                                                    <td style="display: block; width: 100%;   padding: 0 40px ; "
+                                                <tr style="background-color: #fbfbfb; background: #fbfbfb;">
+                                                    <td style="display: inline-block; padding: 30px;"
                                                         class="footer-details">
-                                                        <table bgcolor="#ffffff" role="presentation" width="100%"
-                                                            border="0" cellspacing="0" cellpadding="0">
+                                                        <table role="presentation" cellpadding="0">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td class="" style=" padding: 40px 0 0;">
-                                                                        <a href="#"
+                                                                    <td>
+                                                                        <a href="mailto:scheduling@expertmri.com"
                                                                             style="color: #033D5A; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.32px; text-decoration: none;"
                                                                             class="paragraph">
                                                                             <img src="https://clientstaging.space/emailer-images/cls-mail-logo.png"
                                                                                 alt="mail button logo"
-                                                                                style="vertical-align: middle; margin-right: 12px;">
+                                                                                style="vertical-align: top; margin-right: 12px;">
                                                                             Email us
                                                                         </a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td class="last-footer-td"
-                                                                        style="padding: 0 0 60px;">
+                                                                    <td
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb;">
                                                                         <a href="mailto:scheduling@expertmri.com"
                                                                             style="color: #033D5A; font-family: Helvetica; font-size: 24px; font-style: normal; font-weight: 400; line-height: 170%; letter-spacing: 0.32px; "
                                                                             class="paragraph number">
@@ -1185,7 +1097,27 @@
                                                                         </a>
                                                                     </td>
                                                                 </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
 
+                                                </tr>
+                                                <tr style="background-color: #fbfbfb;">
+                                                    <td style="display: inline-block; padding:0 0 40px;"
+                                                        class="footer-details">
+                                                        <table role="presentation" cellpadding="0">
+                                                            <tbody>
+                                                                
+                                                                <tr>
+                                                                    <td
+                                                                        style="background-color: #fbfbfb; background: #fbfbfb;">
+                                                                        <a href="https://expertmri.com/"
+                                                                            style="color: #033D5A; font-family: Helvetica; font-size: 16px; font-style: normal; font-weight: 400; line-height: 170%; letter-spacing: 0.32px;text-decoration: none; "
+                                                                            class="paragraph number">
+                                                                            www.expertmri.com
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </td>

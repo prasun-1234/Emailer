@@ -1,0 +1,164 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="600px" />
+    <mj-font name="Helvetica" href="https://fonts.cdnfonts.com/css/helvetica-neue-55" />
+    <mj-attributes>
+      <mj-all color="#033D5A" font-family="'Helvetica Neue, sans-serif'" padding="0" />
+      <mj-class name="border-radius" border-radius="8px" />
+      <mj-class name="top-border" border-radius="8px 8px 0 0" />
+      <mj-class name="bottom-border" border-radius="0 0 8px 8px" />
+      <mj-class name="border" border="1px solid red" />
+      <mj-class name="custom" display="inline-block" />
+
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#CEF3FF">
+    <!--     header logo     -->
+    <mj-section background-color="#1E0C46" mj-class="top-border">
+      <mj-column padding="40px 0 25px">
+        <mj-image href="https://expertmri.com" align="center" width="250px" src="https://clientstaging.space/emailer-images/atr-header-logo.jpg" alt="expert mri logo" />
+      </mj-column>
+    </mj-section>
+
+    <!--     warning section    -->
+    <mj-section background-color="#1E0C46" padding="0 20px">
+      <mj-column background-color="#749DEC" mj-class="border-radius">
+        <mj-text align="center" color="#ffffff" background-color="#749DEC" padding="16px" font-family="Helvetica,sans-serif" font-size="14px" font-weight="700">
+          PLEASE DO NOT REPLY TO THIS EMAIL. THIS MAILBOX IS NOT MONITORED.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!--     sections wrapper     -->
+    <mj-wrapper background-color="#1E0C46" padding="12px 20px">
+      <!--     letter head section     -->
+      <mj-section background-color="#ffffff" padding="20px" mj-class="top-border">
+        <mj-column>
+          <mj-text font-family="Helvetica,sans-serif" font-size="18px" font-weight="700">
+            Dear [Attorney Name],
+          </mj-text>
+          <mj-text font-family="Helvetica,sans-serif" font-size="14px" font-weight="400" align="justify" padding="12px 0" line-height="160%">
+            At <strong>Expert MRI, PC,</strong> we are committed to delivering the best possible service to our clients,
+            and your feedback is invaluable in helping us achieve that goal. To make it even easier
+            for you to keep us updated on the progress of your cases, we are excited to introduce Injury Claim Status,
+            a user-friendly feature that will streamline the statusing process.
+          </mj-text>
+          <mj-text font-family="Helvetica,sans-serif" font-size="18px" font-weight="700" align="justify" line-height="160%">
+            Here's how it works:
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     two column section 1     -->
+      <mj-section background-color="#ffffff" padding="0 20px 30px">
+        <mj-column width="15%">
+          <mj-image width="60px" height="60px" align="left" src="https://clientstaging.space/emailer-images/atr-recieved-mail.png" alt="email logo with message notification" padding="0 0 10px 0" />
+        </mj-column>
+        <mj-column width="85%">
+          <mj-text font-family="Helvetica,sans-serif" font-size="18px" font-weight="700" padding="0 0 10px" align="left" line-height="160%">
+            Receive an Email Notification
+          </mj-text>
+          <mj-text font-family="Helvetica,sans-serif" font-size="14px" font-weight="400" align="justify" line-height="160%">
+            Periodically, you will receive an email from us with a list of your active cases that require a status update.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     two column section 2     -->
+      <mj-section background-color="#ffffff" padding="0 20px 30px">
+        <mj-column width="15%">
+          <mj-image width="60px" height="60px" align="left" src="https://clientstaging.space/emailer-images/atr-open-mail.png" alt="email logo" padding="0 0 10px 0" />
+        </mj-column>
+        <mj-column width="85%">
+          <mj-text font-family="Helvetica,sans-serif" font-size="18px" font-weight="700" padding="0 0 10px" align="left" line-height="160%">
+            Convenient Drop-Down Menu
+          </mj-text>
+          <mj-text font-family="Helvetica,sans-serif" font-size="14px" font-weight="400" align="justify" line-height="160%">
+            In the email, you will find a drop-down menu next to each case, where you can easily select the appropriate status
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     two column section 3     -->
+      <mj-section background-color="#ffffff" padding="0 20px 30px">
+        <mj-column width="15%">
+          <mj-image width="60px" height="60px" align="left" src="https://clientstaging.space/emailer-images/atr-mail-logo.png" alt="flying email logo " padding="0 0 10px 0" />
+        </mj-column>
+        <mj-column width="85%">
+          <mj-text font-family="Helvetica,sans-serif" font-size="18px" font-weight="700" padding="0 0 10px" align="left" line-height="160%">
+            Submit with a Single Click
+          </mj-text>
+          <mj-text font-family="Helvetica,sans-serif" font-size="14px" font-weight="400" align="justify" line-height="160%">
+            Once you've made your selections, simply click the "Submit" button in the email, and your updates will be sent directly to our team.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     paragraph section     -->
+      <mj-section background-color="#ffffff" padding="0 20px 30px">
+        <mj-column>
+          <mj-text font-family="Helvetica,sans-serif" font-size="14px" font-weight="400" align="justify" line-height="160%" padding="0 0 25px">
+            Injury Claim Status eliminates the need for lengthy phone calls or detailed written updates,
+            making it more convenient than ever to communicate with us regarding your cases.
+          </mj-text>
+          <mj-text font-family="Helvetica,sans-serif" font-size="14px" font-weight="400" align="justify" line-height="160%" padding="0">
+            Thank you for choosing Expert MRI, PC as your trusted partner. We look forward to
+            making our collaboration even more seamless and productive with this new feature.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     regards section     -->
+      <mj-section background-color="#ffffff" padding="0 20px 30px" mj-class="bottom-border">
+        <mj-column>
+          <mj-text font-family="Helvetica,sans-serif" font-size="18px" font-weight="700" align="justify" line-height="160%" padding="0">
+            Warm regards,
+          </mj-text>
+          <mj-text font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" align="justify" line-height="160%" padding="0">
+            Collections Department
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+    </mj-wrapper>
+
+
+    <!--     social media handeler     -->
+    <mj-section background-color="#1E0C46" padding="30px 5%">
+      <mj-column>
+        <mj-social font-size="15px" icon-size="24px" mode="horizontal" align="center">
+          <mj-social-element padding="15px" name="youtube" background-color="#1E0C46" src="https://clientstaging.space/emailer-images/atr-youtube.jpg" href="https://www.youtube.com/channel/UCN8HBDqaOvN8gf2pJ48_ZNQ"></mj-social-element>
+          <mj-social-element padding="15px" name="facebook" background-color="#1E0C46" src="https://clientstaging.space/emailer-images/atr-facebook.jpg" href="https://www.facebook.com/expertmri/"></mj-social-element>
+          <mj-social-element padding="15px" name="instagram" background-color="#1E0C46" src="https://clientstaging.space/emailer-images/atr-instagram.jpg" href="https://www.instagram.com/ExpertMRI/"></mj-social-element>
+          <mj-social-element padding="15px" name="twitter" background-color="#1E0C46" src="https://clientstaging.space/emailer-images/atr-twitter.jpg" href="https://twitter.com/Expert_MRI"></mj-social-element>
+          <mj-social-element padding="15px" name="linkedln" background-color="#1E0C46" src="https://clientstaging.space/emailer-images/atr-linkedln.jpg" href="https://www.linkedin.com/company/expert-mri-medical-diagnostics/"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!--     link section     -->
+    <mj-section background-color="#1E0C46" padding="30px 5%" mj-class="bottom-border">
+      <mj-column padding="0 0 20px">
+        <mj-navbar base-url="mailto:" align="center">
+          <mj-navbar-link href="collections@expertmri.com" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="capitalize">Email us </mj-navbar-link>
+        </mj-navbar>
+        <mj-navbar base-url="mailto:" align="center">
+          <mj-navbar-link href="collections@expertmri.com" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="small">collectsion@expertmrip.com</mj-navbar-link>
+        </mj-navbar>
+      </mj-column>
+      <mj-column>
+        <mj-navbar base-url="tel:" align="center">
+          <mj-navbar-link href="877-MRI-8888" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="capitalize">Phone</mj-navbar-link>
+        </mj-navbar>
+        <mj-navbar base-url="tel:" align="center">
+          <mj-navbar-link href="877-MRI-8888" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="small">877-MRI-8888</mj-navbar-link>
+        </mj-navbar>
+      </mj-column>
+
+
+    </mj-section>
+
+
+  </mj-body>
+</mjml>

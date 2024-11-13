@@ -1,0 +1,15 @@
+{
+	"name": "costa-mesa",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "mjml --watch src/index.mjml --output src/index.html",
+		"server": "live-server --host=localhost --open=src",
+		"dev": "concurrently \"yarn start\" \"yarn server\"",
+		"build": "mjml src/index.mjml --output src/index.html"
+	},
+	"devDependencies": {
+		"mjml": "^4.15.3"
+	}
+}

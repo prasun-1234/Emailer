@@ -1,0 +1,289 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="600px" />
+    <mj-font name="Helvetica" href="https://fonts.cdnfonts.com/css/helvetica-neue-55" />
+    <mj-attributes>
+      <mj-all color="#033D5A" font-family="'Helvetica Neue, sans-serif'" padding="0" />
+      <mj-class name="border-radius" border-radius="8px" />
+      <mj-class name="top-border" border-radius="8px 8px 0 0" />
+      <mj-class name="bottom-border" border-radius="0 0 8px 8px" />
+      <mj-class name="border" border="1px solid red" />
+      <mj-class name="custom" display="inline-block" />
+      <mj-class name="section-border-right" border-right="2px solid rgba(0, 0, 0, 0.40)" />
+      <mj-class name="section-border-left" border-left="2px solid rgba(0, 0, 0, 0.40)" />
+
+    </mj-attributes>
+    <mj-raw>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </mj-raw>
+
+    <mj-style inline="inline">
+      @media screen and (prefers-color-scheme: dark) {
+        .dark-text {
+          color: #fff !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#CEF3FF" background="#FFF">
+    <!-- <mj-wrapper mj-class="section-border-right section-border-left">
+      <mj-hero mode="fixed-height" height="323px" background-width="600px" css-class="section-border" background-height="323px" background-url="https://clientstaging.space/emailer-images/thank-you-mailer/group2.jpg" background-color="#2a3448">
+       
+      </mj-hero>
+    </mj-wrapper> -->
+    <mj-wrapper mj-class="section-border-right section-border-left">
+      <mj-section>
+        <mj-column width="100%">
+          <mj-image href="https://expertmri.com/" src="https://clientstaging.space/emailer-images/thank-you-mailer/group2.jpg" alt="hero img" width="600px" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-wrapper mj-class="section-border-right section-border-left" background-color="#FFFFFF">
+      <mj-section>
+        <mj-column width="600px" padding="24px">
+          <mj-text color="#033D5A" font-family="Helvetica Neue" font-size="18px" font-style="normal" font-weight="400" line-height="33px" text-transform="capitalize">
+            Dear [Recipient's Name],
+          </mj-text>
+          <mj-text color="#033D5A" font-family="Helvetica Neue" font-size="18px" font-style="normal" font-weight="400" line-height="33px" text-transform="capitalize">
+            Thank you for visiting our booth at CAALA! We hope you discovered how ExpertMRI is transforming diagnostic imaging.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-wrapper mj-class="section-border-right section-border-left" background-color="#063851">
+
+      <mj-section>
+        <mj-column width="600px" padding="0">
+          <mj-image href="https://expertmri.com/" src="https://clientstaging.space/emailer-images/thank-you-mri-text.jpg" alt="mri machine" width="600px" padding='0 0 0 0 ' />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-wrapper mj-class="section-border-right section-border-left" background-color="#FFFFFF">
+      <mj-section>
+        <mj-column width="600px" padding="24px">
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Superior Image Quality:
+            </span>
+            <span style="font-weight:400">
+              Twice the magnetic strength for highly detailed images.
+            </span>
+
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Early and Accurate Detection:
+            </span>
+            <span style="font-weight:400">
+              Identifies subtle brain changes for precise TBI diagnosis.
+            </span>
+
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Advanced NeuroQuant Analysis:
+            </span>
+            <span style="font-weight:400">
+              Assesses brain volume changes for better TBI management.
+            </span>
+
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Reduced Scan Time:
+            </span>
+            <span style="font-weight:400">
+              Shorter scan times with improved image clarity.
+            </span>
+
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px">
+            <span style="font-weight:700">
+              Comprehensive TBI Evaluation:
+            </span>
+            <span style="font-weight:400">
+              Ideal for assessing all levels of TBI for personalized care.
+            </span>
+
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="23px 0 45px 0">
+        <mj-column width="600px">
+          <mj-button border-radius="8px" background-color="#496BC0" color="#FFF" font-family="Helvetica" font-size="18px" font-style="normal" font-weight="700" line-height="180%" text-transform="uppercase" href="https://expertmri.com/">
+
+            Let’s Talk
+
+          </mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-wrapper mj-class="section-border-right section-border-left">
+      <mj-section>
+        <mj-column width="100%">
+          <mj-image href="https://expertmri.com/" src="https://clientstaging.space/emailer-images/thank-you-mailer/brain-mri-img.jpg" alt="brain mri image" width="600px" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-wrapper mj-class="section-border-right section-border-left" background-color="#FFFFFF">
+      <mj-section>
+        <mj-column width="600px" padding="24px 35px 40px">
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Detects Subtle Brain Changes:
+            </span>
+            <span style="font-weight:400">
+              Identifies microstructural damage in the brain's white matter.
+            </span>
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Enhanced Diagnostic Accuracy:
+            </span>
+            <span style="font-weight:400">
+              Provides detailed insights into TBI-related brain abnormalities.
+            </span>
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Maps Brain Connectivity:
+            </span>
+            <span style="font-weight:400">
+              Visualizes disrupted neural pathways for a comprehensive evaluation.
+            </span>
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Reduced Scan Time:
+            </span>
+            <span style="font-weight:400">
+              Shorter scan times with improved image clarity.
+            </span>
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Guides Personalized Treatment:
+            </span>
+            <span style="font-weight:400">
+              Helps tailor rehabilitation plans based on specific brain injuries.
+            </span>
+          </mj-text>
+          <mj-text color="#063851" font-family="Helvetica" font-size="18px" font-style="normal" line-height="33px" padding="0 0 18px 0">
+            <span style="font-weight:700">
+              Monitors Recovery Progress:
+            </span>
+            <span style="font-weight:400">
+              Tracks brain changes over time for effective treatment assessment.
+            </span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column width="600px">
+          <mj-button border-radius="8px" background-color="#496BC0" color="#FFF" font-family="Helvetica" font-size="18px" font-style="normal" font-weight="700" line-height="180%" text-transform="uppercase" href="https://expertmri.com/">
+            Let’s Talk
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+    <mj-wrapper mj-class="section-border-right section-border-left" background-color="#FFFFFF">
+      <mj-section>
+        <mj-column width="600px" padding="60px 54px 0px">
+          <mj-text color="#033D5A" align="center" font-family="Helvetica" font-size="18px" font-style="normal" font-weight="400" line-height="33px">
+            Experience the next level of care with ExpertMRI.Schedule your appointment today and see the difference our advanced technology can make.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column width="600px" padding="20px 54px 24px">
+          <mj-text color="#033D5A" align="center" font-family="Helvetica" font-size="18px" font-style="normal" font-weight="400" line-height="33px">
+            Warm regards,
+          </mj-text>
+          <mj-text color="#033D5A" align="center" font-family="Helvetica" font-size="18px" font-style="normal" font-weight="700" line-height="33px">
+
+            The ExpertMRI Team
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column width="600px">
+          <mj-image src="https://clientstaging.space/emailer-images/thank-you-mailer/Frame%201601.png" alt="mri mechine " width="600px" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- footer section start-->
+    <mj-wrapper mj-class="section-border-right section-border-left">
+
+      <mj-section background-color="#033D5A" padding="20px 0 0 0">
+        <mj-column width="100%" mj-class="border-padding">
+          <mj-image src="https://clientstaging.space/emailer-images/3t-mri/exp.jpg" alt="" width="276px" href="https://expertmri.com/" />
+        </mj-column>
+      </mj-section>
+      <!--     social media handeler     -->
+      <mj-section background-color="#033D5A" padding="20px 20px 35px">
+        <mj-column>
+          <mj-social font-size="15px" icon-size="24px" mode="horizontal" align="center">
+            <mj-social-element padding="15px" name="youtube" background-color="#033D5A" src="https://clientstaging.space/emailer-images/3t-mri/YouTube,%20Negative.png" href="https://www.youtube.com/channel/UCN8HBDqaOvN8gf2pJ48_ZNQ"></mj-social-element>
+            <mj-social-element padding="15px" name="facebook" background-color="#033D5A" src="https://clientstaging.space/emailer-images/3t-mri/Facebook,%20Negative.png" href="https://www.facebook.com/expertmri/"></mj-social-element>
+            <mj-social-element padding="15px" name="instagram" background-color="#033D5A" src="https://clientstaging.space/emailer-images/3t-mri/Instagram,%20Negative.png" href="https://www.instagram.com/ExpertMRI/"></mj-social-element>
+            <mj-social-element padding="15px" name="twitter" background-color="#033D5A" src="https://clientstaging.space/emailer-images/3t-mri/X,%20Negative.png" href="https://twitter.com/Expert_MRI"></mj-social-element>
+            <mj-social-element padding="15px" name="linkedln" background-color="#033D5A" src="https://clientstaging.space/emailer-images/3t-mri/LinkedIn,%20Negative.png" href="https://www.linkedin.com/company/expert-mri-medical-diagnostics/"></mj-social-element>
+          </mj-social>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-wrapper mj-class="section-border-right section-border-left">
+
+      <mj-section background-color="#033D5A">
+        <mj-column width="100%">
+          <mj-navbar base-url="tel:" align="center">
+            <mj-navbar-link href="877-MRI-8888" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="capitalize">
+              <img src="https://clientstaging.space/emailer-images/thank-you-phone.jpg" valign="middle" alt="internet logo" style="margin-right: 12px;" />
+              Schedule an appointment now
+            </mj-navbar-link>
+          </mj-navbar>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#033D5A">
+        <mj-column width="100%" mj-class="border-padding">
+          <mj-navbar base-url="https:/" align="center">
+            <mj-navbar-link href="877-MRI-8888" color="#FFFFFF" font-family="Helvetica,sans-serif" font-size="24px" font-weight="700" line-height="170%" padding="0 0 15px 0">(877)-MRI-8888</mj-navbar-link>
+          </mj-navbar>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#033D5A">
+        <mj-column padding="0 0 20px">
+          <mj-navbar base-url="mailto:" align="center">
+            <mj-navbar-link href="collections@expertmri.com" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="capitalize">
+              <img src="https://clientstaging.space/emailer-images/thank-you-mail.jpg" valign="middle" alt="mail logo" style="margin-right: 12px;" />
+
+              Email us
+            </mj-navbar-link>
+          </mj-navbar>
+          <mj-navbar base-url="mailto:" align="center">
+            <mj-navbar-link href="scheduling@expertmri.com" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="small">scheduling@expertmri.com</mj-navbar-link>
+          </mj-navbar>
+        </mj-column>
+        <mj-column>
+          <mj-navbar base-url="https:/" align="center">
+
+            <mj-navbar-link href="/expertmri.com/" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="capitalize">
+              <img src="https://clientstaging.space/emailer-images/thank-you-internet.jpg" valign="middle" alt="internet logo" style="margin-right: 12px;" />
+
+              Visit us
+            </mj-navbar-link>
+          </mj-navbar>
+          <mj-navbar base-url="https:/" align="center">
+            <mj-navbar-link href="/expertmri.com/" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="180%" color="#ffffff" text-transform="small">www.expertmri.com</mj-navbar-link>
+          </mj-navbar>
+        </mj-column>
+
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>

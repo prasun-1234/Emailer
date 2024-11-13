@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calcium Scoring emailer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+        /* CLIENT-SPECIFIC STYLES */
+        #outlook a {
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Force Outlook to provide a "view in browser" message */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Force Hotmail to display normal line spacing */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Remove spacing between tables in Outlook 2007 and up */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Allow smoother rendering of resized image in Internet Explorer */
+
+        /* RESET STYLES */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            font-family: Helvetica Neue, sans-serif;
+            color: #033D5A;
+        }
+
+        /* iOS BLUE LINKS */
+        .appleBody a {
+            color: #68440a;
+            text-decoration: none;
+        }
+
+        .appleFooter a {
+            color: #999999;
+            text-decoration: none;
+        }
+
+        .button-primary {
+            display: block;
+            max-width: 320px;
+            width: 100%;
+            border-radius: 6px;
+            background: #338CCA;
+            color: #ffffff;
+            padding: 20px 60px;
+            text-decoration: none;
+            font-family: 'Helvetica ', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%;
+            letter-spacing: 0.2px;
+        }
+
+        .img-max {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .paragraph {
+            color: #033D5A;
+            font-family: 'Helvetica ', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 190%;
+            letter-spacing: 0.16px;
+        }
+
+        .hel-header {
+            color: #033D5A;
+            text-align: center;
+            font-family: 'Helvetica ', sans-serif;
+            font-size: 31px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 0.31px;
+        }
+
+        .column-header {
+            color: #1A4361;
+            text-align: left;
+            font-family: 'Helvetica ', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 148%;
+            letter-spacing: 0.24px;
+        }
+
+
+
+
+
+
+
+
+        /* MOBILE STYLES */
+        @media screen and (max-width: 600px) {
+
+            /* ALLOWS FOR FLUID TABLES */
+            table[class="wrapper"] {
+                width: 100% !important;
+            }
+
+            td[class="padding-both"] {
+                padding: 0 15px !important;
+            }
+
+            td[class="column-header"],
+            span.column-header {
+                font-size: 25px !important;
+            }
+
+            td[class="paragraph"],
+            span.paragraph, a.paragraph {
+                font-size: 14px !important;
+            }
+
+            td[class="padding-top"] {
+                padding-top: 30px !important;
+            }
+
+            td[class="hero-text"] {
+                padding: 25px 15px !important;
+            }
+
+            td[class="hero-para-padding"] {
+                padding: 25px 15px !important;
+            }
+
+            td[class="hero-button-padding"] {
+                padding: 25px 0 0 !important;
+            }
+
+            td[class="column-header custom-text"] {
+                padding: 25px 0 0 !important;
+                font-size: 25px !important;
+            }
+            td[class="footer-media"] {
+                padding: 25px 0 0 !important;
+            }
+
+
+            td img.img-round-box {
+                width: 170px !important;
+                height: 170px !important;
+            }
+
+            td img.img-max-banner {
+                width: 100% !important;
+                height: 100% !important;
+            }
+
+
+
+
+            /* ADJUSTS LAYOUT OF LOGO IMAGE */
+            td[class="logo"] {
+                text-align: left;
+                padding: 20px 0 20px 0 !important;
+            }
+
+            td[class="logo"] img {
+                margin: 0 auto !important;
+            }
+
+            /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+            td[class="mobile-hide"] {
+                display: none;
+            }
+
+            img[class="mobile-hide"] {
+                display: none !important;
+            }
+
+            img[class="img-max"] {
+                max-width: 100% !important;
+                height: auto !important;
+                width: auto !important;
+
+            }
+
+            td img.exp-footer {
+                max-width: 200px;
+            }
+
+            /* FULL-WIDTH TABLES */
+            table[class="responsive-table"] {
+                width: 100% !important;
+            }
+
+            /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+            td[class="padding"] {
+                padding: 10px 5% 15px 5% !important;
+            }
+
+            td[class="padding-copy"] {
+                padding: 10px 5% 10px 5% !important;
+                text-align: center;
+            }
+
+            td[class="padding-meta"] {
+                padding: 30px 5% 0px 5% !important;
+                text-align: center;
+            }
+
+            td[class="no-pad"] {
+                padding: 0 0 20px 0 !important;
+            }
+
+            td[class="no-padding"] {
+                padding: 0 !important;
+            }
+
+            td[class="section-padding"] {
+                padding: 0 15px 0 15px !important;
+            }
+
+            td[class="section-padding-bottom-image"] {
+                padding: 0px 15px 0 15px !important;
+            }
+
+            /* ADJUST BUTTONS ON MOBILE */
+            td[class="mobile-wrapper"] {
+                padding: 10px 5% 15px 5% !important;
+            }
+
+            table[class="mobile-button-container"] {
+                margin: 0 auto;
+                width: 100% !important;
+            }
+
+            a[class="mobile-button"] {
+                width: 80% !important;
+                padding: 15px !important;
+                border: 0 !important;
+                font-size: 16px !important;
+            }
+
+            td img.img-hero {
+                width: 100% !important;
+            }
+
+        }
+        @media screen and (max-width:480px){
+            td img.footer-icons{
+                width: 26px !important;
+                height: 26px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #FCFCFC">
+
+    <!-- Some preview text. -->
+    <div style="display: none; max-height: 0; overflow: hidden;">
+
+    </div>
+    <!-- Get rid of unwanted preview text. -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+        &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+    </div>
+
+    <center class="wrapper" style=" width: 100%; table-layout: fixed; background-color: #FCFCFC">
+
+        <!--HEADER HERO -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" style="padding: 0;" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr>
+                            <td style="border-left: 1px solid #A6CBDE; border-right: 1px solid #A6CBDE;">
+                                <table bgcolor="#E1F8FF" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td>
+                                            <a href="https://marketing.expertmri.com/" target="_blank">
+                                                <img src="https://clientstaging.space/emailer-images/cal-s-header-logo2.jpg" border="0"
+                                                    alt="Expert mri logo inside a half circle" class="img-max">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0 40px;" class="padding-both">
+                                            <table bgcolor="#E1F8FF" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="column-header"
+                                                        style="display: block;  text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 46px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px;">
+                                                        Calcium Scoring test
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="paragraph"
+                                                        style="display: block; padding-top: 12px; text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px; max-width: 380px; margin: 0 auto;">
+                                                        Calcium Scoring Tests detect early heart disease, enabling
+                                                        timely treatment
+                                                        and prevention
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="padding: 32px 0 0;">
+                                                        <a href="https://marketing.expertmri.com/lp-expert-calcium/" class="button-primary"
+                                                            style="display: block; margin: 0 auto; max-width: 320px; width: 100%; border-radius: 6px; background: #338CCA; color: #ffffff ; padding: 19px 20px; text-decoration: none; font-family: 'Helvetica ', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px;">
+                                                            Request An Appointment
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 60px;" class="padding-top">
+                                            <a href="https://marketing.expertmri.com/lp-expert-calcium/" target="_blank">
+                                                <img src="https://clientstaging.space/emailer-images/cal-s-red-heart.jpg" border="0"
+                                                    alt="Expert mri logo inside a half circle" class="img-max">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- CALCIUM SCORING TEST -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr bgcolor="#ffffff">
+                            <td style="border-left: 1px solid #A6CBDE; border-right: 1px solid #A6CBDE;">
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td class="hero-text" style="padding: 32px 40px 40px">
+                                            <table role="presentation" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tr>
+                                                    <td align="center">
+                                                        <span class="column-header"
+                                                            style="display: block;  text-align: center; color: #033D5A; font-family: 'Helvetica', sans-serif; font-size: 46px; font-style: normal; font-weight: 400; line-height: 140%; letter-spacing: 0.46px; max-width: 480px;">
+                                                            What is calcium scoring test?
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="https://marketing.expertmri.com/lp-expert-calcium/" target="_blank">
+                                                <img src="https://clientstaging.space/emailer-images/cal-s-chest.jpg" alt="chest mri photo"
+                                                    class="img-max">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table bgcolor="#033D5A" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td style="padding: 50px 40px;" class="hero-para-padding">
+                                                        <table role="presentation" width="100%" border="0"
+                                                            cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="paragraph"
+                                                                    style="display: block;  text-align: center; color: #ffffff; font-family: 'Helvetica', sans-serif; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.16px; max-width: 457px; margin: 0 auto;">
+                                                                    A Calcium Scoring Test is a quick, painless CT scan
+                                                                    that detects calcium buildup in your heart's
+                                                                    arteries.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="paragraph"
+                                                                    style="display: block; padding-top: 25px;  text-align: center; color: #ffffff; font-family: 'Helvetica', sans-serif; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.16px; max-width: 457px; margin: 0 auto;">
+                                                                    This buildup indicates plaque, which can lead to
+                                                                    heart disease, and the test helps determine your
+                                                                    individual risk.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" style="padding: 32px 0 0;"
+                                                                    class="hero-button-padding">
+                                                                    <a href="tel:(877) 674-8888" class="button-primary"
+                                                                        style="display: block; margin: 0 auto; max-width: 320px; width: 100%; border-radius: 6px; background: #ffffff; color: #033D5A ; padding: 19px 20px; text-decoration: none; font-family: 'Helvetica ', sans-serif; font-size: 16px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.2px;">
+                                                                        Call Us At (877) 674-8888
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- GET A TEST -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr bgcolor="#ffffff">
+                            <td style="border-left: 1px solid #A6CBDE; border-right: 1px solid #A6CBDE;">
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td style="padding: 50px 40px;" class="hero-para-padding">
+                                            <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="column-header"
+                                                        style="display: block;  text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 46px; font-style: normal; font-weight: 400; line-height: 130%; letter-spacing: 0.36px; max-width: 540px;">
+                                                        Why get a Calcium Scoring Test?
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="paragraph"
+                                                        style="display: block; padding-top: 12px;  text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px; max-width: 540px;">
+                                                        Detects calcium buildup (plaque) in your arteries even before
+                                                        symptoms appear.
+                                                        Early detection allows for timely intervention and preventive
+                                                        measures to reduce your risk of heart attack or stroke.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 40px;" class="padding-top">
+                                                        <table bgcolor="#ffffff" role="presentation" width="100%"
+                                                            border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="https://marketing.expertmri.com/lp-expert-calcium/" target="_blank">
+                                                                        <img src="https://clientstaging.space/emailer-images/cal-s-heart-attk.jpg"
+                                                                            border="0" alt="old man grab his chest"
+                                                                            style="border-radius: 50%; width: 270px; height: 270px; display: block; margin: 0 auto; "
+                                                                            class="img-round-box">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="paragraph"
+                                                                    style="display: block; margin: 0 auto; padding-top: 20px;  text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px; max-width: 350px;">
+                                                                    Calcium scoring provides a more accurate risk
+                                                                    assessment than traditional risk factors alone
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 40px;" class="padding-top">
+                                                        <table bgcolor="#ffffff" role="presentation" width="100%"
+                                                            border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="https://marketing.expertmri.com/lp-expert-calcium/" target="_blank">
+                                                                        <img src="https://clientstaging.space/emailer-images/cal-s-chest-sm.jpg"
+                                                                            border="0" alt="old man grab his chest"
+                                                                            style="border-radius: 50%; width: 270px; height: 270px; display: block; margin: 0 auto; "
+                                                                            class="img-round-box">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="paragraph"
+                                                                    style="display: block; margin: 0 auto; padding-top: 20px;  text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px; max-width: 350px;">
+                                                                    Plays a crucial role in risk assessment and
+                                                                    prevention
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 40px;" class="padding-top">
+                                                        <table bgcolor="#ffffff" role="presentation" width="100%"
+                                                            border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="https://marketing.expertmri.com/lp-expert-calcium/" target="_blank">
+                                                                        <img src="https://clientstaging.space/emailer-images/cal-s-heart-attk.jpg"
+                                                                            border="0" alt="old man grab his chest"
+                                                                            style="border-radius: 50%; width: 270px; height: 270px; display: block; margin: 0 auto; "
+                                                                            class="img-round-box">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="paragraph"
+                                                                    style="display: block; margin: 0 auto; padding-top: 20px;  text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: 0.36px; max-width: 350px;">
+                                                                    Calcium scoring provides a more accurate risk
+                                                                    assessment than traditional risk factors alone
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- GRAPHICAL CHART -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr bgcolor="#ffffff">
+                            <td style="border-left: 1px solid #A6CBDE; border-right: 1px solid #A6CBDE;">
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td style="padding: 0 30px;" class="hero-para-padding">
+                                            <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td style="border-top: 1px dashed #033D5A; padding-top: 50px;" class="padding-top">
+                                                        <a href="https://marketing.expertmri.com/lp-expert-calcium/" target="_blank">
+                                                            <img src="https://clientstaging.space/emailer-images/cal-s-graph.png" border="0"
+                                                                alt="graph that show the persentage of safe patients"
+                                                                style="border-radius: 50%; width: 240px; height: 240px; display: block; margin: 0 auto; "
+                                                                class="img-round-box">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="column-header custom-text"
+                                                        style="display: block; margin: 0 auto; padding: 24px 0 60px; text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 40px; font-style: normal; font-weight: 400; line-height: 130%; letter-spacing: 0.36px; max-width: 510px;">
+                                                        Our Calcium Scoring Test has enabled early detection and timely
+                                                        interventions for <span style="color: #338CCA;">65% of our
+                                                            patients,</span> helping protect their heart health
+                                                    </td>
+                                                </tr>
+
+
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="https://marketing.expertmri.com/lp-expert-calcium/" target="_blank">
+                                                <img src="https://clientstaging.space/emailer-images/cal-s-banner.jpg" border="0"
+                                                    alt="graph that show the persentage of safe patients"
+                                                    style="display: block; width: auto; " class="img-max-banner">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- LOCATION MAP -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr bgcolor="#ffffff">
+                            <td style="border-left: 1px solid #A6CBDE; border-right: 1px solid #A6CBDE;">
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td>
+                                            <table bgcolor="#ffffff" role="presentation" width="100%" border="0"
+                                                cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://marketing.expertmri.com/lp-expert-calcium/" target="_blank">
+                                                            <img src="https://clientstaging.space/emailer-images/cal-s-location-map.png" border="0"
+                                                                alt="graph that show the persentage of safe patients"
+                                                                style="display: block; width: auto; "
+                                                                class="img-max-banner">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0 30px;" class="padding-both">
+                                                        <table bgcolor="#ffffff" role="presentation" width="100%"
+                                                            border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="column-header custom-text"
+                                                                    style="display: block; margin: 0 auto; padding: 0 0 32px; text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 46px; font-style: normal; font-weight: 400; line-height: 130%; letter-spacing: 0.46px; max-width: 480px;">
+                                                                    Locations across Southern California
+                                                                </td>
+                                                            </tr>
+                                                            <tr style="display: block; width: 100%; margin-bottom: 32px; background-color: #ffffff;"
+                                                                class="footer-media-gap">
+                                                                <td style="display: block; width: 100%; border-bottom: 1px dashed #033D5A;"
+                                                                    class="footer-media">
+                                                                    <table role="presentation" width="100%" border="0"
+                                                                        cellspacing="0" cellpadding="0"
+                                                                        style="display: block; width: 100%;">
+                                                                        <tbody
+                                                                            style="display: block; width: 100%; text-align: center; padding-bottom: 32px;"
+                                                                            class="footer-body-social">
+                                                                            <tr style="display: inline-block;"
+                                                                                class="social-padding">
+                                                                                <td>
+                                                                                    <a style="display: inline-block; padding:8px 15px;"
+                                                                                        href="https://www.linkedin.com/company/expert-mri-medical-diagnostics">
+                                                                                        <img style=" display: inline-block; margin: auto;"
+                                                                                            src="https://clientstaging.space/emailer-images/cal-s-linkedln.png"
+                                                                                            alt="linkedin" class="footer-icons">
+                                                                                    </a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a style="display: inline-block; padding:8px 15px;"
+                                                                                        href="https://www.facebook.com/expertmri">
+                                                                                        <img style=" display: inline-block; margin: auto;"
+                                                                                            src="https://clientstaging.space/emailer-images/cal-s-facebook.png"
+                                                                                            alt="facebook" class="footer-icons">
+                                                                                    </a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a style="display: inline-block; padding:8px 15px;"
+                                                                                        href="https://twitter.com/Expert_MRI">
+                                                                                        <img style=" display: inline-block; margin: auto;"
+                                                                                            src="https://clientstaging.space/emailer-images/cal-s-twitter.png"
+                                                                                            alt="twitter" class="footer-icons">
+                                                                                    </a>
+                                                                                </td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr style="display: inline-block; ">
+                                                                                <td>
+                                                                                    <a style="display: inline-block; padding:8px 15px;"
+                                                                                        href="https://www.youtube.com/channel/UCN8HBDqaOvN8gf2pJ48_ZNQ">
+                                                                                        <img style=" display: inline-block; margin: auto;"
+                                                                                            src="https://clientstaging.space/emailer-images/cal-s-youtube.png"
+                                                                                            alt="youtube" class="footer-icons">
+                                                                                    </a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a style="display: inline-block; padding:8px 15px;"
+                                                                                        href="https://www.instagram.com/ExpertMRI">
+                                                                                        <img style=" display: inline-block; margin: auto;"
+                                                                                            src="https://clientstaging.space/emailer-images/cal-s-instagram.png"
+                                                                                            alt="instagram" class="footer-icons">
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- FOOTER -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" class="section-padding-bottom-image">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"
+                        class="responsive-table">
+                        <tr bgcolor="#ffffff">
+                            <td style="border-left: 1px solid #A6CBDE; border-right: 1px solid #A6CBDE;">
+                                <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                        <td>
+                                            <table bgcolor="#ffffff" role="presentation" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tr>
+                                                    <td style="display: block; width: 100%; padding: 0 40px 24px; " class="footer-logo">
+                                                        <a style="outline: none; display: block; " href="https://marketing.expertmri.com/lp-expert-ct-new">
+                                                            <img class="exp-footer exp-mri-logo-footer" style="max-width: 322px; width: 100%; margin:0 auto; display: block;" src="https://clientstaging.space/emailer-images/footer-logo.png" alt="Expert MRI-logo">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0 30px;" class="padding-both">
+                                                        <a style="outline: none; display: block; text-align: center; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: 0.2px; " href="tel:877-674-8888" class="paragraph">
+                                                            Call Us at : 877-674-8888
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0 30px;" class="padding-both">
+                                                        <a style="outline: none; display: block; text-align: center; padding-top: 16px; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: 0.2px; text-decoration: underline; " href="mailto:scheduling@expertmri.com" class="paragraph">
+                                                            scheduling@expertmri.com
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0 30px;" class="padding-both">
+                                                        <a style="outline: none; display: block; text-align: center; padding: 16px 0 30px; color: #033D5A; font-family: Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: 0.2px; text-decoration: underline; " href="https://www.expertmri.com" class="paragraph">
+                                                            www.expertmri.com
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="600px" />
+    <mj-font name="Helvetica" href="https://fonts.cdnfonts.com/css/helvetica-neue-55" />
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
+    <mj-attributes>
+      <mj-all color="#040404" font-family="'Helvetica Neue, sans-serif'" padding="0px" />
+      <mj-class name="border-radius" border-radius="8px" />
+      <mj-class name="border-right" border-right="1px solid #CECECE" />
+      <mj-class name="border-left" border-left="1px solid #CECECE" />
+      <mj-class name="custom" display="inline-block" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#ECEDEC">
+
+    <mj-wrapper background-color="#ECEDEC" padding="0px 15px">
+
+      <!--     header logo     -->
+      <mj-section background-color="#ECEDEC" mj-class="top-border" padding="70px 0 0 0">
+        <mj-column padding="10px" background-color="#4D5DFB" mj-class="border-right">
+          <mj-button href="tel:877-674-8888" inner-padding="10px 15px" font-family="Raleway,sans-serif" font-size="14px" font-weight="400" color="#ffffff" background-color="transparent">
+            "Schedule your appointment today! Call us at 877-674-8888
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <!--     Header text section    -->
+      <mj-section background-color="#ffffff" padding="30px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-text align="left" color="#0F0F0F" background-color="#ffffff" font-family="Raleway,sans-serif" font-size="24px" font-weight="400" line-height="170%">
+            CT vs MRI: Making Informed Decisions for Better Outcomes
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#ffffff" padding="0 0 15px 0" mj-class="border-right border-left">
+        <mj-column>
+          <mj-image src="https://clientstaging.space/emailer-images/ctv-banner.jpg" href="https://expertmri.com/" />
+
+        </mj-column>
+      </mj-section>
+
+      <!--     Greetings section    -->
+      <mj-section background-color="#ffffff" padding="10px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            Dear [Physician’s/Patient’s Name],
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            When it comes to diagnostic imaging, selecting the appropriate modality—CT or MRI—can make all the difference in accuracy,
+            comfort, and outcomes. At ExpertMRI, we’re here to help you understand the strengths and ideal applications of each technique.
+            Here’s a quick overview to guide you through the essential considerations.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     Reason bullet section    -->
+      <mj-section background-color="#ffffff" padding="20px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            When to Choose a CT Scan
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            CT (Computed Tomography) scans offer rapid and precise imaging, particularly useful in emergencies or for complex bone and joint injuries.
+            Physicians often turn to CT scans for:
+          </mj-text>
+          <mj-text align="left" padding-left="10px" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            <ul style="padding-left: 20px; margin: 0; list-style-type: disc;">
+              <li style="font-size: 14px; line-height: 150%;">Trauma cases (e.g., fractures or internal bleeding)</li>
+              <li style="font-size: 14px; line-height: 150%;">Chest and abdominal issues where quick, detailed images are critical</li>
+              <li style="font-size: 14px; line-height: 150%;">Lung and chest imaging to detect tumors, infections, or nodules</li>
+              <li style="font-size: 14px; line-height: 150%;">Blood vessel imaging through CT Angiography (CTA)</li>
+            </ul>
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            CT scans are fast and highly effective for acute injuries, infections, and conditions requiring detailed cross-sectional images.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <!--     Option bullet section    -->
+      <mj-section background-color="#ffffff" padding="10px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            When MRI is the Preferred Option
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            MRI (Magnetic Resonance Imaging) uses magnetic fields to create highly detailed images without radiation, making it ideal for soft tissue assessment.
+            MRI is commonly ordered for:
+          </mj-text>
+          <mj-text align="left" padding-left="10px" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            <ul style="padding-left: 20px; margin: 0; list-style-type: disc;">
+              <li style="font-size: 14px; line-height: 150%;">Neurological assessments (brain and spinal cord conditions)</li>
+              <li style="font-size: 14px; line-height: 150%;">Soft tissue injuries like ligament, tendon, and muscle issues</li>
+              <li style="font-size: 14px; line-height: 150%;">Detailed joint imaging (for complex injuries or conditions like arthritis)</li>
+              <li style="font-size: 14px; line-height: 150%;">Evaluating organs (e.g., liver, pancreas, and reproductive organs)</li>
+            </ul>
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            MRI’s high-resolution imaging offers a deeper look into the body’s structures, especially when examining neurological and musculoskeletal systems.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <!--     Option bullet section    -->
+      <mj-section background-color="#ffffff" padding="20px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            Which to Choose? We Can Help!
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            Not sure which test is best? Our team at ExpertMRI is available to discuss patient cases and help ensure the right diagnostic pathway is chosen.
+            We’re committed to providing the highest quality imaging for all needs, with both 3T MRI and advanced CT technology available
+          </mj-text>
+
+          <mj-text align="left" padding-top="20px" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="170%">
+            At ExpertMRI, we’re dedicated to guiding you to the best options for timely and accurate diagnostics.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <!--     Schedule link section    -->
+      <mj-section background-color="#ffffff" padding="20px 24px 15px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff" border-bottom="1px solid #cecece">
+          <mj-text align="center" color="#0F0F0F" background-color="#ffffff" font-family="Raleway,sans-serif" font-size="23px" font-weight="700" line-height="170%">
+            Schedule Today
+          </mj-text>
+          <mj-text align="center" color="#0F0F0F" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            <span style="display: inline-block;">
+              <a href="tel:877-674-8888" style="color: #0F0F0F; text-decoration: none;">Call us at 877-674-8888</a>
+            </span>
+            <span style="display: inline-block; padding-left: 5px; ">
+              or
+            </span>
+            <span style=" display: inline-block; margin-left: 2px;">
+              <a href="https://expertmri.com" style="color: #0F0F0F; text-decoration: none;">visit https://expertmri.com</a>
+            </span>
+          </mj-text>
+          <mj-text align="center" color="#0F0F0F" padding-bottom="10px" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            to schedule your appointment.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     Footer logo     -->
+      <mj-section padding="0 0 70px 0">
+        <mj-column padding="10px" background-color="#ffffff" mj-class="border-right border-left" border-bottom="1px solid #CECECE">
+          <mj-image width="190px" src="https://clientstaging.space/emailer-images/ctv-mri-logo.jpg" href="https://expertmri.com/" />
+          <mj-text align="center" padding="10px 0 0 0" color="#0D5385" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" font-style="italic" line-height="170%">
+            Your Partner in Precision Diagnostics
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

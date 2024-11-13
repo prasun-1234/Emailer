@@ -1,0 +1,235 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="600px" />
+    <mj-font name="Helvetica" href="https://fonts.cdnfonts.com/css/helvetica-neue-55" />
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
+    <mj-attributes>
+      <mj-all color="#040404" font-family="'Helvetica Neue, sans-serif'" padding="0px" />
+      <mj-class name="border-radius" border-radius="8px" />
+      <mj-class name="border-right" border-right="1px solid #CECECE" />
+      <mj-class name="border-left" border-left="1px solid #CECECE" />
+      <mj-class name="custom" display="inline-block" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#ECEDEC">
+
+    <mj-wrapper background-color="#ECEDEC" padding="0px 15px">
+
+      <!--     header logo     -->
+      <mj-section background-color="#ECEDEC" mj-class="top-border" padding="70px 0 0 0">
+        <mj-column padding="10px" background-color="#4D5DFB" mj-class="border-right">
+          <mj-button href="tel:877-674-8888" inner-padding="10px 15px" font-family="Raleway,sans-serif" font-size="14px" font-weight="400" color="#ffffff" background-color="transparent">
+            Book your appointment now! Reach out at 877-674-8888
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <!--     Header text section    -->
+      <mj-section background-color="#ffffff" padding="30px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-text align="left" color="#484848" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="24px" font-weight="700" line-height="170%" font-style="italic">
+            Discover Medicare-Covered Diagnostic Imaging Services with ExpertMRI
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#ffffff" padding="0 0 15px 0" mj-class="border-right border-left">
+        <mj-column>
+          <mj-image src="https://clientstaging.space/emailer-images/medicare-banner.png" href="https://expertmri.com/" />
+        </mj-column>
+      </mj-section>
+
+      <!--     Greetings section    -->
+      <mj-section background-color="#ffffff" padding="10px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="220%">
+            Dear [Physician’s/Patient’s Name],
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="220%">
+            At ExpertMRI, we understand that navigating Medicare benefits shouldn't be complicated. That's why we've streamlined access to advanced diagnostic imaging services while ensuring full Medicare compliance.
+            Our Medicare-Covered Services Include:
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="220%">
+            Advanced Diagnostic Imaging
+          </mj-text>
+          <mj-text align="left" color="#040404" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" line-height="220%">
+            <ul style="padding-left: 30px; margin: 0; list-style-type: disc; border-bottom: 1px solid #B6B6B6; padding-bottom: 30px; ">
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                High-Resolution MRI and CT Scans <br />
+                <span>
+                  State-of-the-art technology delivering precise results for confident diagnosis
+                </span>
+              </li>
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px; ">
+                Low-Dose Lung Cancer Screening <br />
+                <span>
+                  Medicare-approved screening for early detection in eligible patients
+                </span>
+              </li>
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px; ">
+                Cardiac Calcium Scoring <br />
+                <span>
+                  Non-invasive heart health assessment to guide preventive care
+                </span>
+              </li>
+            </ul>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!--     Advantage bullet section    -->
+      <mj-section background-color="#ffffff" padding="24px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#ffffff">
+          <mj-text align="left" color="#484848" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="22px" font-weight="700" line-height="170%" font-style="italic">
+            The ExpertMRI Advantage
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" padding="0px 24px" mj-class="border-right border-left">
+        <mj-column width="10%" padding="0 0 10px 10px">
+          <mj-image src="https://clientstaging.space/emailer-images/medicare-streamline.jpg" alt="medicare heart" width="48px" align="left" />
+        </mj-column>
+        <mj-column width="90%">
+          <mj-text align="left" padding-left="20px" color="#484848" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="20px" font-weight="700" line-height="220%" font-style="normal">
+            Patient-First Experience <br />
+            <ul style="padding-left: 15px; margin: 0; list-style-type: disc; ">
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Compassionate staff dedicated to your comfort
+              </li>
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Step-by-step guidance through your procedure
+              </li>
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Clear explanation of Medicare coverage
+              </li>
+            </ul>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" padding="24px 24px" mj-class="border-right border-left">
+        <mj-column width="10%" padding="0 0 10px 10px">
+          <mj-image src="https://clientstaging.space/emailer-images/medicare-insurence.jpg" alt="medicare insurence" width="48px" align="left" />
+        </mj-column>
+        <mj-column width="90%">
+          <mj-text align="left" padding-left="20px" color="#484848" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="20px" font-weight="700" line-height="220%" font-style="normal">
+            Quick Access to Care <br />
+            <ul style="padding-left: 15px; margin: 0; list-style-type: disc; ">
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Same-week appointments available
+              </li>
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Flexible scheduling options
+              </li>
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Rapid results delivery to your healthcare team
+              </li>
+            </ul>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" padding="0px 24px 36px" mj-class="border-right border-left">
+        <mj-column width="10%" padding="0 0 10px 10px">
+          <mj-image src="https://clientstaging.space/emailer-images/medicare-mdibox.jpg" alt="medicare medical box" width="48px" align="left" />
+        </mj-column>
+        <mj-column width="90%">
+          <mj-text align="left" padding-left="20px" color="#484848" background-color="#ffffff" font-family="Helvetica,sans-serif" font-size="20px" font-weight="700" line-height="220%" font-style="normal">
+            Quality You Can Trust <br />
+            <ul style="padding-left: 15px; margin: 0; list-style-type: disc; ">
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Same-week appointments available
+              </li>
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Flexible scheduling options
+              </li>
+              <li style="font-size: 16px; line-height: 35PX; font-weight: 400; margin-bottom: 10px;  ">
+                Rapid results delivery to your healthcare team
+              </li>
+            </ul>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!--    End advantage bullet section    -->
+
+      <!--    Action order list section    -->
+      <mj-section background-color="#ffffff" padding="16px 24px" mj-class="border-right border-left">
+        <mj-column border-top="1px solid #B6B6B6">
+          <mj-text align="left" padding="10px 0 0 0" color="#484848" font-family="Helvetica,sans-serif" font-size="22px" font-weight="700" font-style="italic" line-height="220%">
+            Taking Action Is Simple
+          </mj-text>
+          <mj-text align="left" padding="10px 0 0 0" color="#2C2C2C" font-family="Helvetica,sans-serif" font-size="16px" font-weight="700" font-style="normal" line-height="200%">
+            <ol style="padding-left: 30px; margin: 0; ">
+              <li>
+                <a href="tel:877-674-8888" style="color: #2C2C2C; text-decoration: none; ">Call us at 877-674-8888</a>
+              </li>
+              <li>
+                Have your Medicare card ready
+              </li>
+              <li>
+                Schedule your appointment at a time that works for you
+              </li>
+            </ol>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--    Commitment section    -->
+      <mj-section background-color="#ffffff" padding="16px 24px" mj-class="border-right border-left">
+        <mj-column background-color="#7030F7" border-radius="8px">
+          <mj-text padding="20px" align="left" padding="10px 0 0 0" color="#ffffff" font-family="Helvetica,sans-serif" font-size="22px" font-weight="400" font-style="italic" line-height="178%">
+            Our commitment is to make advanced diagnostic imaging accessible to every Medicare beneficiary while providing an exceptional care experience.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--    Coverage note section    -->
+      <mj-section background-color="#ffffff" padding="16px 24px" mj-class="border-right border-left">
+        <mj-column>
+          <mj-text align="center" color="#484848" font-family="Helvetica,sans-serif" font-size="16px" font-weight="700" font-style="normal" line-height="220%">
+            Medicare Coverage Note
+          </mj-text>
+          <mj-text align="left" padding-top="10px" color="#2C2C2C" font-family="Helvetica,sans-serif" font-size="16px" font-weight="400" font-style="normal" line-height="187%">
+            Most diagnostic imaging services are covered under Medicare Part B. Our team will verify your coverage and explain any applicable copayments before your appointment.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+
+      <!--     Schedule link section    -->
+      <mj-section background-color="#061F3D" padding="20px 24px 15px" mj-class="border-right border-left">
+        <mj-column background-color="#061F3D">
+          <mj-text align="center" color="#ffffff" background-color="#ffffff" font-family="Raleway,sans-serif" font-size="23px" font-weight="700" line-height="170%">
+            Schedule Your Appointment Today
+          </mj-text>
+
+          <mj-text align="center" padding-top="10px" color="#ffffff" padding-bottom="10px" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            <a href="tel:877-674-8888" style="color: #ffffff; text-decoration: none;">Call us at 877-674-8888 or</a>
+          </mj-text>
+          <mj-text align="center" color="#ffffff" padding-bottom="10px" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            <a href="https://expertmri.com" style="color: #ffffff; text-decoration: none;">visit https://expertmri.com</a>
+          </mj-text>
+          <mj-text align="center" color="#ffffff" padding-bottom="10px" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" line-height="170%">
+            to schedule your appointment.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--     Footer logo     -->
+      <mj-section padding="0 0 70px 0">
+        <mj-column padding="10px" background-color="#ffffff" mj-class="border-right border-left" border-bottom="1px solid #CECECE">
+          <mj-text align="center" padding-bottom="10px" color="#484848" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" font-style="italic" line-height="170%">
+            Caring for Our Community
+          </mj-text>
+
+          <mj-image width="190px" src="https://clientstaging.space/emailer-images/ctv-mri-logo.jpg" href="https://expertmri.com/" />
+          <mj-text align="center" padding="20px 0 0 0" color="#0D5385" font-family="Raleway,sans-serif" font-size="16px" font-weight="700" font-style="italic" line-height="170%">
+            Your Partner in Precision Diagnostics
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>
